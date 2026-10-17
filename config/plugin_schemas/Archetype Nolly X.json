@@ -1,0 +1,9509 @@
+{
+  "plugin_name": "Archetype Nolly X",
+  "vst3_path": "C:\\Program Files\\Common Files\\VST3\\Neural DSP\\Archetype Nolly X.vst3",
+  "is_instrument": false,
+  "parameter_count": 161,
+  "inspected_with": "0.9.26",
+  "parameters": [
+    {
+      "index": 0,
+      "name": "input_gain",
+      "host_name": "Input Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -24.0,
+      "max_value": 24.0,
+      "step_size": 0.05,
+      "num_steps": 483,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-24.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+12.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+24.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "output_gain",
+      "host_name": "Output Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -24.0,
+      "max_value": 24.0,
+      "step_size": 0.05,
+      "num_steps": 483,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-24.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+12.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+24.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "gate_active",
+      "host_name": "Gate Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "gate_threshold",
+      "host_name": "Gate Threshold",
+      "kind": "numeric",
+      "default_normalized": 0.1666666716337204,
+      "default_display": "-80.0 dB",
+      "units": "dB",
+      "min_value": -96.0,
+      "max_value": 0.0,
+      "step_size": 0.1,
+      "num_steps": 961,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-96.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-72.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "-48.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "-24.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "0.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "transpose",
+      "host_name": "Transpose",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "0 st",
+      "num_steps": 25,
+      "valid_values": [
+        "-12 st",
+        "-11 st",
+        "-10 st",
+        "-9 st",
+        "-8 st",
+        "-7 st",
+        "-6 st",
+        "-5 st",
+        "-4 st",
+        "-3 st",
+        "-2 st",
+        "-1 st",
+        "0 st",
+        "1 st",
+        "2 st",
+        "3 st",
+        "4 st",
+        "5 st",
+        "6 st",
+        "7 st",
+        "8 st",
+        "9 st",
+        "10 st",
+        "11 st",
+        "12 st"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12 st"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6 st"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0 st"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6 st"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12 st"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 5,
+      "name": "doubler_active",
+      "host_name": "Doubler Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "doubler_spread",
+      "host_name": "Doubler Spread",
+      "kind": "numeric",
+      "default_normalized": 0.1764705926179886,
+      "default_display": "6.00 ms",
+      "units": "ms",
+      "min_value": 3.0,
+      "max_value": 20.0,
+      "step_size": 0.015,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "3.00 ms"
+        },
+        {
+          "normalized": 0.25,
+          "display": "7.25 ms"
+        },
+        {
+          "normalized": 0.5,
+          "display": "11.50 ms"
+        },
+        {
+          "normalized": 0.75,
+          "display": "15.75 ms"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.00 ms"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "active_pre_fx_section",
+      "host_name": "Active Pre FX Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "compressor_active",
+      "host_name": "Compressor Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "compressor_compression",
+      "host_name": "Compressor Compression",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "compressor_level",
+      "host_name": "Compressor Level",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "compressor_attack",
+      "host_name": "Compressor Attack",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Smooth",
+      "num_steps": 2,
+      "valid_values": [
+        "Smooth",
+        "Snappy"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Smooth"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Smooth"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Smooth"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Snappy"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Snappy"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 12,
+      "name": "overdrive_1_active",
+      "host_name": "Overdrive-1 Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "overdrive_1_drive",
+      "host_name": "Overdrive-1 Drive",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "overdrive_1_tone",
+      "host_name": "Overdrive-1 Tone",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "overdrive_1_level",
+      "host_name": "Overdrive-1 Level",
+      "kind": "numeric",
+      "default_normalized": 0.6111530065536499,
+      "default_display": "61 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "overdrive_1_bright",
+      "host_name": "Overdrive-1 Bright",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "delay_1_active",
+      "host_name": "Delay-1 Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "delay_1_mix",
+      "host_name": "Delay-1 Mix",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "delay_1_feedback",
+      "host_name": "Delay-1 Feedback",
+      "kind": "numeric",
+      "default_normalized": 0.1597466766834259,
+      "default_display": "14 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 90.0,
+      "step_size": 1.0,
+      "num_steps": 91,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "22 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "45 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "67 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "90 %"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "name": "delay_1_time",
+      "host_name": "Delay-1 Time",
+      "kind": "numeric",
+      "default_normalized": 0.031578946858644485,
+      "default_display": "80 ms",
+      "units": "ms",
+      "min_value": 50.0,
+      "max_value": 1000.0,
+      "step_size": 1.0,
+      "num_steps": 951,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "50 ms"
+        },
+        {
+          "normalized": 0.25,
+          "display": "288 ms"
+        },
+        {
+          "normalized": 0.5,
+          "display": "525 ms"
+        },
+        {
+          "normalized": 0.75,
+          "display": "763 ms"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1000 ms"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "name": "delay_1_syncnote",
+      "host_name": "Delay-1 SyncNote",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "1/8",
+      "num_steps": 21,
+      "valid_values": [
+        "1/64T",
+        "1/64",
+        "1/32T",
+        "1/64D",
+        "1/32",
+        "1/16T",
+        "1/32D",
+        "1/16",
+        "1/8T",
+        "1/16D",
+        "1/8",
+        "1/4T",
+        "1/8D",
+        "1/4",
+        "1/2T",
+        "1/4D",
+        "1/2",
+        "1/1T",
+        "1/2D",
+        "1/1",
+        "1/1D"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1/64T"
+        },
+        {
+          "normalized": 0.25,
+          "display": "1/16T"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1/8"
+        },
+        {
+          "normalized": 0.75,
+          "display": "1/4D"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1/1D"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 22,
+      "name": "delay_1_sync",
+      "host_name": "Delay-1 Sync",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Note",
+      "num_steps": 2,
+      "valid_values": [
+        "Ms",
+        "Note"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Ms"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Ms"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Ms"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Note"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Note"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 23,
+      "name": "delay_1_tone",
+      "host_name": "Delay-1 Tone",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "name": "overdrive_2_active",
+      "host_name": "Overdrive-2 Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "name": "overdrive_2_gain",
+      "host_name": "Overdrive-2 Gain",
+      "kind": "numeric",
+      "default_normalized": 0.1740490049123764,
+      "default_display": "17 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "name": "overdrive_2_bass",
+      "host_name": "Overdrive-2 Bass",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "name": "overdrive_2_treble",
+      "host_name": "Overdrive-2 Treble",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "name": "overdrive_2_level",
+      "host_name": "Overdrive-2 Level",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "name": "active_amp_section",
+      "host_name": "Active Amp Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "name": "amp_cab_linked",
+      "host_name": "Amp/Cab Linked",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "name": "amp_type",
+      "host_name": "Amp Type",
+      "kind": "enum",
+      "default_normalized": 0.6666666865348816,
+      "default_display": "Rhythm",
+      "num_steps": 4,
+      "valid_values": [
+        "Clean",
+        "Crunch",
+        "Rhythm",
+        "Lead"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Clean"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Crunch"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Rhythm"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Rhythm"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Lead"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 32,
+      "name": "clean_amp_bright",
+      "host_name": "Clean Amp Bright",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "name": "clean_amp_gain",
+      "host_name": "Clean Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "name": "clean_amp_bass",
+      "host_name": "Clean Amp Bass",
+      "kind": "numeric",
+      "default_normalized": 0.38913699984550476,
+      "default_display": "39 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "name": "clean_amp_middle",
+      "host_name": "Clean Amp Middle",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "name": "clean_amp_treble",
+      "host_name": "Clean Amp Treble",
+      "kind": "numeric",
+      "default_normalized": 0.6172000169754028,
+      "default_display": "62 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "name": "clean_amp_master",
+      "host_name": "Clean Amp Master",
+      "kind": "numeric",
+      "default_normalized": 0.33856499195098877,
+      "default_display": "34 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "name": "clean_amp_output",
+      "host_name": "Clean Amp Output",
+      "kind": "numeric",
+      "default_normalized": 0.6503175497055054,
+      "default_display": "65 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "name": "crunch_amp_bright",
+      "host_name": "Crunch Amp Bright",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "name": "crunch_amp_gain",
+      "host_name": "Crunch Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.6910409927368164,
+      "default_display": "69 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "name": "crunch_amp_bass",
+      "host_name": "Crunch Amp Bass",
+      "kind": "numeric",
+      "default_normalized": 0.6732620000839233,
+      "default_display": "67 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "name": "crunch_amp_mid",
+      "host_name": "Crunch Amp Mid",
+      "kind": "numeric",
+      "default_normalized": 0.8211789727210999,
+      "default_display": "82 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "name": "crunch_amp_treble",
+      "host_name": "Crunch Amp Treble",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "name": "crunch_amp_presence",
+      "host_name": "Crunch Amp Presence",
+      "kind": "numeric",
+      "default_normalized": 0.8047209978103638,
+      "default_display": "80 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "name": "crunch_amp_depth",
+      "host_name": "Crunch Amp Depth",
+      "kind": "numeric",
+      "default_normalized": 0.40164700150489807,
+      "default_display": "40 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "name": "crunch_amp_master",
+      "host_name": "Crunch Amp Master",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "name": "crunch_amp_output",
+      "host_name": "Crunch Amp Output",
+      "kind": "numeric",
+      "default_normalized": 0.6926760077476501,
+      "default_display": "69 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "name": "rhythm_amp_gain",
+      "host_name": "Rhythm Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "name": "rhythm_amp_bass",
+      "host_name": "Rhythm Amp Bass",
+      "kind": "numeric",
+      "default_normalized": 0.611719012260437,
+      "default_display": "61 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "name": "rhythm_amp_mid",
+      "host_name": "Rhythm Amp Mid",
+      "kind": "numeric",
+      "default_normalized": 0.4018569886684418,
+      "default_display": "40 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "name": "rhythm_amp_treble",
+      "host_name": "Rhythm Amp Treble",
+      "kind": "numeric",
+      "default_normalized": 0.49619099497795105,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "name": "rhythm_amp_resonance",
+      "host_name": "Rhythm Amp Resonance",
+      "kind": "numeric",
+      "default_normalized": 0.6827250123023987,
+      "default_display": "68 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "name": "rhythm_amp_presence",
+      "host_name": "Rhythm Amp Presence",
+      "kind": "numeric",
+      "default_normalized": 0.7250139713287354,
+      "default_display": "73 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "name": "rhythm_amp_master",
+      "host_name": "Rhythm Amp Master",
+      "kind": "numeric",
+      "default_normalized": 0.40452298521995544,
+      "default_display": "40 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "name": "rhythm_amp_output",
+      "host_name": "Rhythm Amp Output",
+      "kind": "numeric",
+      "default_normalized": 0.7509011030197144,
+      "default_display": "75 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "name": "lead_amp_gain",
+      "host_name": "Lead Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.6665130257606506,
+      "default_display": "67 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "name": "lead_amp_bass",
+      "host_name": "Lead Amp Bass",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "name": "lead_amp_middle",
+      "host_name": "Lead Amp Middle",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "name": "lead_amp_treble",
+      "host_name": "Lead Amp Treble",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "name": "lead_amp_master",
+      "host_name": "Lead Amp Master",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "name": "lead_amp_output",
+      "host_name": "Lead Amp Output",
+      "kind": "numeric",
+      "default_normalized": 0.7364793419837952,
+      "default_display": "74 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "name": "active_cab_section",
+      "host_name": "Active Cab Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "name": "cab_type_unlinked",
+      "host_name": "Cab Type (Unlinked)",
+      "kind": "enum",
+      "default_normalized": 0.6666666865348816,
+      "default_display": "Rhythm",
+      "num_steps": 4,
+      "valid_values": [
+        "Clean",
+        "Crunch",
+        "Rhythm",
+        "Lead"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Clean"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Crunch"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Rhythm"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Rhythm"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Lead"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 64,
+      "name": "cab_l_active",
+      "host_name": "Cab L Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "name": "clean_amp_cab_mic_l_type",
+      "host_name": "Clean Amp Cab Mic L Type",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "Dynamic 57",
+      "num_steps": 13,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 66,
+      "name": "crunch_amp_cab_mic_l_type",
+      "host_name": "Crunch Amp Cab Mic L Type",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Dynamic 57",
+      "num_steps": 13,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 67,
+      "name": "rhythm_amp_cab_mic_l_type",
+      "host_name": "Rhythm Amp Cab Mic L Type",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "Dynamic 57",
+      "num_steps": 13,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 68,
+      "name": "lead_amp_cab_mic_l_type",
+      "host_name": "Lead Amp Cab Mic L Type",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "Dynamic 57",
+      "num_steps": 13,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 69,
+      "name": "cab_l_position",
+      "host_name": "Cab L Position",
+      "kind": "numeric",
+      "default_normalized": 0.3499999940395355,
+      "default_display": "0.350",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "name": "cab_l_distance",
+      "host_name": "Cab L Distance",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "name": "cab_l_level",
+      "host_name": "Cab L Level",
+      "kind": "numeric",
+      "default_normalized": 0.4999988377094269,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -40.0,
+      "max_value": 6.0,
+      "step_size": 1.4916666666666665,
+      "num_steps": 262,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-40.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-5.2 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+3.4 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+6.0 dB"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          -40.0
+        ],
+        [
+          0.03125,
+          -17.1
+        ],
+        [
+          0.0625,
+          -13.7
+        ],
+        [
+          0.09375,
+          -11.5
+        ],
+        [
+          0.125,
+          -9.8
+        ],
+        [
+          0.15625,
+          -8.4
+        ],
+        [
+          0.1875,
+          -7.2
+        ],
+        [
+          0.21875,
+          -6.1
+        ],
+        [
+          0.25,
+          -5.2
+        ],
+        [
+          0.28125,
+          -4.4
+        ],
+        [
+          0.3125,
+          -3.6
+        ],
+        [
+          0.34375,
+          -2.9
+        ],
+        [
+          0.375,
+          -2.3
+        ],
+        [
+          0.40625,
+          -1.6
+        ],
+        [
+          0.4375,
+          -1.1
+        ],
+        [
+          0.46875,
+          -0.5
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.53125,
+          0.5
+        ],
+        [
+          0.5625,
+          1.0
+        ],
+        [
+          0.59375,
+          1.4
+        ],
+        [
+          0.625,
+          1.8
+        ],
+        [
+          0.65625,
+          2.3
+        ],
+        [
+          0.6875,
+          2.7
+        ],
+        [
+          0.71875,
+          3.0
+        ],
+        [
+          0.75,
+          3.4
+        ],
+        [
+          0.78125,
+          3.8
+        ],
+        [
+          0.8125,
+          4.1
+        ],
+        [
+          0.84375,
+          4.5
+        ],
+        [
+          0.875,
+          4.8
+        ],
+        [
+          0.90625,
+          5.1
+        ],
+        [
+          0.9375,
+          5.4
+        ],
+        [
+          0.96875,
+          5.7
+        ],
+        [
+          1.0,
+          6.0
+        ]
+      ]
+    },
+    {
+      "index": 72,
+      "name": "cab_l_pan",
+      "host_name": "Cab L Pan",
+      "kind": "enum",
+      "default_normalized": 0.4994140565395355,
+      "default_display": "C",
+      "num_steps": 101,
+      "valid_values": [
+        "50 L",
+        "49 L",
+        "48 L",
+        "47 L",
+        "46 L",
+        "45 L",
+        "44 L",
+        "43 L",
+        "42 L",
+        "41 L",
+        "40 L",
+        "39 L",
+        "38 L",
+        "37 L",
+        "36 L",
+        "35 L",
+        "34 L",
+        "33 L",
+        "32 L",
+        "31 L",
+        "30 L",
+        "29 L",
+        "28 L",
+        "27 L",
+        "26 L",
+        "25 L",
+        "24 L",
+        "23 L",
+        "22 L",
+        "21 L",
+        "20 L",
+        "19 L",
+        "18 L",
+        "17 L",
+        "16 L",
+        "15 L",
+        "14 L",
+        "13 L",
+        "12 L",
+        "11 L",
+        "10 L",
+        "9 L",
+        "8 L",
+        "7 L",
+        "6 L",
+        "5 L",
+        "4 L",
+        "3 L",
+        "2 L",
+        "1 L",
+        "C",
+        "1 R",
+        "2 R",
+        "3 R",
+        "4 R",
+        "5 R",
+        "6 R",
+        "7 R",
+        "8 R",
+        "9 R",
+        "10 R",
+        "11 R",
+        "12 R",
+        "13 R",
+        "14 R",
+        "15 R",
+        "16 R",
+        "17 R",
+        "18 R",
+        "19 R",
+        "20 R",
+        "21 R",
+        "22 R",
+        "23 R",
+        "24 R",
+        "25 R",
+        "26 R",
+        "27 R",
+        "28 R",
+        "29 R",
+        "30 R",
+        "31 R",
+        "32 R",
+        "33 R",
+        "34 R",
+        "35 R",
+        "36 R",
+        "37 R",
+        "38 R",
+        "39 R",
+        "40 R",
+        "41 R",
+        "42 R",
+        "43 R",
+        "44 R",
+        "45 R",
+        "46 R",
+        "47 R",
+        "48 R",
+        "49 R",
+        "50 R"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "50 L"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 L"
+        },
+        {
+          "normalized": 0.5,
+          "display": "C"
+        },
+        {
+          "normalized": 0.75,
+          "display": "25 R"
+        },
+        {
+          "normalized": 1.0,
+          "display": "50 R"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 73,
+      "name": "cab_l_phase",
+      "host_name": "Cab L Phase",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "name": "room_l_active",
+      "host_name": "Room L Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "name": "room_l_send",
+      "host_name": "Room L Send",
+      "kind": "numeric",
+      "default_normalized": 0.2233172357082367,
+      "default_display": "-6.0 dB",
+      "units": "dB",
+      "min_value": -40.0,
+      "max_value": 6.0,
+      "step_size": 1.4916666666666665,
+      "num_steps": 262,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-40.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-5.2 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+3.4 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+6.0 dB"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          -40.0
+        ],
+        [
+          0.03125,
+          -17.1
+        ],
+        [
+          0.0625,
+          -13.7
+        ],
+        [
+          0.09375,
+          -11.5
+        ],
+        [
+          0.125,
+          -9.8
+        ],
+        [
+          0.15625,
+          -8.4
+        ],
+        [
+          0.1875,
+          -7.2
+        ],
+        [
+          0.21875,
+          -6.1
+        ],
+        [
+          0.25,
+          -5.2
+        ],
+        [
+          0.28125,
+          -4.4
+        ],
+        [
+          0.3125,
+          -3.6
+        ],
+        [
+          0.34375,
+          -2.9
+        ],
+        [
+          0.375,
+          -2.3
+        ],
+        [
+          0.40625,
+          -1.6
+        ],
+        [
+          0.4375,
+          -1.1
+        ],
+        [
+          0.46875,
+          -0.5
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.53125,
+          0.5
+        ],
+        [
+          0.5625,
+          1.0
+        ],
+        [
+          0.59375,
+          1.4
+        ],
+        [
+          0.625,
+          1.8
+        ],
+        [
+          0.65625,
+          2.3
+        ],
+        [
+          0.6875,
+          2.7
+        ],
+        [
+          0.71875,
+          3.0
+        ],
+        [
+          0.75,
+          3.4
+        ],
+        [
+          0.78125,
+          3.8
+        ],
+        [
+          0.8125,
+          4.1
+        ],
+        [
+          0.84375,
+          4.5
+        ],
+        [
+          0.875,
+          4.8
+        ],
+        [
+          0.90625,
+          5.1
+        ],
+        [
+          0.9375,
+          5.4
+        ],
+        [
+          0.96875,
+          5.7
+        ],
+        [
+          1.0,
+          6.0
+        ]
+      ]
+    },
+    {
+      "index": 76,
+      "name": "cab_r_active",
+      "host_name": "Cab R Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "name": "clean_amp_cab_mic_r_type",
+      "host_name": "Clean Amp Cab Mic R Type",
+      "kind": "enum",
+      "default_normalized": 0.75,
+      "default_display": "Condenser 414",
+      "num_steps": 13,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 78,
+      "name": "crunch_amp_cab_mic_r_type",
+      "host_name": "Crunch Amp Cab Mic R Type",
+      "kind": "enum",
+      "default_normalized": 0.25,
+      "default_display": "Condenser 414",
+      "num_steps": 13,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 79,
+      "name": "rhythm_amp_cab_mic_r_type",
+      "host_name": "Rhythm Amp Cab Mic R Type",
+      "kind": "enum",
+      "default_normalized": 0.75,
+      "default_display": "Condenser 414",
+      "num_steps": 13,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 80,
+      "name": "lead_amp_cab_mic_r_type",
+      "host_name": "Lead Amp Cab Mic R Type",
+      "kind": "enum",
+      "default_normalized": 0.75,
+      "default_display": "Condenser 414",
+      "num_steps": 13,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 184",
+        "Condenser 414",
+        "Ribbon 121",
+        "Ribbon 160",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 81,
+      "name": "cab_r_position",
+      "host_name": "Cab R Position",
+      "kind": "numeric",
+      "default_normalized": 0.3499999940395355,
+      "default_display": "0.350",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "name": "cab_r_distance",
+      "host_name": "Cab R Distance",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "name": "cab_r_level",
+      "host_name": "Cab R Level",
+      "kind": "numeric",
+      "default_normalized": 0.4999988377094269,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -40.0,
+      "max_value": 6.0,
+      "step_size": 1.4916666666666665,
+      "num_steps": 262,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-40.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-5.2 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+3.4 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+6.0 dB"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          -40.0
+        ],
+        [
+          0.03125,
+          -17.1
+        ],
+        [
+          0.0625,
+          -13.7
+        ],
+        [
+          0.09375,
+          -11.5
+        ],
+        [
+          0.125,
+          -9.8
+        ],
+        [
+          0.15625,
+          -8.4
+        ],
+        [
+          0.1875,
+          -7.2
+        ],
+        [
+          0.21875,
+          -6.1
+        ],
+        [
+          0.25,
+          -5.2
+        ],
+        [
+          0.28125,
+          -4.4
+        ],
+        [
+          0.3125,
+          -3.6
+        ],
+        [
+          0.34375,
+          -2.9
+        ],
+        [
+          0.375,
+          -2.3
+        ],
+        [
+          0.40625,
+          -1.6
+        ],
+        [
+          0.4375,
+          -1.1
+        ],
+        [
+          0.46875,
+          -0.5
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.53125,
+          0.5
+        ],
+        [
+          0.5625,
+          1.0
+        ],
+        [
+          0.59375,
+          1.4
+        ],
+        [
+          0.625,
+          1.8
+        ],
+        [
+          0.65625,
+          2.3
+        ],
+        [
+          0.6875,
+          2.7
+        ],
+        [
+          0.71875,
+          3.0
+        ],
+        [
+          0.75,
+          3.4
+        ],
+        [
+          0.78125,
+          3.8
+        ],
+        [
+          0.8125,
+          4.1
+        ],
+        [
+          0.84375,
+          4.5
+        ],
+        [
+          0.875,
+          4.8
+        ],
+        [
+          0.90625,
+          5.1
+        ],
+        [
+          0.9375,
+          5.4
+        ],
+        [
+          0.96875,
+          5.7
+        ],
+        [
+          1.0,
+          6.0
+        ]
+      ]
+    },
+    {
+      "index": 84,
+      "name": "cab_r_pan",
+      "host_name": "Cab R Pan",
+      "kind": "enum",
+      "default_normalized": 0.5005859136581421,
+      "default_display": "C",
+      "num_steps": 101,
+      "valid_values": [
+        "50 L",
+        "49 L",
+        "48 L",
+        "47 L",
+        "46 L",
+        "45 L",
+        "44 L",
+        "43 L",
+        "42 L",
+        "41 L",
+        "40 L",
+        "39 L",
+        "38 L",
+        "37 L",
+        "36 L",
+        "35 L",
+        "34 L",
+        "33 L",
+        "32 L",
+        "31 L",
+        "30 L",
+        "29 L",
+        "28 L",
+        "27 L",
+        "26 L",
+        "25 L",
+        "24 L",
+        "23 L",
+        "22 L",
+        "21 L",
+        "20 L",
+        "19 L",
+        "18 L",
+        "17 L",
+        "16 L",
+        "15 L",
+        "14 L",
+        "13 L",
+        "12 L",
+        "11 L",
+        "10 L",
+        "9 L",
+        "8 L",
+        "7 L",
+        "6 L",
+        "5 L",
+        "4 L",
+        "3 L",
+        "2 L",
+        "1 L",
+        "C",
+        "1 R",
+        "2 R",
+        "3 R",
+        "4 R",
+        "5 R",
+        "6 R",
+        "7 R",
+        "8 R",
+        "9 R",
+        "10 R",
+        "11 R",
+        "12 R",
+        "13 R",
+        "14 R",
+        "15 R",
+        "16 R",
+        "17 R",
+        "18 R",
+        "19 R",
+        "20 R",
+        "21 R",
+        "22 R",
+        "23 R",
+        "24 R",
+        "25 R",
+        "26 R",
+        "27 R",
+        "28 R",
+        "29 R",
+        "30 R",
+        "31 R",
+        "32 R",
+        "33 R",
+        "34 R",
+        "35 R",
+        "36 R",
+        "37 R",
+        "38 R",
+        "39 R",
+        "40 R",
+        "41 R",
+        "42 R",
+        "43 R",
+        "44 R",
+        "45 R",
+        "46 R",
+        "47 R",
+        "48 R",
+        "49 R",
+        "50 R"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "50 L"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 L"
+        },
+        {
+          "normalized": 0.5,
+          "display": "C"
+        },
+        {
+          "normalized": 0.75,
+          "display": "25 R"
+        },
+        {
+          "normalized": 1.0,
+          "display": "50 R"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 85,
+      "name": "cab_r_phase",
+      "host_name": "Cab R Phase",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "name": "room_r_active",
+      "host_name": "Room R Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "name": "room_r_send",
+      "host_name": "Room R Send",
+      "kind": "numeric",
+      "default_normalized": 0.22361025214195251,
+      "default_display": "-6.0 dB",
+      "units": "dB",
+      "min_value": -40.0,
+      "max_value": 6.0,
+      "step_size": 1.4916666666666665,
+      "num_steps": 262,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-40.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-5.2 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+3.4 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+6.0 dB"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          -40.0
+        ],
+        [
+          0.03125,
+          -17.1
+        ],
+        [
+          0.0625,
+          -13.7
+        ],
+        [
+          0.09375,
+          -11.5
+        ],
+        [
+          0.125,
+          -9.8
+        ],
+        [
+          0.15625,
+          -8.4
+        ],
+        [
+          0.1875,
+          -7.2
+        ],
+        [
+          0.21875,
+          -6.1
+        ],
+        [
+          0.25,
+          -5.2
+        ],
+        [
+          0.28125,
+          -4.4
+        ],
+        [
+          0.3125,
+          -3.6
+        ],
+        [
+          0.34375,
+          -2.9
+        ],
+        [
+          0.375,
+          -2.3
+        ],
+        [
+          0.40625,
+          -1.6
+        ],
+        [
+          0.4375,
+          -1.1
+        ],
+        [
+          0.46875,
+          -0.5
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.53125,
+          0.5
+        ],
+        [
+          0.5625,
+          1.0
+        ],
+        [
+          0.59375,
+          1.4
+        ],
+        [
+          0.625,
+          1.8
+        ],
+        [
+          0.65625,
+          2.3
+        ],
+        [
+          0.6875,
+          2.7
+        ],
+        [
+          0.71875,
+          3.0
+        ],
+        [
+          0.75,
+          3.4
+        ],
+        [
+          0.78125,
+          3.8
+        ],
+        [
+          0.8125,
+          4.1
+        ],
+        [
+          0.84375,
+          4.5
+        ],
+        [
+          0.875,
+          4.8
+        ],
+        [
+          0.90625,
+          5.1
+        ],
+        [
+          0.9375,
+          5.4
+        ],
+        [
+          0.96875,
+          5.7
+        ],
+        [
+          1.0,
+          6.0
+        ]
+      ]
+    },
+    {
+      "index": 88,
+      "name": "active_eq_section",
+      "host_name": "Active EQ Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "name": "clean_amp_eq_active",
+      "host_name": "Clean Amp EQ Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "name": "clean_amp_eq_type",
+      "host_name": "Clean Amp EQ Type",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Mod",
+      "num_steps": 2,
+      "valid_values": [
+        "Original",
+        "Mod"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Mod"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Mod"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 91,
+      "name": "clean_amp_eq_band_1",
+      "host_name": "Clean Amp EQ Band 1",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "name": "clean_amp_eq_band_2",
+      "host_name": "Clean Amp EQ Band 2",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "name": "clean_amp_eq_band_3",
+      "host_name": "Clean Amp EQ Band 3",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "name": "clean_amp_eq_band_4",
+      "host_name": "Clean Amp EQ Band 4",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "name": "clean_amp_eq_band_5",
+      "host_name": "Clean Amp EQ Band 5",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "name": "clean_amp_eq_band_6",
+      "host_name": "Clean Amp EQ Band 6",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "name": "clean_amp_eq_band_7",
+      "host_name": "Clean Amp EQ Band 7",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "name": "clean_amp_eq_band_8",
+      "host_name": "Clean Amp EQ Band 8",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "name": "clean_amp_eq_band_9",
+      "host_name": "Clean Amp EQ Band 9",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "name": "clean_amp_eq_high_pass",
+      "host_name": "Clean Amp EQ High Pass",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "20 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 500.0,
+      "step_size": 1.0,
+      "num_steps": 481,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "68 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "171 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "317 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "500 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          25.0
+        ],
+        [
+          0.09375,
+          29.0
+        ],
+        [
+          0.125,
+          35.0
+        ],
+        [
+          0.15625,
+          42.0
+        ],
+        [
+          0.1875,
+          49.0
+        ],
+        [
+          0.21875,
+          58.0
+        ],
+        [
+          0.25,
+          68.0
+        ],
+        [
+          0.28125,
+          78.0
+        ],
+        [
+          0.3125,
+          89.0
+        ],
+        [
+          0.34375,
+          101.0
+        ],
+        [
+          0.375,
+          114.0
+        ],
+        [
+          0.40625,
+          127.0
+        ],
+        [
+          0.4375,
+          141.0
+        ],
+        [
+          0.46875,
+          156.0
+        ],
+        [
+          0.5,
+          171.0
+        ],
+        [
+          0.53125,
+          187.0
+        ],
+        [
+          0.5625,
+          204.0
+        ],
+        [
+          0.59375,
+          221.0
+        ],
+        [
+          0.625,
+          239.0
+        ],
+        [
+          0.65625,
+          258.0
+        ],
+        [
+          0.6875,
+          277.0
+        ],
+        [
+          0.71875,
+          297.0
+        ],
+        [
+          0.75,
+          317.0
+        ],
+        [
+          0.78125,
+          338.0
+        ],
+        [
+          0.8125,
+          360.0
+        ],
+        [
+          0.84375,
+          382.0
+        ],
+        [
+          0.875,
+          404.0
+        ],
+        [
+          0.90625,
+          427.0
+        ],
+        [
+          0.9375,
+          451.0
+        ],
+        [
+          0.96875,
+          475.0
+        ],
+        [
+          1.0,
+          500.0
+        ]
+      ]
+    },
+    {
+      "index": 101,
+      "name": "clean_amp_eq_low_pass",
+      "host_name": "Clean Amp EQ Low Pass",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "20.0 kHz",
+      "units": "Hz",
+      "min_value": 1000.0,
+      "max_value": 20000.0,
+      "step_size": 40.0,
+      "num_steps": 669,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1.00 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.89 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.98 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.8 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          1000.0
+        ],
+        [
+          0.03125,
+          1060.0
+        ],
+        [
+          0.0625,
+          1190.0
+        ],
+        [
+          0.09375,
+          1370.0
+        ],
+        [
+          0.125,
+          1590.0
+        ],
+        [
+          0.15625,
+          1860.0
+        ],
+        [
+          0.1875,
+          2170.0
+        ],
+        [
+          0.21875,
+          2510.0
+        ],
+        [
+          0.25,
+          2890.0
+        ],
+        [
+          0.28125,
+          3290.0
+        ],
+        [
+          0.3125,
+          3730.0
+        ],
+        [
+          0.34375,
+          4200.0
+        ],
+        [
+          0.375,
+          4710.0
+        ],
+        [
+          0.40625,
+          5230.0
+        ],
+        [
+          0.4375,
+          5790.0
+        ],
+        [
+          0.46875,
+          6370.0
+        ],
+        [
+          0.5,
+          6980.0
+        ],
+        [
+          0.53125,
+          7620.0
+        ],
+        [
+          0.5625,
+          8280.0
+        ],
+        [
+          0.59375,
+          8970.0
+        ],
+        [
+          0.625,
+          9680.0
+        ],
+        [
+          0.65625,
+          10400.0
+        ],
+        [
+          0.6875,
+          11200.0
+        ],
+        [
+          0.71875,
+          12000.0
+        ],
+        [
+          0.75,
+          12800.0
+        ],
+        [
+          0.78125,
+          13600.0
+        ],
+        [
+          0.8125,
+          14400.0
+        ],
+        [
+          0.84375,
+          15300.0
+        ],
+        [
+          0.875,
+          16200.0
+        ],
+        [
+          0.90625,
+          17100.0
+        ],
+        [
+          0.9375,
+          18100.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 102,
+      "name": "crunch_amp_eq_active",
+      "host_name": "Crunch Amp EQ Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "name": "crunch_amp_eq_type",
+      "host_name": "Crunch Amp EQ Type",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Mod",
+      "num_steps": 2,
+      "valid_values": [
+        "Original",
+        "Mod"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Mod"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Mod"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 104,
+      "name": "crunch_amp_eq_band_1",
+      "host_name": "Crunch Amp EQ Band 1",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "name": "crunch_amp_eq_band_2",
+      "host_name": "Crunch Amp EQ Band 2",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "name": "crunch_amp_eq_band_3",
+      "host_name": "Crunch Amp EQ Band 3",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "name": "crunch_amp_eq_band_4",
+      "host_name": "Crunch Amp EQ Band 4",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "name": "crunch_amp_eq_band_5",
+      "host_name": "Crunch Amp EQ Band 5",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "name": "crunch_amp_eq_band_6",
+      "host_name": "Crunch Amp EQ Band 6",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "name": "crunch_amp_eq_band_7",
+      "host_name": "Crunch Amp EQ Band 7",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "name": "crunch_amp_eq_band_8",
+      "host_name": "Crunch Amp EQ Band 8",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 112,
+      "name": "crunch_amp_eq_band_9",
+      "host_name": "Crunch Amp EQ Band 9",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 113,
+      "name": "crunch_amp_eq_high_pass",
+      "host_name": "Crunch Amp EQ High Pass",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "20 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 500.0,
+      "step_size": 1.0,
+      "num_steps": 481,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "68 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "171 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "317 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "500 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          25.0
+        ],
+        [
+          0.09375,
+          29.0
+        ],
+        [
+          0.125,
+          35.0
+        ],
+        [
+          0.15625,
+          42.0
+        ],
+        [
+          0.1875,
+          49.0
+        ],
+        [
+          0.21875,
+          58.0
+        ],
+        [
+          0.25,
+          68.0
+        ],
+        [
+          0.28125,
+          78.0
+        ],
+        [
+          0.3125,
+          89.0
+        ],
+        [
+          0.34375,
+          101.0
+        ],
+        [
+          0.375,
+          114.0
+        ],
+        [
+          0.40625,
+          127.0
+        ],
+        [
+          0.4375,
+          141.0
+        ],
+        [
+          0.46875,
+          156.0
+        ],
+        [
+          0.5,
+          171.0
+        ],
+        [
+          0.53125,
+          187.0
+        ],
+        [
+          0.5625,
+          204.0
+        ],
+        [
+          0.59375,
+          221.0
+        ],
+        [
+          0.625,
+          239.0
+        ],
+        [
+          0.65625,
+          258.0
+        ],
+        [
+          0.6875,
+          277.0
+        ],
+        [
+          0.71875,
+          297.0
+        ],
+        [
+          0.75,
+          317.0
+        ],
+        [
+          0.78125,
+          338.0
+        ],
+        [
+          0.8125,
+          360.0
+        ],
+        [
+          0.84375,
+          382.0
+        ],
+        [
+          0.875,
+          404.0
+        ],
+        [
+          0.90625,
+          427.0
+        ],
+        [
+          0.9375,
+          451.0
+        ],
+        [
+          0.96875,
+          475.0
+        ],
+        [
+          1.0,
+          500.0
+        ]
+      ]
+    },
+    {
+      "index": 114,
+      "name": "crunch_amp_eq_low_pass",
+      "host_name": "Crunch Amp EQ Low Pass",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "20.0 kHz",
+      "units": "Hz",
+      "min_value": 1000.0,
+      "max_value": 20000.0,
+      "step_size": 40.0,
+      "num_steps": 669,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1.00 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.89 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.98 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.8 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          1000.0
+        ],
+        [
+          0.03125,
+          1060.0
+        ],
+        [
+          0.0625,
+          1190.0
+        ],
+        [
+          0.09375,
+          1370.0
+        ],
+        [
+          0.125,
+          1590.0
+        ],
+        [
+          0.15625,
+          1860.0
+        ],
+        [
+          0.1875,
+          2170.0
+        ],
+        [
+          0.21875,
+          2510.0
+        ],
+        [
+          0.25,
+          2890.0
+        ],
+        [
+          0.28125,
+          3290.0
+        ],
+        [
+          0.3125,
+          3730.0
+        ],
+        [
+          0.34375,
+          4200.0
+        ],
+        [
+          0.375,
+          4710.0
+        ],
+        [
+          0.40625,
+          5230.0
+        ],
+        [
+          0.4375,
+          5790.0
+        ],
+        [
+          0.46875,
+          6370.0
+        ],
+        [
+          0.5,
+          6980.0
+        ],
+        [
+          0.53125,
+          7620.0
+        ],
+        [
+          0.5625,
+          8280.0
+        ],
+        [
+          0.59375,
+          8970.0
+        ],
+        [
+          0.625,
+          9680.0
+        ],
+        [
+          0.65625,
+          10400.0
+        ],
+        [
+          0.6875,
+          11200.0
+        ],
+        [
+          0.71875,
+          12000.0
+        ],
+        [
+          0.75,
+          12800.0
+        ],
+        [
+          0.78125,
+          13600.0
+        ],
+        [
+          0.8125,
+          14400.0
+        ],
+        [
+          0.84375,
+          15300.0
+        ],
+        [
+          0.875,
+          16200.0
+        ],
+        [
+          0.90625,
+          17100.0
+        ],
+        [
+          0.9375,
+          18100.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 115,
+      "name": "rhythm_amp_eq_active",
+      "host_name": "Rhythm Amp EQ Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 116,
+      "name": "rhythm_amp_eq_type",
+      "host_name": "Rhythm Amp EQ Type",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Mod",
+      "num_steps": 2,
+      "valid_values": [
+        "Original",
+        "Mod"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Mod"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Mod"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 117,
+      "name": "rhythm_amp_eq_band_1",
+      "host_name": "Rhythm Amp EQ Band 1",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 118,
+      "name": "rhythm_amp_eq_band_2",
+      "host_name": "Rhythm Amp EQ Band 2",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 119,
+      "name": "rhythm_amp_eq_band_3",
+      "host_name": "Rhythm Amp EQ Band 3",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 120,
+      "name": "rhythm_amp_eq_band_4",
+      "host_name": "Rhythm Amp EQ Band 4",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 121,
+      "name": "rhythm_amp_eq_band_5",
+      "host_name": "Rhythm Amp EQ Band 5",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 122,
+      "name": "rhythm_amp_eq_band_6",
+      "host_name": "Rhythm Amp EQ Band 6",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 123,
+      "name": "rhythm_amp_eq_band_7",
+      "host_name": "Rhythm Amp EQ Band 7",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 124,
+      "name": "rhythm_amp_eq_band_8",
+      "host_name": "Rhythm Amp EQ Band 8",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 125,
+      "name": "rhythm_amp_eq_band_9",
+      "host_name": "Rhythm Amp EQ Band 9",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 126,
+      "name": "rhythm_amp_eq_high_pass",
+      "host_name": "Rhythm Amp EQ High Pass",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "20 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 500.0,
+      "step_size": 1.0,
+      "num_steps": 481,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "68 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "171 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "317 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "500 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          25.0
+        ],
+        [
+          0.09375,
+          29.0
+        ],
+        [
+          0.125,
+          35.0
+        ],
+        [
+          0.15625,
+          42.0
+        ],
+        [
+          0.1875,
+          49.0
+        ],
+        [
+          0.21875,
+          58.0
+        ],
+        [
+          0.25,
+          68.0
+        ],
+        [
+          0.28125,
+          78.0
+        ],
+        [
+          0.3125,
+          89.0
+        ],
+        [
+          0.34375,
+          101.0
+        ],
+        [
+          0.375,
+          114.0
+        ],
+        [
+          0.40625,
+          127.0
+        ],
+        [
+          0.4375,
+          141.0
+        ],
+        [
+          0.46875,
+          156.0
+        ],
+        [
+          0.5,
+          171.0
+        ],
+        [
+          0.53125,
+          187.0
+        ],
+        [
+          0.5625,
+          204.0
+        ],
+        [
+          0.59375,
+          221.0
+        ],
+        [
+          0.625,
+          239.0
+        ],
+        [
+          0.65625,
+          258.0
+        ],
+        [
+          0.6875,
+          277.0
+        ],
+        [
+          0.71875,
+          297.0
+        ],
+        [
+          0.75,
+          317.0
+        ],
+        [
+          0.78125,
+          338.0
+        ],
+        [
+          0.8125,
+          360.0
+        ],
+        [
+          0.84375,
+          382.0
+        ],
+        [
+          0.875,
+          404.0
+        ],
+        [
+          0.90625,
+          427.0
+        ],
+        [
+          0.9375,
+          451.0
+        ],
+        [
+          0.96875,
+          475.0
+        ],
+        [
+          1.0,
+          500.0
+        ]
+      ]
+    },
+    {
+      "index": 127,
+      "name": "rhythm_amp_eq_low_pass",
+      "host_name": "Rhythm Amp EQ Low Pass",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "20.0 kHz",
+      "units": "Hz",
+      "min_value": 1000.0,
+      "max_value": 20000.0,
+      "step_size": 40.0,
+      "num_steps": 669,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1.00 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.89 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.98 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.8 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          1000.0
+        ],
+        [
+          0.03125,
+          1060.0
+        ],
+        [
+          0.0625,
+          1190.0
+        ],
+        [
+          0.09375,
+          1370.0
+        ],
+        [
+          0.125,
+          1590.0
+        ],
+        [
+          0.15625,
+          1860.0
+        ],
+        [
+          0.1875,
+          2170.0
+        ],
+        [
+          0.21875,
+          2510.0
+        ],
+        [
+          0.25,
+          2890.0
+        ],
+        [
+          0.28125,
+          3290.0
+        ],
+        [
+          0.3125,
+          3730.0
+        ],
+        [
+          0.34375,
+          4200.0
+        ],
+        [
+          0.375,
+          4710.0
+        ],
+        [
+          0.40625,
+          5230.0
+        ],
+        [
+          0.4375,
+          5790.0
+        ],
+        [
+          0.46875,
+          6370.0
+        ],
+        [
+          0.5,
+          6980.0
+        ],
+        [
+          0.53125,
+          7620.0
+        ],
+        [
+          0.5625,
+          8280.0
+        ],
+        [
+          0.59375,
+          8970.0
+        ],
+        [
+          0.625,
+          9680.0
+        ],
+        [
+          0.65625,
+          10400.0
+        ],
+        [
+          0.6875,
+          11200.0
+        ],
+        [
+          0.71875,
+          12000.0
+        ],
+        [
+          0.75,
+          12800.0
+        ],
+        [
+          0.78125,
+          13600.0
+        ],
+        [
+          0.8125,
+          14400.0
+        ],
+        [
+          0.84375,
+          15300.0
+        ],
+        [
+          0.875,
+          16200.0
+        ],
+        [
+          0.90625,
+          17100.0
+        ],
+        [
+          0.9375,
+          18100.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 128,
+      "name": "lead_amp_eq_active",
+      "host_name": "Lead Amp EQ Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 129,
+      "name": "lead_amp_eq_type",
+      "host_name": "Lead Amp EQ Type",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Mod",
+      "num_steps": 2,
+      "valid_values": [
+        "Original",
+        "Mod"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Original"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Mod"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Mod"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 130,
+      "name": "lead_amp_eq_band_1",
+      "host_name": "Lead Amp EQ Band 1",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 131,
+      "name": "lead_amp_eq_band_2",
+      "host_name": "Lead Amp EQ Band 2",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 132,
+      "name": "lead_amp_eq_band_3",
+      "host_name": "Lead Amp EQ Band 3",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 133,
+      "name": "lead_amp_eq_band_4",
+      "host_name": "Lead Amp EQ Band 4",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 134,
+      "name": "lead_amp_eq_band_5",
+      "host_name": "Lead Amp EQ Band 5",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 135,
+      "name": "lead_amp_eq_band_6",
+      "host_name": "Lead Amp EQ Band 6",
+      "kind": "numeric",
+      "default_normalized": 0.500292956829071,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 136,
+      "name": "lead_amp_eq_band_7",
+      "host_name": "Lead Amp EQ Band 7",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 137,
+      "name": "lead_amp_eq_band_8",
+      "host_name": "Lead Amp EQ Band 8",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 138,
+      "name": "lead_amp_eq_band_9",
+      "host_name": "Lead Amp EQ Band 9",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 139,
+      "name": "lead_amp_eq_high_pass",
+      "host_name": "Lead Amp EQ High Pass",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "20 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 500.0,
+      "step_size": 1.0,
+      "num_steps": 481,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "68 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "171 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "317 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "500 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          25.0
+        ],
+        [
+          0.09375,
+          29.0
+        ],
+        [
+          0.125,
+          35.0
+        ],
+        [
+          0.15625,
+          42.0
+        ],
+        [
+          0.1875,
+          49.0
+        ],
+        [
+          0.21875,
+          58.0
+        ],
+        [
+          0.25,
+          68.0
+        ],
+        [
+          0.28125,
+          78.0
+        ],
+        [
+          0.3125,
+          89.0
+        ],
+        [
+          0.34375,
+          101.0
+        ],
+        [
+          0.375,
+          114.0
+        ],
+        [
+          0.40625,
+          127.0
+        ],
+        [
+          0.4375,
+          141.0
+        ],
+        [
+          0.46875,
+          156.0
+        ],
+        [
+          0.5,
+          171.0
+        ],
+        [
+          0.53125,
+          187.0
+        ],
+        [
+          0.5625,
+          204.0
+        ],
+        [
+          0.59375,
+          221.0
+        ],
+        [
+          0.625,
+          239.0
+        ],
+        [
+          0.65625,
+          258.0
+        ],
+        [
+          0.6875,
+          277.0
+        ],
+        [
+          0.71875,
+          297.0
+        ],
+        [
+          0.75,
+          317.0
+        ],
+        [
+          0.78125,
+          338.0
+        ],
+        [
+          0.8125,
+          360.0
+        ],
+        [
+          0.84375,
+          382.0
+        ],
+        [
+          0.875,
+          404.0
+        ],
+        [
+          0.90625,
+          427.0
+        ],
+        [
+          0.9375,
+          451.0
+        ],
+        [
+          0.96875,
+          475.0
+        ],
+        [
+          1.0,
+          500.0
+        ]
+      ]
+    },
+    {
+      "index": 140,
+      "name": "lead_amp_eq_low_pass",
+      "host_name": "Lead Amp EQ Low Pass",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "20.0 kHz",
+      "units": "Hz",
+      "min_value": 1000.0,
+      "max_value": 20000.0,
+      "step_size": 40.0,
+      "num_steps": 669,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1.00 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.89 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.98 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.8 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          1000.0
+        ],
+        [
+          0.03125,
+          1060.0
+        ],
+        [
+          0.0625,
+          1190.0
+        ],
+        [
+          0.09375,
+          1370.0
+        ],
+        [
+          0.125,
+          1590.0
+        ],
+        [
+          0.15625,
+          1860.0
+        ],
+        [
+          0.1875,
+          2170.0
+        ],
+        [
+          0.21875,
+          2510.0
+        ],
+        [
+          0.25,
+          2890.0
+        ],
+        [
+          0.28125,
+          3290.0
+        ],
+        [
+          0.3125,
+          3730.0
+        ],
+        [
+          0.34375,
+          4200.0
+        ],
+        [
+          0.375,
+          4710.0
+        ],
+        [
+          0.40625,
+          5230.0
+        ],
+        [
+          0.4375,
+          5790.0
+        ],
+        [
+          0.46875,
+          6370.0
+        ],
+        [
+          0.5,
+          6980.0
+        ],
+        [
+          0.53125,
+          7620.0
+        ],
+        [
+          0.5625,
+          8280.0
+        ],
+        [
+          0.59375,
+          8970.0
+        ],
+        [
+          0.625,
+          9680.0
+        ],
+        [
+          0.65625,
+          10400.0
+        ],
+        [
+          0.6875,
+          11200.0
+        ],
+        [
+          0.71875,
+          12000.0
+        ],
+        [
+          0.75,
+          12800.0
+        ],
+        [
+          0.78125,
+          13600.0
+        ],
+        [
+          0.8125,
+          14400.0
+        ],
+        [
+          0.84375,
+          15300.0
+        ],
+        [
+          0.875,
+          16200.0
+        ],
+        [
+          0.90625,
+          17100.0
+        ],
+        [
+          0.9375,
+          18100.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 141,
+      "name": "active_post_fx_section",
+      "host_name": "Active Post FX Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 142,
+      "name": "delay_2_active",
+      "host_name": "Delay-2 Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 143,
+      "name": "delay_2_mix",
+      "host_name": "Delay-2 Mix",
+      "kind": "numeric",
+      "default_normalized": 0.21182399988174438,
+      "default_display": "21 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 144,
+      "name": "delay_2_feedback",
+      "host_name": "Delay-2 Feedback",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 145,
+      "name": "delay_2_low_cut",
+      "host_name": "Delay-2 Low Cut",
+      "kind": "numeric",
+      "default_normalized": 0.26705682277679443,
+      "default_display": "178 Hz",
+      "units": "Hz",
+      "min_value": 60.0,
+      "max_value": 500.0,
+      "step_size": 1.0,
+      "num_steps": 441,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "60 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "170 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "280 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "390 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "500 Hz"
+        }
+      ]
+    },
+    {
+      "index": 146,
+      "name": "delay_2_high_cut",
+      "host_name": "Delay-2 High Cut",
+      "kind": "numeric",
+      "default_normalized": 0.5764666795730591,
+      "default_display": "3.09 kHz",
+      "units": "Hz",
+      "min_value": 500.0,
+      "max_value": 5000.0,
+      "step_size": 4.75,
+      "num_steps": 513,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "500 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "1.62 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "2.75 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "3.88 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "5.00 kHz"
+        }
+      ]
+    },
+    {
+      "index": 147,
+      "name": "delay_2_time",
+      "host_name": "Delay-2 Time",
+      "kind": "numeric",
+      "default_normalized": 0.16079221665859222,
+      "default_display": "500.00 ms",
+      "units": "ms",
+      "min_value": 21.0,
+      "max_value": 3000.0,
+      "step_size": 2.975,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "21.00 ms"
+        },
+        {
+          "normalized": 0.25,
+          "display": "765.75 ms"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1510.50 ms"
+        },
+        {
+          "normalized": 0.75,
+          "display": "2255.25 ms"
+        },
+        {
+          "normalized": 1.0,
+          "display": "3000.00 ms"
+        }
+      ]
+    },
+    {
+      "index": 148,
+      "name": "delay_2_tempo",
+      "host_name": "Delay-2 Tempo",
+      "kind": "enum",
+      "default_normalized": 0.4000000059604645,
+      "default_display": "120.0 BPM",
+      "num_steps": 1001,
+      "valid_values": [
+        "40.0 BPM",
+        "40.2 BPM",
+        "40.4 BPM",
+        "40.6 BPM",
+        "40.8 BPM",
+        "41.0 BPM",
+        "41.2 BPM",
+        "41.4 BPM",
+        "41.6 BPM",
+        "41.8 BPM",
+        "42.0 BPM",
+        "42.2 BPM",
+        "42.4 BPM",
+        "42.6 BPM",
+        "42.8 BPM",
+        "43.0 BPM",
+        "43.2 BPM",
+        "43.4 BPM",
+        "43.6 BPM",
+        "43.8 BPM",
+        "44.0 BPM",
+        "44.2 BPM",
+        "44.4 BPM",
+        "44.6 BPM",
+        "44.8 BPM",
+        "45.0 BPM",
+        "45.2 BPM",
+        "45.4 BPM",
+        "45.6 BPM",
+        "45.8 BPM",
+        "46.0 BPM",
+        "46.2 BPM",
+        "46.4 BPM",
+        "46.6 BPM",
+        "46.8 BPM",
+        "47.0 BPM",
+        "47.2 BPM",
+        "47.4 BPM",
+        "47.6 BPM",
+        "47.8 BPM",
+        "48.0 BPM",
+        "48.2 BPM",
+        "48.4 BPM",
+        "48.6 BPM",
+        "48.8 BPM",
+        "49.0 BPM",
+        "49.2 BPM",
+        "49.4 BPM",
+        "49.6 BPM",
+        "49.8 BPM",
+        "50.0 BPM",
+        "50.2 BPM",
+        "50.4 BPM",
+        "50.6 BPM",
+        "50.8 BPM",
+        "51.0 BPM",
+        "51.2 BPM",
+        "51.4 BPM",
+        "51.6 BPM",
+        "51.8 BPM",
+        "52.0 BPM",
+        "52.2 BPM",
+        "52.4 BPM",
+        "52.6 BPM",
+        "52.8 BPM",
+        "53.0 BPM",
+        "53.2 BPM",
+        "53.4 BPM",
+        "53.6 BPM",
+        "53.8 BPM",
+        "54.0 BPM",
+        "54.2 BPM",
+        "54.4 BPM",
+        "54.6 BPM",
+        "54.8 BPM",
+        "55.0 BPM",
+        "55.2 BPM",
+        "55.4 BPM",
+        "55.6 BPM",
+        "55.8 BPM",
+        "56.0 BPM",
+        "56.2 BPM",
+        "56.4 BPM",
+        "56.6 BPM",
+        "56.8 BPM",
+        "57.0 BPM",
+        "57.2 BPM",
+        "57.4 BPM",
+        "57.6 BPM",
+        "57.8 BPM",
+        "58.0 BPM",
+        "58.2 BPM",
+        "58.4 BPM",
+        "58.6 BPM",
+        "58.8 BPM",
+        "59.0 BPM",
+        "59.2 BPM",
+        "59.4 BPM",
+        "59.6 BPM",
+        "59.8 BPM",
+        "60.0 BPM",
+        "60.2 BPM",
+        "60.4 BPM",
+        "60.6 BPM",
+        "60.8 BPM",
+        "61.0 BPM",
+        "61.2 BPM",
+        "61.4 BPM",
+        "61.6 BPM",
+        "61.8 BPM",
+        "62.0 BPM",
+        "62.2 BPM",
+        "62.4 BPM",
+        "62.6 BPM",
+        "62.8 BPM",
+        "63.0 BPM",
+        "63.2 BPM",
+        "63.4 BPM",
+        "63.6 BPM",
+        "63.8 BPM",
+        "64.0 BPM",
+        "64.2 BPM",
+        "64.4 BPM",
+        "64.6 BPM",
+        "64.8 BPM",
+        "65.0 BPM",
+        "65.2 BPM",
+        "65.4 BPM",
+        "65.6 BPM",
+        "65.8 BPM",
+        "66.0 BPM",
+        "66.2 BPM",
+        "66.4 BPM",
+        "66.6 BPM",
+        "66.8 BPM",
+        "67.0 BPM",
+        "67.2 BPM",
+        "67.4 BPM",
+        "67.6 BPM",
+        "67.8 BPM",
+        "68.0 BPM",
+        "68.2 BPM",
+        "68.4 BPM",
+        "68.6 BPM",
+        "68.8 BPM",
+        "69.0 BPM",
+        "69.2 BPM",
+        "69.4 BPM",
+        "69.6 BPM",
+        "69.8 BPM",
+        "70.0 BPM",
+        "70.2 BPM",
+        "70.4 BPM",
+        "70.6 BPM",
+        "70.8 BPM",
+        "71.0 BPM",
+        "71.2 BPM",
+        "71.4 BPM",
+        "71.6 BPM",
+        "71.8 BPM",
+        "72.0 BPM",
+        "72.2 BPM",
+        "72.4 BPM",
+        "72.6 BPM",
+        "72.8 BPM",
+        "73.0 BPM",
+        "73.2 BPM",
+        "73.4 BPM",
+        "73.6 BPM",
+        "73.8 BPM",
+        "74.0 BPM",
+        "74.2 BPM",
+        "74.4 BPM",
+        "74.6 BPM",
+        "74.8 BPM",
+        "75.0 BPM",
+        "75.2 BPM",
+        "75.4 BPM",
+        "75.6 BPM",
+        "75.8 BPM",
+        "76.0 BPM",
+        "76.2 BPM",
+        "76.4 BPM",
+        "76.6 BPM",
+        "76.8 BPM",
+        "77.0 BPM",
+        "77.2 BPM",
+        "77.4 BPM",
+        "77.6 BPM",
+        "77.8 BPM",
+        "78.0 BPM",
+        "78.2 BPM",
+        "78.4 BPM",
+        "78.6 BPM",
+        "78.8 BPM",
+        "79.0 BPM",
+        "79.2 BPM",
+        "79.4 BPM",
+        "79.6 BPM",
+        "79.8 BPM",
+        "80.0 BPM",
+        "80.2 BPM",
+        "80.4 BPM",
+        "80.6 BPM",
+        "80.8 BPM",
+        "81.0 BPM",
+        "81.2 BPM",
+        "81.4 BPM",
+        "81.6 BPM",
+        "81.8 BPM",
+        "82.0 BPM",
+        "82.2 BPM",
+        "82.4 BPM",
+        "82.6 BPM",
+        "82.8 BPM",
+        "83.0 BPM",
+        "83.2 BPM",
+        "83.4 BPM",
+        "83.6 BPM",
+        "83.8 BPM",
+        "84.0 BPM",
+        "84.2 BPM",
+        "84.4 BPM",
+        "84.6 BPM",
+        "84.8 BPM",
+        "85.0 BPM",
+        "85.2 BPM",
+        "85.4 BPM",
+        "85.6 BPM",
+        "85.8 BPM",
+        "86.0 BPM",
+        "86.2 BPM",
+        "86.4 BPM",
+        "86.6 BPM",
+        "86.8 BPM",
+        "87.0 BPM",
+        "87.2 BPM",
+        "87.4 BPM",
+        "87.6 BPM",
+        "87.8 BPM",
+        "88.0 BPM",
+        "88.2 BPM",
+        "88.4 BPM",
+        "88.6 BPM",
+        "88.8 BPM",
+        "89.0 BPM",
+        "89.2 BPM",
+        "89.4 BPM",
+        "89.6 BPM",
+        "89.8 BPM",
+        "90.0 BPM",
+        "90.2 BPM",
+        "90.4 BPM",
+        "90.6 BPM",
+        "90.8 BPM",
+        "91.0 BPM",
+        "91.2 BPM",
+        "91.4 BPM",
+        "91.6 BPM",
+        "91.8 BPM",
+        "92.0 BPM",
+        "92.2 BPM",
+        "92.4 BPM",
+        "92.6 BPM",
+        "92.8 BPM",
+        "93.0 BPM",
+        "93.2 BPM",
+        "93.4 BPM",
+        "93.6 BPM",
+        "93.8 BPM",
+        "94.0 BPM",
+        "94.2 BPM",
+        "94.4 BPM",
+        "94.6 BPM",
+        "94.8 BPM",
+        "95.0 BPM",
+        "95.2 BPM",
+        "95.4 BPM",
+        "95.6 BPM",
+        "95.8 BPM",
+        "96.0 BPM",
+        "96.2 BPM",
+        "96.4 BPM",
+        "96.6 BPM",
+        "96.8 BPM",
+        "97.0 BPM",
+        "97.2 BPM",
+        "97.4 BPM",
+        "97.6 BPM",
+        "97.8 BPM",
+        "98.0 BPM",
+        "98.2 BPM",
+        "98.4 BPM",
+        "98.6 BPM",
+        "98.8 BPM",
+        "99.0 BPM",
+        "99.2 BPM",
+        "99.4 BPM",
+        "99.6 BPM",
+        "99.8 BPM",
+        "100.0 BPM",
+        "100.2 BPM",
+        "100.4 BPM",
+        "100.6 BPM",
+        "100.8 BPM",
+        "101.0 BPM",
+        "101.2 BPM",
+        "101.4 BPM",
+        "101.6 BPM",
+        "101.8 BPM",
+        "102.0 BPM",
+        "102.2 BPM",
+        "102.4 BPM",
+        "102.6 BPM",
+        "102.8 BPM",
+        "103.0 BPM",
+        "103.2 BPM",
+        "103.4 BPM",
+        "103.6 BPM",
+        "103.8 BPM",
+        "104.0 BPM",
+        "104.2 BPM",
+        "104.4 BPM",
+        "104.6 BPM",
+        "104.8 BPM",
+        "105.0 BPM",
+        "105.2 BPM",
+        "105.4 BPM",
+        "105.6 BPM",
+        "105.8 BPM",
+        "106.0 BPM",
+        "106.2 BPM",
+        "106.4 BPM",
+        "106.6 BPM",
+        "106.8 BPM",
+        "107.0 BPM",
+        "107.2 BPM",
+        "107.4 BPM",
+        "107.6 BPM",
+        "107.8 BPM",
+        "108.0 BPM",
+        "108.2 BPM",
+        "108.4 BPM",
+        "108.6 BPM",
+        "108.8 BPM",
+        "109.0 BPM",
+        "109.2 BPM",
+        "109.4 BPM",
+        "109.6 BPM",
+        "109.8 BPM",
+        "110.0 BPM",
+        "110.2 BPM",
+        "110.4 BPM",
+        "110.6 BPM",
+        "110.8 BPM",
+        "111.0 BPM",
+        "111.2 BPM",
+        "111.4 BPM",
+        "111.6 BPM",
+        "111.8 BPM",
+        "112.0 BPM",
+        "112.2 BPM",
+        "112.4 BPM",
+        "112.6 BPM",
+        "112.8 BPM",
+        "113.0 BPM",
+        "113.2 BPM",
+        "113.4 BPM",
+        "113.6 BPM",
+        "113.8 BPM",
+        "114.0 BPM",
+        "114.2 BPM",
+        "114.4 BPM",
+        "114.6 BPM",
+        "114.8 BPM",
+        "115.0 BPM",
+        "115.2 BPM",
+        "115.4 BPM",
+        "115.6 BPM",
+        "115.8 BPM",
+        "116.0 BPM",
+        "116.2 BPM",
+        "116.4 BPM",
+        "116.6 BPM",
+        "116.8 BPM",
+        "117.0 BPM",
+        "117.2 BPM",
+        "117.4 BPM",
+        "117.6 BPM",
+        "117.8 BPM",
+        "118.0 BPM",
+        "118.2 BPM",
+        "118.4 BPM",
+        "118.6 BPM",
+        "118.8 BPM",
+        "119.0 BPM",
+        "119.2 BPM",
+        "119.4 BPM",
+        "119.6 BPM",
+        "119.8 BPM",
+        "120.0 BPM",
+        "120.2 BPM",
+        "120.4 BPM",
+        "120.6 BPM",
+        "120.8 BPM",
+        "121.0 BPM",
+        "121.2 BPM",
+        "121.4 BPM",
+        "121.6 BPM",
+        "121.8 BPM",
+        "122.0 BPM",
+        "122.2 BPM",
+        "122.4 BPM",
+        "122.6 BPM",
+        "122.8 BPM",
+        "123.0 BPM",
+        "123.2 BPM",
+        "123.4 BPM",
+        "123.6 BPM",
+        "123.8 BPM",
+        "124.0 BPM",
+        "124.2 BPM",
+        "124.4 BPM",
+        "124.6 BPM",
+        "124.8 BPM",
+        "125.0 BPM",
+        "125.2 BPM",
+        "125.4 BPM",
+        "125.6 BPM",
+        "125.8 BPM",
+        "126.0 BPM",
+        "126.2 BPM",
+        "126.4 BPM",
+        "126.6 BPM",
+        "126.8 BPM",
+        "127.0 BPM",
+        "127.2 BPM",
+        "127.4 BPM",
+        "127.6 BPM",
+        "127.8 BPM",
+        "128.0 BPM",
+        "128.2 BPM",
+        "128.4 BPM",
+        "128.6 BPM",
+        "128.8 BPM",
+        "129.0 BPM",
+        "129.2 BPM",
+        "129.4 BPM",
+        "129.6 BPM",
+        "129.8 BPM",
+        "130.0 BPM",
+        "130.2 BPM",
+        "130.4 BPM",
+        "130.6 BPM",
+        "130.8 BPM",
+        "131.0 BPM",
+        "131.2 BPM",
+        "131.4 BPM",
+        "131.6 BPM",
+        "131.8 BPM",
+        "132.0 BPM",
+        "132.2 BPM",
+        "132.4 BPM",
+        "132.6 BPM",
+        "132.8 BPM",
+        "133.0 BPM",
+        "133.2 BPM",
+        "133.4 BPM",
+        "133.6 BPM",
+        "133.8 BPM",
+        "134.0 BPM",
+        "134.2 BPM",
+        "134.4 BPM",
+        "134.6 BPM",
+        "134.8 BPM",
+        "135.0 BPM",
+        "135.2 BPM",
+        "135.4 BPM",
+        "135.6 BPM",
+        "135.8 BPM",
+        "136.0 BPM",
+        "136.2 BPM",
+        "136.4 BPM",
+        "136.6 BPM",
+        "136.8 BPM",
+        "137.0 BPM",
+        "137.2 BPM",
+        "137.4 BPM",
+        "137.6 BPM",
+        "137.8 BPM",
+        "138.0 BPM",
+        "138.2 BPM",
+        "138.4 BPM",
+        "138.6 BPM",
+        "138.8 BPM",
+        "139.0 BPM",
+        "139.2 BPM",
+        "139.4 BPM",
+        "139.6 BPM",
+        "139.8 BPM",
+        "140.0 BPM",
+        "140.2 BPM",
+        "140.4 BPM",
+        "140.6 BPM",
+        "140.8 BPM",
+        "141.0 BPM",
+        "141.2 BPM",
+        "141.4 BPM",
+        "141.6 BPM",
+        "141.8 BPM",
+        "142.0 BPM",
+        "142.2 BPM",
+        "142.4 BPM",
+        "142.6 BPM",
+        "142.8 BPM",
+        "143.0 BPM",
+        "143.2 BPM",
+        "143.4 BPM",
+        "143.6 BPM",
+        "143.8 BPM",
+        "144.0 BPM",
+        "144.2 BPM",
+        "144.4 BPM",
+        "144.6 BPM",
+        "144.8 BPM",
+        "145.0 BPM",
+        "145.2 BPM",
+        "145.4 BPM",
+        "145.6 BPM",
+        "145.8 BPM",
+        "146.0 BPM",
+        "146.2 BPM",
+        "146.4 BPM",
+        "146.6 BPM",
+        "146.8 BPM",
+        "147.0 BPM",
+        "147.2 BPM",
+        "147.4 BPM",
+        "147.6 BPM",
+        "147.8 BPM",
+        "148.0 BPM",
+        "148.2 BPM",
+        "148.4 BPM",
+        "148.6 BPM",
+        "148.8 BPM",
+        "149.0 BPM",
+        "149.2 BPM",
+        "149.4 BPM",
+        "149.6 BPM",
+        "149.8 BPM",
+        "150.0 BPM",
+        "150.2 BPM",
+        "150.4 BPM",
+        "150.6 BPM",
+        "150.8 BPM",
+        "151.0 BPM",
+        "151.2 BPM",
+        "151.4 BPM",
+        "151.6 BPM",
+        "151.8 BPM",
+        "152.0 BPM",
+        "152.2 BPM",
+        "152.4 BPM",
+        "152.6 BPM",
+        "152.8 BPM",
+        "153.0 BPM",
+        "153.2 BPM",
+        "153.4 BPM",
+        "153.6 BPM",
+        "153.8 BPM",
+        "154.0 BPM",
+        "154.2 BPM",
+        "154.4 BPM",
+        "154.6 BPM",
+        "154.8 BPM",
+        "155.0 BPM",
+        "155.2 BPM",
+        "155.4 BPM",
+        "155.6 BPM",
+        "155.8 BPM",
+        "156.0 BPM",
+        "156.2 BPM",
+        "156.4 BPM",
+        "156.6 BPM",
+        "156.8 BPM",
+        "157.0 BPM",
+        "157.2 BPM",
+        "157.4 BPM",
+        "157.6 BPM",
+        "157.8 BPM",
+        "158.0 BPM",
+        "158.2 BPM",
+        "158.4 BPM",
+        "158.6 BPM",
+        "158.8 BPM",
+        "159.0 BPM",
+        "159.2 BPM",
+        "159.4 BPM",
+        "159.6 BPM",
+        "159.8 BPM",
+        "160.0 BPM",
+        "160.2 BPM",
+        "160.4 BPM",
+        "160.6 BPM",
+        "160.8 BPM",
+        "161.0 BPM",
+        "161.2 BPM",
+        "161.4 BPM",
+        "161.6 BPM",
+        "161.8 BPM",
+        "162.0 BPM",
+        "162.2 BPM",
+        "162.4 BPM",
+        "162.6 BPM",
+        "162.8 BPM",
+        "163.0 BPM",
+        "163.2 BPM",
+        "163.4 BPM",
+        "163.6 BPM",
+        "163.8 BPM",
+        "164.0 BPM",
+        "164.2 BPM",
+        "164.4 BPM",
+        "164.6 BPM",
+        "164.8 BPM",
+        "165.0 BPM",
+        "165.2 BPM",
+        "165.4 BPM",
+        "165.6 BPM",
+        "165.8 BPM",
+        "166.0 BPM",
+        "166.2 BPM",
+        "166.4 BPM",
+        "166.6 BPM",
+        "166.8 BPM",
+        "167.0 BPM",
+        "167.2 BPM",
+        "167.4 BPM",
+        "167.6 BPM",
+        "167.8 BPM",
+        "168.0 BPM",
+        "168.2 BPM",
+        "168.4 BPM",
+        "168.6 BPM",
+        "168.8 BPM",
+        "169.0 BPM",
+        "169.2 BPM",
+        "169.4 BPM",
+        "169.6 BPM",
+        "169.8 BPM",
+        "170.0 BPM",
+        "170.2 BPM",
+        "170.4 BPM",
+        "170.6 BPM",
+        "170.8 BPM",
+        "171.0 BPM",
+        "171.2 BPM",
+        "171.4 BPM",
+        "171.6 BPM",
+        "171.8 BPM",
+        "172.0 BPM",
+        "172.2 BPM",
+        "172.4 BPM",
+        "172.6 BPM",
+        "172.8 BPM",
+        "173.0 BPM",
+        "173.2 BPM",
+        "173.4 BPM",
+        "173.6 BPM",
+        "173.8 BPM",
+        "174.0 BPM",
+        "174.2 BPM",
+        "174.4 BPM",
+        "174.6 BPM",
+        "174.8 BPM",
+        "175.0 BPM",
+        "175.2 BPM",
+        "175.4 BPM",
+        "175.6 BPM",
+        "175.8 BPM",
+        "176.0 BPM",
+        "176.2 BPM",
+        "176.4 BPM",
+        "176.6 BPM",
+        "176.8 BPM",
+        "177.0 BPM",
+        "177.2 BPM",
+        "177.4 BPM",
+        "177.6 BPM",
+        "177.8 BPM",
+        "178.0 BPM",
+        "178.2 BPM",
+        "178.4 BPM",
+        "178.6 BPM",
+        "178.8 BPM",
+        "179.0 BPM",
+        "179.2 BPM",
+        "179.4 BPM",
+        "179.6 BPM",
+        "179.8 BPM",
+        "180.0 BPM",
+        "180.2 BPM",
+        "180.4 BPM",
+        "180.6 BPM",
+        "180.8 BPM",
+        "181.0 BPM",
+        "181.2 BPM",
+        "181.4 BPM",
+        "181.6 BPM",
+        "181.8 BPM",
+        "182.0 BPM",
+        "182.2 BPM",
+        "182.4 BPM",
+        "182.6 BPM",
+        "182.8 BPM",
+        "183.0 BPM",
+        "183.2 BPM",
+        "183.4 BPM",
+        "183.6 BPM",
+        "183.8 BPM",
+        "184.0 BPM",
+        "184.2 BPM",
+        "184.4 BPM",
+        "184.6 BPM",
+        "184.8 BPM",
+        "185.0 BPM",
+        "185.2 BPM",
+        "185.4 BPM",
+        "185.6 BPM",
+        "185.8 BPM",
+        "186.0 BPM",
+        "186.2 BPM",
+        "186.4 BPM",
+        "186.6 BPM",
+        "186.8 BPM",
+        "187.0 BPM",
+        "187.2 BPM",
+        "187.4 BPM",
+        "187.6 BPM",
+        "187.8 BPM",
+        "188.0 BPM",
+        "188.2 BPM",
+        "188.4 BPM",
+        "188.6 BPM",
+        "188.8 BPM",
+        "189.0 BPM",
+        "189.2 BPM",
+        "189.4 BPM",
+        "189.6 BPM",
+        "189.8 BPM",
+        "190.0 BPM",
+        "190.2 BPM",
+        "190.4 BPM",
+        "190.6 BPM",
+        "190.8 BPM",
+        "191.0 BPM",
+        "191.2 BPM",
+        "191.4 BPM",
+        "191.6 BPM",
+        "191.8 BPM",
+        "192.0 BPM",
+        "192.2 BPM",
+        "192.4 BPM",
+        "192.6 BPM",
+        "192.8 BPM",
+        "193.0 BPM",
+        "193.2 BPM",
+        "193.4 BPM",
+        "193.6 BPM",
+        "193.8 BPM",
+        "194.0 BPM",
+        "194.2 BPM",
+        "194.4 BPM",
+        "194.6 BPM",
+        "194.8 BPM",
+        "195.0 BPM",
+        "195.2 BPM",
+        "195.4 BPM",
+        "195.6 BPM",
+        "195.8 BPM",
+        "196.0 BPM",
+        "196.2 BPM",
+        "196.4 BPM",
+        "196.6 BPM",
+        "196.8 BPM",
+        "197.0 BPM",
+        "197.2 BPM",
+        "197.4 BPM",
+        "197.6 BPM",
+        "197.8 BPM",
+        "198.0 BPM",
+        "198.2 BPM",
+        "198.4 BPM",
+        "198.6 BPM",
+        "198.8 BPM",
+        "199.0 BPM",
+        "199.2 BPM",
+        "199.4 BPM",
+        "199.6 BPM",
+        "199.8 BPM",
+        "200.0 BPM",
+        "200.2 BPM",
+        "200.4 BPM",
+        "200.6 BPM",
+        "200.8 BPM",
+        "201.0 BPM",
+        "201.2 BPM",
+        "201.4 BPM",
+        "201.6 BPM",
+        "201.8 BPM",
+        "202.0 BPM",
+        "202.2 BPM",
+        "202.4 BPM",
+        "202.6 BPM",
+        "202.8 BPM",
+        "203.0 BPM",
+        "203.2 BPM",
+        "203.4 BPM",
+        "203.6 BPM",
+        "203.8 BPM",
+        "204.0 BPM",
+        "204.2 BPM",
+        "204.4 BPM",
+        "204.6 BPM",
+        "204.8 BPM",
+        "205.0 BPM",
+        "205.2 BPM",
+        "205.4 BPM",
+        "205.6 BPM",
+        "205.8 BPM",
+        "206.0 BPM",
+        "206.2 BPM",
+        "206.4 BPM",
+        "206.6 BPM",
+        "206.8 BPM",
+        "207.0 BPM",
+        "207.2 BPM",
+        "207.4 BPM",
+        "207.6 BPM",
+        "207.8 BPM",
+        "208.0 BPM",
+        "208.2 BPM",
+        "208.4 BPM",
+        "208.6 BPM",
+        "208.8 BPM",
+        "209.0 BPM",
+        "209.2 BPM",
+        "209.4 BPM",
+        "209.6 BPM",
+        "209.8 BPM",
+        "210.0 BPM",
+        "210.2 BPM",
+        "210.4 BPM",
+        "210.6 BPM",
+        "210.8 BPM",
+        "211.0 BPM",
+        "211.2 BPM",
+        "211.4 BPM",
+        "211.6 BPM",
+        "211.8 BPM",
+        "212.0 BPM",
+        "212.2 BPM",
+        "212.4 BPM",
+        "212.6 BPM",
+        "212.8 BPM",
+        "213.0 BPM",
+        "213.2 BPM",
+        "213.4 BPM",
+        "213.6 BPM",
+        "213.8 BPM",
+        "214.0 BPM",
+        "214.2 BPM",
+        "214.4 BPM",
+        "214.6 BPM",
+        "214.8 BPM",
+        "215.0 BPM",
+        "215.2 BPM",
+        "215.4 BPM",
+        "215.6 BPM",
+        "215.8 BPM",
+        "216.0 BPM",
+        "216.2 BPM",
+        "216.4 BPM",
+        "216.6 BPM",
+        "216.8 BPM",
+        "217.0 BPM",
+        "217.2 BPM",
+        "217.4 BPM",
+        "217.6 BPM",
+        "217.8 BPM",
+        "218.0 BPM",
+        "218.2 BPM",
+        "218.4 BPM",
+        "218.6 BPM",
+        "218.8 BPM",
+        "219.0 BPM",
+        "219.2 BPM",
+        "219.4 BPM",
+        "219.6 BPM",
+        "219.8 BPM",
+        "220.0 BPM",
+        "220.2 BPM",
+        "220.4 BPM",
+        "220.6 BPM",
+        "220.8 BPM",
+        "221.0 BPM",
+        "221.2 BPM",
+        "221.4 BPM",
+        "221.6 BPM",
+        "221.8 BPM",
+        "222.0 BPM",
+        "222.2 BPM",
+        "222.4 BPM",
+        "222.6 BPM",
+        "222.8 BPM",
+        "223.0 BPM",
+        "223.2 BPM",
+        "223.4 BPM",
+        "223.6 BPM",
+        "223.8 BPM",
+        "224.0 BPM",
+        "224.2 BPM",
+        "224.4 BPM",
+        "224.6 BPM",
+        "224.8 BPM",
+        "225.0 BPM",
+        "225.2 BPM",
+        "225.4 BPM",
+        "225.6 BPM",
+        "225.8 BPM",
+        "226.0 BPM",
+        "226.2 BPM",
+        "226.4 BPM",
+        "226.6 BPM",
+        "226.8 BPM",
+        "227.0 BPM",
+        "227.2 BPM",
+        "227.4 BPM",
+        "227.6 BPM",
+        "227.8 BPM",
+        "228.0 BPM",
+        "228.2 BPM",
+        "228.4 BPM",
+        "228.6 BPM",
+        "228.8 BPM",
+        "229.0 BPM",
+        "229.2 BPM",
+        "229.4 BPM",
+        "229.6 BPM",
+        "229.8 BPM",
+        "230.0 BPM",
+        "230.2 BPM",
+        "230.4 BPM",
+        "230.6 BPM",
+        "230.8 BPM",
+        "231.0 BPM",
+        "231.2 BPM",
+        "231.4 BPM",
+        "231.6 BPM",
+        "231.8 BPM",
+        "232.0 BPM",
+        "232.2 BPM",
+        "232.4 BPM",
+        "232.6 BPM",
+        "232.8 BPM",
+        "233.0 BPM",
+        "233.2 BPM",
+        "233.4 BPM",
+        "233.6 BPM",
+        "233.8 BPM",
+        "234.0 BPM",
+        "234.2 BPM",
+        "234.4 BPM",
+        "234.6 BPM",
+        "234.8 BPM",
+        "235.0 BPM",
+        "235.2 BPM",
+        "235.4 BPM",
+        "235.6 BPM",
+        "235.8 BPM",
+        "236.0 BPM",
+        "236.2 BPM",
+        "236.4 BPM",
+        "236.6 BPM",
+        "236.8 BPM",
+        "237.0 BPM",
+        "237.2 BPM",
+        "237.4 BPM",
+        "237.6 BPM",
+        "237.8 BPM",
+        "238.0 BPM",
+        "238.2 BPM",
+        "238.4 BPM",
+        "238.6 BPM",
+        "238.8 BPM",
+        "239.0 BPM",
+        "239.2 BPM",
+        "239.4 BPM",
+        "239.6 BPM",
+        "239.8 BPM",
+        "240.0 BPM"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "40.0 BPM"
+        },
+        {
+          "normalized": 0.25,
+          "display": "90.0 BPM"
+        },
+        {
+          "normalized": 0.5,
+          "display": "140.0 BPM"
+        },
+        {
+          "normalized": 0.75,
+          "display": "190.0 BPM"
+        },
+        {
+          "normalized": 1.0,
+          "display": "240.0 BPM"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 149,
+      "name": "delay_2_note",
+      "host_name": "Delay-2 Note",
+      "kind": "enum",
+      "default_normalized": 0.6499999761581421,
+      "default_display": "1/4",
+      "num_steps": 21,
+      "valid_values": [
+        "1/64T",
+        "1/64",
+        "1/32T",
+        "1/64D",
+        "1/32",
+        "1/16T",
+        "1/32D",
+        "1/16",
+        "1/8T",
+        "1/16D",
+        "1/8",
+        "1/4T",
+        "1/8D",
+        "1/4",
+        "1/2T",
+        "1/4D",
+        "1/2",
+        "1/1T",
+        "1/2D",
+        "1/1",
+        "1/1D"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1/64T"
+        },
+        {
+          "normalized": 0.25,
+          "display": "1/16T"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1/8"
+        },
+        {
+          "normalized": 0.75,
+          "display": "1/4D"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1/1D"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 150,
+      "name": "delay_2_mod",
+      "host_name": "Delay-2 Mod",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 151,
+      "name": "delay_2_sync",
+      "host_name": "Delay-2 Sync",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "Daw",
+      "num_steps": 3,
+      "valid_values": [
+        "Free",
+        "Daw",
+        "Tap"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Free"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Free"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Daw"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Tap"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Tap"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 152,
+      "name": "delay_2_ping_pong",
+      "host_name": "Delay-2 Ping Pong",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 153,
+      "name": "reverb_active",
+      "host_name": "Reverb Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 154,
+      "name": "reverb_mix",
+      "host_name": "Reverb Mix",
+      "kind": "numeric",
+      "default_normalized": 0.2889780104160309,
+      "default_display": "29 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 155,
+      "name": "reverb_decay",
+      "host_name": "Reverb Decay",
+      "kind": "enum",
+      "default_normalized": 0.4300000071525574,
+      "default_display": "4.22s",
+      "num_steps": 751,
+      "valid_values": [
+        "1.00s",
+        "1.01s",
+        "1.02s",
+        "1.03s",
+        "1.04s",
+        "1.05s",
+        "1.06s",
+        "1.07s",
+        "1.08s",
+        "1.09s",
+        "1.10s",
+        "1.11s",
+        "1.12s",
+        "1.13s",
+        "1.14s",
+        "1.15s",
+        "1.16s",
+        "1.17s",
+        "1.18s",
+        "1.19s",
+        "1.20s",
+        "1.21s",
+        "1.22s",
+        "1.23s",
+        "1.24s",
+        "1.25s",
+        "1.26s",
+        "1.27s",
+        "1.28s",
+        "1.29s",
+        "1.30s",
+        "1.31s",
+        "1.32s",
+        "1.33s",
+        "1.34s",
+        "1.35s",
+        "1.36s",
+        "1.37s",
+        "1.38s",
+        "1.39s",
+        "1.40s",
+        "1.41s",
+        "1.42s",
+        "1.43s",
+        "1.44s",
+        "1.45s",
+        "1.46s",
+        "1.47s",
+        "1.48s",
+        "1.49s",
+        "1.50s",
+        "1.51s",
+        "1.52s",
+        "1.53s",
+        "1.54s",
+        "1.55s",
+        "1.56s",
+        "1.57s",
+        "1.58s",
+        "1.59s",
+        "1.60s",
+        "1.61s",
+        "1.62s",
+        "1.63s",
+        "1.64s",
+        "1.65s",
+        "1.66s",
+        "1.67s",
+        "1.68s",
+        "1.69s",
+        "1.70s",
+        "1.71s",
+        "1.72s",
+        "1.73s",
+        "1.74s",
+        "1.75s",
+        "1.76s",
+        "1.77s",
+        "1.78s",
+        "1.79s",
+        "1.80s",
+        "1.81s",
+        "1.82s",
+        "1.83s",
+        "1.84s",
+        "1.85s",
+        "1.86s",
+        "1.87s",
+        "1.88s",
+        "1.89s",
+        "1.90s",
+        "1.91s",
+        "1.92s",
+        "1.93s",
+        "1.94s",
+        "1.95s",
+        "1.96s",
+        "1.97s",
+        "1.98s",
+        "1.99s",
+        "2.00s",
+        "2.01s",
+        "2.02s",
+        "2.03s",
+        "2.04s",
+        "2.05s",
+        "2.06s",
+        "2.07s",
+        "2.08s",
+        "2.09s",
+        "2.10s",
+        "2.11s",
+        "2.12s",
+        "2.13s",
+        "2.14s",
+        "2.15s",
+        "2.16s",
+        "2.17s",
+        "2.18s",
+        "2.19s",
+        "2.20s",
+        "2.21s",
+        "2.22s",
+        "2.23s",
+        "2.24s",
+        "2.25s",
+        "2.26s",
+        "2.27s",
+        "2.28s",
+        "2.29s",
+        "2.30s",
+        "2.31s",
+        "2.32s",
+        "2.33s",
+        "2.34s",
+        "2.35s",
+        "2.36s",
+        "2.37s",
+        "2.38s",
+        "2.39s",
+        "2.40s",
+        "2.41s",
+        "2.42s",
+        "2.43s",
+        "2.44s",
+        "2.45s",
+        "2.46s",
+        "2.47s",
+        "2.48s",
+        "2.49s",
+        "2.50s",
+        "2.51s",
+        "2.52s",
+        "2.53s",
+        "2.54s",
+        "2.55s",
+        "2.56s",
+        "2.57s",
+        "2.58s",
+        "2.59s",
+        "2.60s",
+        "2.61s",
+        "2.62s",
+        "2.63s",
+        "2.64s",
+        "2.65s",
+        "2.66s",
+        "2.67s",
+        "2.68s",
+        "2.69s",
+        "2.70s",
+        "2.71s",
+        "2.72s",
+        "2.73s",
+        "2.74s",
+        "2.75s",
+        "2.76s",
+        "2.77s",
+        "2.78s",
+        "2.79s",
+        "2.80s",
+        "2.81s",
+        "2.82s",
+        "2.83s",
+        "2.84s",
+        "2.85s",
+        "2.86s",
+        "2.87s",
+        "2.88s",
+        "2.89s",
+        "2.90s",
+        "2.91s",
+        "2.92s",
+        "2.93s",
+        "2.94s",
+        "2.95s",
+        "2.96s",
+        "2.97s",
+        "2.98s",
+        "2.99s",
+        "3.00s",
+        "3.01s",
+        "3.02s",
+        "3.03s",
+        "3.04s",
+        "3.05s",
+        "3.06s",
+        "3.07s",
+        "3.08s",
+        "3.09s",
+        "3.10s",
+        "3.11s",
+        "3.12s",
+        "3.13s",
+        "3.14s",
+        "3.15s",
+        "3.16s",
+        "3.17s",
+        "3.18s",
+        "3.19s",
+        "3.20s",
+        "3.21s",
+        "3.22s",
+        "3.23s",
+        "3.24s",
+        "3.25s",
+        "3.26s",
+        "3.27s",
+        "3.28s",
+        "3.29s",
+        "3.30s",
+        "3.31s",
+        "3.32s",
+        "3.33s",
+        "3.34s",
+        "3.35s",
+        "3.36s",
+        "3.37s",
+        "3.38s",
+        "3.39s",
+        "3.40s",
+        "3.41s",
+        "3.42s",
+        "3.43s",
+        "3.44s",
+        "3.45s",
+        "3.46s",
+        "3.47s",
+        "3.48s",
+        "3.49s",
+        "3.50s",
+        "3.51s",
+        "3.52s",
+        "3.53s",
+        "3.54s",
+        "3.55s",
+        "3.56s",
+        "3.57s",
+        "3.58s",
+        "3.59s",
+        "3.60s",
+        "3.61s",
+        "3.62s",
+        "3.63s",
+        "3.64s",
+        "3.65s",
+        "3.66s",
+        "3.67s",
+        "3.68s",
+        "3.69s",
+        "3.70s",
+        "3.71s",
+        "3.72s",
+        "3.73s",
+        "3.74s",
+        "3.75s",
+        "3.76s",
+        "3.77s",
+        "3.78s",
+        "3.79s",
+        "3.80s",
+        "3.81s",
+        "3.82s",
+        "3.83s",
+        "3.84s",
+        "3.85s",
+        "3.86s",
+        "3.87s",
+        "3.88s",
+        "3.89s",
+        "3.90s",
+        "3.91s",
+        "3.92s",
+        "3.93s",
+        "3.94s",
+        "3.95s",
+        "3.96s",
+        "3.97s",
+        "3.98s",
+        "3.99s",
+        "4.00s",
+        "4.01s",
+        "4.02s",
+        "4.03s",
+        "4.04s",
+        "4.05s",
+        "4.06s",
+        "4.07s",
+        "4.08s",
+        "4.09s",
+        "4.10s",
+        "4.11s",
+        "4.12s",
+        "4.13s",
+        "4.14s",
+        "4.15s",
+        "4.16s",
+        "4.17s",
+        "4.18s",
+        "4.19s",
+        "4.20s",
+        "4.21s",
+        "4.22s",
+        "4.23s",
+        "4.24s",
+        "4.25s",
+        "4.26s",
+        "4.27s",
+        "4.28s",
+        "4.29s",
+        "4.30s",
+        "4.31s",
+        "4.32s",
+        "4.33s",
+        "4.34s",
+        "4.35s",
+        "4.36s",
+        "4.37s",
+        "4.38s",
+        "4.39s",
+        "4.40s",
+        "4.41s",
+        "4.42s",
+        "4.43s",
+        "4.44s",
+        "4.45s",
+        "4.46s",
+        "4.47s",
+        "4.48s",
+        "4.49s",
+        "4.50s",
+        "4.51s",
+        "4.52s",
+        "4.53s",
+        "4.54s",
+        "4.55s",
+        "4.56s",
+        "4.57s",
+        "4.58s",
+        "4.59s",
+        "4.60s",
+        "4.61s",
+        "4.62s",
+        "4.63s",
+        "4.64s",
+        "4.65s",
+        "4.66s",
+        "4.67s",
+        "4.68s",
+        "4.69s",
+        "4.70s",
+        "4.71s",
+        "4.72s",
+        "4.73s",
+        "4.74s",
+        "4.75s",
+        "4.76s",
+        "4.77s",
+        "4.78s",
+        "4.79s",
+        "4.80s",
+        "4.81s",
+        "4.82s",
+        "4.83s",
+        "4.84s",
+        "4.85s",
+        "4.86s",
+        "4.87s",
+        "4.88s",
+        "4.89s",
+        "4.90s",
+        "4.91s",
+        "4.92s",
+        "4.93s",
+        "4.94s",
+        "4.95s",
+        "4.96s",
+        "4.97s",
+        "4.98s",
+        "4.99s",
+        "5.00s",
+        "5.01s",
+        "5.02s",
+        "5.03s",
+        "5.04s",
+        "5.05s",
+        "5.06s",
+        "5.07s",
+        "5.08s",
+        "5.09s",
+        "5.10s",
+        "5.11s",
+        "5.12s",
+        "5.13s",
+        "5.14s",
+        "5.15s",
+        "5.16s",
+        "5.17s",
+        "5.18s",
+        "5.19s",
+        "5.20s",
+        "5.21s",
+        "5.22s",
+        "5.23s",
+        "5.24s",
+        "5.25s",
+        "5.26s",
+        "5.27s",
+        "5.28s",
+        "5.29s",
+        "5.30s",
+        "5.31s",
+        "5.32s",
+        "5.33s",
+        "5.34s",
+        "5.35s",
+        "5.36s",
+        "5.37s",
+        "5.38s",
+        "5.39s",
+        "5.40s",
+        "5.41s",
+        "5.42s",
+        "5.43s",
+        "5.44s",
+        "5.45s",
+        "5.46s",
+        "5.47s",
+        "5.48s",
+        "5.49s",
+        "5.50s",
+        "5.51s",
+        "5.52s",
+        "5.53s",
+        "5.54s",
+        "5.55s",
+        "5.56s",
+        "5.57s",
+        "5.58s",
+        "5.59s",
+        "5.60s",
+        "5.61s",
+        "5.62s",
+        "5.63s",
+        "5.64s",
+        "5.65s",
+        "5.66s",
+        "5.67s",
+        "5.68s",
+        "5.69s",
+        "5.70s",
+        "5.71s",
+        "5.72s",
+        "5.73s",
+        "5.74s",
+        "5.75s",
+        "5.76s",
+        "5.77s",
+        "5.78s",
+        "5.79s",
+        "5.80s",
+        "5.81s",
+        "5.82s",
+        "5.83s",
+        "5.84s",
+        "5.85s",
+        "5.86s",
+        "5.87s",
+        "5.88s",
+        "5.89s",
+        "5.90s",
+        "5.91s",
+        "5.92s",
+        "5.93s",
+        "5.94s",
+        "5.95s",
+        "5.96s",
+        "5.97s",
+        "5.98s",
+        "5.99s",
+        "6.00s",
+        "6.01s",
+        "6.02s",
+        "6.03s",
+        "6.04s",
+        "6.05s",
+        "6.06s",
+        "6.07s",
+        "6.08s",
+        "6.09s",
+        "6.10s",
+        "6.11s",
+        "6.12s",
+        "6.13s",
+        "6.14s",
+        "6.15s",
+        "6.16s",
+        "6.17s",
+        "6.18s",
+        "6.19s",
+        "6.20s",
+        "6.21s",
+        "6.22s",
+        "6.23s",
+        "6.24s",
+        "6.25s",
+        "6.26s",
+        "6.27s",
+        "6.28s",
+        "6.29s",
+        "6.30s",
+        "6.31s",
+        "6.32s",
+        "6.33s",
+        "6.34s",
+        "6.35s",
+        "6.36s",
+        "6.37s",
+        "6.38s",
+        "6.39s",
+        "6.40s",
+        "6.41s",
+        "6.42s",
+        "6.43s",
+        "6.44s",
+        "6.45s",
+        "6.46s",
+        "6.47s",
+        "6.48s",
+        "6.49s",
+        "6.50s",
+        "6.51s",
+        "6.52s",
+        "6.53s",
+        "6.54s",
+        "6.55s",
+        "6.56s",
+        "6.57s",
+        "6.58s",
+        "6.59s",
+        "6.60s",
+        "6.61s",
+        "6.62s",
+        "6.63s",
+        "6.64s",
+        "6.65s",
+        "6.66s",
+        "6.67s",
+        "6.68s",
+        "6.69s",
+        "6.70s",
+        "6.71s",
+        "6.72s",
+        "6.73s",
+        "6.74s",
+        "6.75s",
+        "6.76s",
+        "6.77s",
+        "6.78s",
+        "6.79s",
+        "6.80s",
+        "6.81s",
+        "6.82s",
+        "6.83s",
+        "6.84s",
+        "6.85s",
+        "6.86s",
+        "6.87s",
+        "6.88s",
+        "6.89s",
+        "6.90s",
+        "6.91s",
+        "6.92s",
+        "6.93s",
+        "6.94s",
+        "6.95s",
+        "6.96s",
+        "6.97s",
+        "6.98s",
+        "6.99s",
+        "7.00s",
+        "7.01s",
+        "7.02s",
+        "7.03s",
+        "7.04s",
+        "7.05s",
+        "7.06s",
+        "7.07s",
+        "7.08s",
+        "7.09s",
+        "7.10s",
+        "7.11s",
+        "7.12s",
+        "7.13s",
+        "7.14s",
+        "7.15s",
+        "7.16s",
+        "7.17s",
+        "7.18s",
+        "7.19s",
+        "7.20s",
+        "7.21s",
+        "7.22s",
+        "7.23s",
+        "7.24s",
+        "7.25s",
+        "7.26s",
+        "7.27s",
+        "7.28s",
+        "7.29s",
+        "7.30s",
+        "7.31s",
+        "7.32s",
+        "7.33s",
+        "7.34s",
+        "7.35s",
+        "7.36s",
+        "7.37s",
+        "7.38s",
+        "7.39s",
+        "7.40s",
+        "7.41s",
+        "7.42s",
+        "7.43s",
+        "7.44s",
+        "7.45s",
+        "7.46s",
+        "7.47s",
+        "7.48s",
+        "7.49s",
+        "7.50s",
+        "7.51s",
+        "7.52s",
+        "7.53s",
+        "7.54s",
+        "7.55s",
+        "7.56s",
+        "7.57s",
+        "7.58s",
+        "7.59s",
+        "7.60s",
+        "7.61s",
+        "7.62s",
+        "7.63s",
+        "7.64s",
+        "7.65s",
+        "7.66s",
+        "7.67s",
+        "7.68s",
+        "7.69s",
+        "7.70s",
+        "7.71s",
+        "7.72s",
+        "7.73s",
+        "7.74s",
+        "7.75s",
+        "7.76s",
+        "7.77s",
+        "7.78s",
+        "7.79s",
+        "7.80s",
+        "7.81s",
+        "7.82s",
+        "7.83s",
+        "7.84s",
+        "7.85s",
+        "7.86s",
+        "7.87s",
+        "7.88s",
+        "7.89s",
+        "7.90s",
+        "7.91s",
+        "7.92s",
+        "7.93s",
+        "7.94s",
+        "7.95s",
+        "7.96s",
+        "7.97s",
+        "7.98s",
+        "7.99s",
+        "8.00s",
+        "8.01s",
+        "8.02s",
+        "8.03s",
+        "8.04s",
+        "8.05s",
+        "8.06s",
+        "8.07s",
+        "8.08s",
+        "8.09s",
+        "8.10s",
+        "8.11s",
+        "8.12s",
+        "8.13s",
+        "8.14s",
+        "8.15s",
+        "8.16s",
+        "8.17s",
+        "8.18s",
+        "8.19s",
+        "8.20s",
+        "8.21s",
+        "8.22s",
+        "8.23s",
+        "8.24s",
+        "8.25s",
+        "8.26s",
+        "8.27s",
+        "8.28s",
+        "8.29s",
+        "8.30s",
+        "8.31s",
+        "8.32s",
+        "8.33s",
+        "8.34s",
+        "8.35s",
+        "8.36s",
+        "8.37s",
+        "8.38s",
+        "8.39s",
+        "8.40s",
+        "8.41s",
+        "8.42s",
+        "8.43s",
+        "8.44s",
+        "8.45s",
+        "8.46s",
+        "8.47s",
+        "8.48s",
+        "8.49s",
+        "8.50s"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1.00s"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.88s"
+        },
+        {
+          "normalized": 0.5,
+          "display": "4.75s"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.62s"
+        },
+        {
+          "normalized": 1.0,
+          "display": "8.50s"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 156,
+      "name": "reverb_low_cut",
+      "host_name": "Reverb Low Cut",
+      "kind": "numeric",
+      "default_normalized": 0.42315301299095154,
+      "default_display": "42 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 157,
+      "name": "reverb_high_cut",
+      "host_name": "Reverb High Cut",
+      "kind": "numeric",
+      "default_normalized": 0.5642169713973999,
+      "default_display": "56 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 158,
+      "name": "preset_previous",
+      "host_name": "Preset Previous",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 159,
+      "name": "preset_next",
+      "host_name": "Preset Next",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 160,
+      "name": "bypass",
+      "host_name": "Bypass",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    }
+  ]
+}

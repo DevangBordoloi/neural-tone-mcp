@@ -1,0 +1,10244 @@
+{
+  "plugin_name": "Archetype Petrucci X",
+  "vst3_path": "C:\\Program Files\\Common Files\\VST3\\Neural DSP\\Archetype Petrucci X.vst3",
+  "is_instrument": false,
+  "parameter_count": 156,
+  "inspected_with": "0.9.26",
+  "parameters": [
+    {
+      "index": 0,
+      "name": "input_gain",
+      "host_name": "Input Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -24.0,
+      "max_value": 24.0,
+      "step_size": 0.05,
+      "num_steps": 483,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-24.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+12.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+24.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "output_gain",
+      "host_name": "Output Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -24.0,
+      "max_value": 24.0,
+      "step_size": 0.05,
+      "num_steps": 483,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-24.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+12.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+24.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "gate_active",
+      "host_name": "Gate Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "gate_threshold",
+      "host_name": "Gate Threshold",
+      "kind": "numeric",
+      "default_normalized": 0.030208349227905273,
+      "default_display": "-93.1 dB",
+      "units": "dB",
+      "min_value": -96.0,
+      "max_value": 0.0,
+      "step_size": 0.1,
+      "num_steps": 961,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-96.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-72.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "-48.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "-24.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "0.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "transpose",
+      "host_name": "Transpose",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "0 st",
+      "num_steps": 25,
+      "valid_values": [
+        "-12 st",
+        "-11 st",
+        "-10 st",
+        "-9 st",
+        "-8 st",
+        "-7 st",
+        "-6 st",
+        "-5 st",
+        "-4 st",
+        "-3 st",
+        "-2 st",
+        "-1 st",
+        "0 st",
+        "1 st",
+        "2 st",
+        "3 st",
+        "4 st",
+        "5 st",
+        "6 st",
+        "7 st",
+        "8 st",
+        "9 st",
+        "10 st",
+        "11 st",
+        "12 st"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12 st"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6 st"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0 st"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6 st"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12 st"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 5,
+      "name": "doubler_active",
+      "host_name": "Doubler Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "doubler_spread",
+      "host_name": "Doubler Spread",
+      "kind": "numeric",
+      "default_normalized": 0.23529411852359772,
+      "default_display": "7.00 ms",
+      "units": "ms",
+      "min_value": 3.0,
+      "max_value": 20.0,
+      "step_size": 0.015,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "3.00 ms"
+        },
+        {
+          "normalized": 0.25,
+          "display": "7.25 ms"
+        },
+        {
+          "normalized": 0.5,
+          "display": "11.50 ms"
+        },
+        {
+          "normalized": 0.75,
+          "display": "15.75 ms"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.00 ms"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "active_wah_comp_section",
+      "host_name": "Active Wah Comp Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "wah_active",
+      "host_name": "Wah Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "wah_position",
+      "host_name": "Wah Position",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "100 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "compressor_compression",
+      "host_name": "Compressor Compression",
+      "kind": "numeric",
+      "default_normalized": 0.6850000023841858,
+      "default_display": "69 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "compressor_level",
+      "host_name": "Compressor Level",
+      "kind": "numeric",
+      "default_normalized": 0.2980000078678131,
+      "default_display": "30 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "compressor_active",
+      "host_name": "Compressor Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "active_pre_fx_section",
+      "host_name": "Active Pre FX Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "overdrive_tone",
+      "host_name": "Overdrive Tone",
+      "kind": "numeric",
+      "default_normalized": 0.6859999895095825,
+      "default_display": "69 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "overdrive_drive",
+      "host_name": "Overdrive Drive",
+      "kind": "numeric",
+      "default_normalized": 0.9509999752044678,
+      "default_display": "95 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "overdrive_level",
+      "host_name": "Overdrive Level",
+      "kind": "numeric",
+      "default_normalized": 0.49000000953674316,
+      "default_display": "49 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "overdrive_active",
+      "host_name": "Overdrive Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "phaser_mode",
+      "host_name": "Phaser Mode",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Phaser",
+      "num_steps": 2,
+      "valid_values": [
+        "Phaser",
+        "Vibe"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Phaser"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Phaser"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Phaser"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Vibe"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Vibe"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 19,
+      "name": "phaser_rate",
+      "host_name": "Phaser Rate",
+      "kind": "numeric",
+      "default_normalized": 0.3529999852180481,
+      "default_display": "35 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "name": "phaser_active",
+      "host_name": "Phaser Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "name": "chorus_mode",
+      "host_name": "Chorus Mode",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Normal",
+      "num_steps": 2,
+      "valid_values": [
+        "Normal",
+        "Tri"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Normal"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Normal"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Normal"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Tri"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Tri"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 22,
+      "name": "chorus_rate",
+      "host_name": "Chorus Rate",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "name": "chorus_depth",
+      "host_name": "Chorus Depth",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "name": "chorus_level",
+      "host_name": "Chorus Level",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "100 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "name": "chorus_active",
+      "host_name": "Chorus Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "name": "flanger_rate",
+      "host_name": "Flanger Rate",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "name": "flanger_depth",
+      "host_name": "Flanger Depth",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "name": "flanger_range",
+      "host_name": "Flanger Range",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "name": "flanger_feedback",
+      "host_name": "Flanger Feedback",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "name": "flanger_active",
+      "host_name": "Flanger Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "name": "active_amp_section",
+      "host_name": "Active Amp Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "name": "amp_type",
+      "host_name": "Amp Type",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Lead",
+      "num_steps": 4,
+      "valid_values": [
+        "Piezo",
+        "Clean",
+        "Rhythm",
+        "Lead"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Piezo"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Clean"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Rhythm"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Rhythm"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Lead"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 33,
+      "name": "piezo_amp_body",
+      "host_name": "Piezo Amp Body",
+      "kind": "numeric",
+      "default_normalized": 0.6499999761581421,
+      "default_display": "65 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "name": "piezo_amp_air",
+      "host_name": "Piezo Amp Air",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Normal",
+      "num_steps": 2,
+      "valid_values": [
+        "Normal",
+        "Ultra"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Normal"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Normal"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Normal"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Ultra"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Ultra"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 35,
+      "name": "piezo_amp_bass",
+      "host_name": "Piezo Amp Bass",
+      "kind": "numeric",
+      "default_normalized": 0.38999998569488525,
+      "default_display": "39 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "name": "piezo_amp_middle",
+      "host_name": "Piezo Amp Middle",
+      "kind": "numeric",
+      "default_normalized": 0.6700000166893005,
+      "default_display": "67 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "name": "piezo_amp_treble",
+      "host_name": "Piezo Amp Treble",
+      "kind": "numeric",
+      "default_normalized": 0.6899999976158142,
+      "default_display": "69 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "name": "piezo_amp_presence",
+      "host_name": "Piezo Amp Presence",
+      "kind": "numeric",
+      "default_normalized": 0.75,
+      "default_display": "75 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "name": "piezo_amp_output",
+      "host_name": "Piezo Amp Output",
+      "kind": "numeric",
+      "default_normalized": 0.5153769850730896,
+      "default_display": "52 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "name": "clean_amp_gain",
+      "host_name": "Clean Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.49000000953674316,
+      "default_display": "49 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "name": "clean_amp_bright",
+      "host_name": "Clean Amp Bright",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "name": "clean_amp_bass",
+      "host_name": "Clean Amp Bass",
+      "kind": "numeric",
+      "default_normalized": 0.4699999988079071,
+      "default_display": "47 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "name": "clean_amp_middle",
+      "host_name": "Clean Amp Middle",
+      "kind": "numeric",
+      "default_normalized": 0.36000001430511475,
+      "default_display": "36 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "name": "clean_amp_treble",
+      "host_name": "Clean Amp Treble",
+      "kind": "numeric",
+      "default_normalized": 0.5299999713897705,
+      "default_display": "53 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "name": "clean_amp_presence",
+      "host_name": "Clean Amp Presence",
+      "kind": "numeric",
+      "default_normalized": 0.7300000190734863,
+      "default_display": "73 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "name": "clean_amp_master",
+      "host_name": "Clean Amp Master",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "name": "clean_amp_output",
+      "host_name": "Clean Amp Output",
+      "kind": "numeric",
+      "default_normalized": 0.40644600987434387,
+      "default_display": "41 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "name": "rhythm_amp_gain",
+      "host_name": "Rhythm Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.7599999904632568,
+      "default_display": "76 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "name": "rhythm_amp_bite",
+      "host_name": "Rhythm Amp Bite",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "name": "rhythm_amp_tight",
+      "host_name": "Rhythm Amp Tight",
+      "kind": "numeric",
+      "default_normalized": 0.46000000834465027,
+      "default_display": "46 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "name": "rhythm_amp_bass",
+      "host_name": "Rhythm Amp Bass",
+      "kind": "numeric",
+      "default_normalized": 0.5400000214576721,
+      "default_display": "54 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "name": "rhythm_amp_middle",
+      "host_name": "Rhythm Amp Middle",
+      "kind": "numeric",
+      "default_normalized": 0.23000000417232513,
+      "default_display": "23 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "name": "rhythm_amp_mid_boost",
+      "host_name": "Rhythm Amp Mid Boost",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "name": "rhythm_amp_treble",
+      "host_name": "Rhythm Amp Treble",
+      "kind": "numeric",
+      "default_normalized": 0.6700000166893005,
+      "default_display": "67 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "name": "rhythm_amp_presence",
+      "host_name": "Rhythm Amp Presence",
+      "kind": "numeric",
+      "default_normalized": 0.699999988079071,
+      "default_display": "70 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "name": "rhythm_amp_master",
+      "host_name": "Rhythm Amp Master",
+      "kind": "numeric",
+      "default_normalized": 0.5799999833106995,
+      "default_display": "58 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "name": "rhythm_amp_output",
+      "host_name": "Rhythm Amp Output",
+      "kind": "numeric",
+      "default_normalized": 0.3160820007324219,
+      "default_display": "32 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "name": "lead_amp_gain",
+      "host_name": "Lead Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.8299999833106995,
+      "default_display": "83 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "name": "lead_amp_bass",
+      "host_name": "Lead Amp Bass",
+      "kind": "numeric",
+      "default_normalized": 0.12999999523162842,
+      "default_display": "13 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "name": "lead_amp_middle",
+      "host_name": "Lead Amp Middle",
+      "kind": "numeric",
+      "default_normalized": 0.4000000059604645,
+      "default_display": "40 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "name": "lead_amp_soar",
+      "host_name": "Lead Amp Soar",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "name": "lead_amp_treble",
+      "host_name": "Lead Amp Treble",
+      "kind": "numeric",
+      "default_normalized": 0.7599999904632568,
+      "default_display": "76 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "name": "lead_amp_presence",
+      "host_name": "Lead Amp Presence",
+      "kind": "numeric",
+      "default_normalized": 0.6899999976158142,
+      "default_display": "69 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "name": "lead_amp_master",
+      "host_name": "Lead Amp Master",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "name": "lead_amp_output",
+      "host_name": "Lead Amp Output",
+      "kind": "numeric",
+      "default_normalized": 0.3705900013446808,
+      "default_display": "37 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "name": "active_cab_section",
+      "host_name": "Active Cab Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "name": "cab_l_active",
+      "host_name": "Cab L Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "name": "cab_mic_l_type",
+      "host_name": "Cab Mic L Type",
+      "kind": "enum",
+      "default_normalized": 0.3333333432674408,
+      "default_display": "Condenser FET 301",
+      "num_steps": 7,
+      "valid_values": [
+        "Dynamic 2500",
+        "Dynamic 421",
+        "Condenser FET 301",
+        "Condenser 2500",
+        "Ribbon 353",
+        "Ribbon VR2",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 2500"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser FET 301"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Condenser 2500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Ribbon 353"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 69,
+      "name": "cab_l_position",
+      "host_name": "Cab L Position",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "name": "cab_l_distance",
+      "host_name": "Cab L Distance",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "name": "cab_l_level",
+      "host_name": "Cab L Level",
+      "kind": "numeric",
+      "default_normalized": 0.6368797421455383,
+      "default_display": "+2.0 dB",
+      "units": "dB",
+      "min_value": -40.0,
+      "max_value": 6.0,
+      "step_size": 1.4916666666666665,
+      "num_steps": 262,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-40.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-5.2 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+3.4 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+6.0 dB"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          -40.0
+        ],
+        [
+          0.03125,
+          -17.1
+        ],
+        [
+          0.0625,
+          -13.7
+        ],
+        [
+          0.09375,
+          -11.5
+        ],
+        [
+          0.125,
+          -9.8
+        ],
+        [
+          0.15625,
+          -8.4
+        ],
+        [
+          0.1875,
+          -7.2
+        ],
+        [
+          0.21875,
+          -6.1
+        ],
+        [
+          0.25,
+          -5.2
+        ],
+        [
+          0.28125,
+          -4.4
+        ],
+        [
+          0.3125,
+          -3.6
+        ],
+        [
+          0.34375,
+          -2.9
+        ],
+        [
+          0.375,
+          -2.3
+        ],
+        [
+          0.40625,
+          -1.6
+        ],
+        [
+          0.4375,
+          -1.1
+        ],
+        [
+          0.46875,
+          -0.5
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.53125,
+          0.5
+        ],
+        [
+          0.5625,
+          1.0
+        ],
+        [
+          0.59375,
+          1.4
+        ],
+        [
+          0.625,
+          1.8
+        ],
+        [
+          0.65625,
+          2.3
+        ],
+        [
+          0.6875,
+          2.7
+        ],
+        [
+          0.71875,
+          3.0
+        ],
+        [
+          0.75,
+          3.4
+        ],
+        [
+          0.78125,
+          3.8
+        ],
+        [
+          0.8125,
+          4.1
+        ],
+        [
+          0.84375,
+          4.5
+        ],
+        [
+          0.875,
+          4.8
+        ],
+        [
+          0.90625,
+          5.1
+        ],
+        [
+          0.9375,
+          5.4
+        ],
+        [
+          0.96875,
+          5.7
+        ],
+        [
+          1.0,
+          6.0
+        ]
+      ]
+    },
+    {
+      "index": 72,
+      "name": "cab_l_pan",
+      "host_name": "Cab L Pan",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "C",
+      "num_steps": 101,
+      "valid_values": [
+        "50 L",
+        "49 L",
+        "48 L",
+        "47 L",
+        "46 L",
+        "45 L",
+        "44 L",
+        "43 L",
+        "42 L",
+        "41 L",
+        "40 L",
+        "39 L",
+        "38 L",
+        "37 L",
+        "36 L",
+        "35 L",
+        "34 L",
+        "33 L",
+        "32 L",
+        "31 L",
+        "30 L",
+        "29 L",
+        "28 L",
+        "27 L",
+        "26 L",
+        "25 L",
+        "24 L",
+        "23 L",
+        "22 L",
+        "21 L",
+        "20 L",
+        "19 L",
+        "18 L",
+        "17 L",
+        "16 L",
+        "15 L",
+        "14 L",
+        "13 L",
+        "12 L",
+        "11 L",
+        "10 L",
+        "9 L",
+        "8 L",
+        "7 L",
+        "6 L",
+        "5 L",
+        "4 L",
+        "3 L",
+        "2 L",
+        "1 L",
+        "C",
+        "1 R",
+        "2 R",
+        "3 R",
+        "4 R",
+        "5 R",
+        "6 R",
+        "7 R",
+        "8 R",
+        "9 R",
+        "10 R",
+        "11 R",
+        "12 R",
+        "13 R",
+        "14 R",
+        "15 R",
+        "16 R",
+        "17 R",
+        "18 R",
+        "19 R",
+        "20 R",
+        "21 R",
+        "22 R",
+        "23 R",
+        "24 R",
+        "25 R",
+        "26 R",
+        "27 R",
+        "28 R",
+        "29 R",
+        "30 R",
+        "31 R",
+        "32 R",
+        "33 R",
+        "34 R",
+        "35 R",
+        "36 R",
+        "37 R",
+        "38 R",
+        "39 R",
+        "40 R",
+        "41 R",
+        "42 R",
+        "43 R",
+        "44 R",
+        "45 R",
+        "46 R",
+        "47 R",
+        "48 R",
+        "49 R",
+        "50 R"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "50 L"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 L"
+        },
+        {
+          "normalized": 0.5,
+          "display": "C"
+        },
+        {
+          "normalized": 0.75,
+          "display": "25 R"
+        },
+        {
+          "normalized": 1.0,
+          "display": "50 R"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 73,
+      "name": "cab_l_phase",
+      "host_name": "Cab L Phase",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "name": "room_l_active",
+      "host_name": "Room L Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "name": "room_l_level",
+      "host_name": "Room L Level",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "-60.0 dB",
+      "units": "dB",
+      "min_value": -60.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 722,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-60.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-42.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "-24.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "name": "room_l_distance",
+      "host_name": "Room L Distance",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Far",
+      "num_steps": 3,
+      "valid_values": [
+        "Close",
+        "Mid",
+        "Far"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Close"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Close"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Mid"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Far"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Far"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 77,
+      "name": "cab_r_active",
+      "host_name": "Cab R Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "name": "cab_mic_r_type",
+      "host_name": "Cab Mic R Type",
+      "kind": "enum",
+      "default_normalized": 0.8333333134651184,
+      "default_display": "Ribbon VR2",
+      "num_steps": 7,
+      "valid_values": [
+        "Dynamic 2500",
+        "Dynamic 421",
+        "Condenser FET 301",
+        "Condenser 2500",
+        "Ribbon 353",
+        "Ribbon VR2",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 2500"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser FET 301"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Condenser 2500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Ribbon 353"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 79,
+      "name": "cab_r_position",
+      "host_name": "Cab R Position",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "name": "cab_r_distance",
+      "host_name": "Cab R Distance",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "name": "cab_r_level",
+      "host_name": "Cab R Level",
+      "kind": "numeric",
+      "default_normalized": 0.4999988377094269,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -40.0,
+      "max_value": 6.0,
+      "step_size": 1.4916666666666665,
+      "num_steps": 262,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-40.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-5.2 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+3.4 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+6.0 dB"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          -40.0
+        ],
+        [
+          0.03125,
+          -17.1
+        ],
+        [
+          0.0625,
+          -13.7
+        ],
+        [
+          0.09375,
+          -11.5
+        ],
+        [
+          0.125,
+          -9.8
+        ],
+        [
+          0.15625,
+          -8.4
+        ],
+        [
+          0.1875,
+          -7.2
+        ],
+        [
+          0.21875,
+          -6.1
+        ],
+        [
+          0.25,
+          -5.2
+        ],
+        [
+          0.28125,
+          -4.4
+        ],
+        [
+          0.3125,
+          -3.6
+        ],
+        [
+          0.34375,
+          -2.9
+        ],
+        [
+          0.375,
+          -2.3
+        ],
+        [
+          0.40625,
+          -1.6
+        ],
+        [
+          0.4375,
+          -1.1
+        ],
+        [
+          0.46875,
+          -0.5
+        ],
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.53125,
+          0.5
+        ],
+        [
+          0.5625,
+          1.0
+        ],
+        [
+          0.59375,
+          1.4
+        ],
+        [
+          0.625,
+          1.8
+        ],
+        [
+          0.65625,
+          2.3
+        ],
+        [
+          0.6875,
+          2.7
+        ],
+        [
+          0.71875,
+          3.0
+        ],
+        [
+          0.75,
+          3.4
+        ],
+        [
+          0.78125,
+          3.8
+        ],
+        [
+          0.8125,
+          4.1
+        ],
+        [
+          0.84375,
+          4.5
+        ],
+        [
+          0.875,
+          4.8
+        ],
+        [
+          0.90625,
+          5.1
+        ],
+        [
+          0.9375,
+          5.4
+        ],
+        [
+          0.96875,
+          5.7
+        ],
+        [
+          1.0,
+          6.0
+        ]
+      ]
+    },
+    {
+      "index": 82,
+      "name": "cab_r_pan",
+      "host_name": "Cab R Pan",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "C",
+      "num_steps": 101,
+      "valid_values": [
+        "50 L",
+        "49 L",
+        "48 L",
+        "47 L",
+        "46 L",
+        "45 L",
+        "44 L",
+        "43 L",
+        "42 L",
+        "41 L",
+        "40 L",
+        "39 L",
+        "38 L",
+        "37 L",
+        "36 L",
+        "35 L",
+        "34 L",
+        "33 L",
+        "32 L",
+        "31 L",
+        "30 L",
+        "29 L",
+        "28 L",
+        "27 L",
+        "26 L",
+        "25 L",
+        "24 L",
+        "23 L",
+        "22 L",
+        "21 L",
+        "20 L",
+        "19 L",
+        "18 L",
+        "17 L",
+        "16 L",
+        "15 L",
+        "14 L",
+        "13 L",
+        "12 L",
+        "11 L",
+        "10 L",
+        "9 L",
+        "8 L",
+        "7 L",
+        "6 L",
+        "5 L",
+        "4 L",
+        "3 L",
+        "2 L",
+        "1 L",
+        "C",
+        "1 R",
+        "2 R",
+        "3 R",
+        "4 R",
+        "5 R",
+        "6 R",
+        "7 R",
+        "8 R",
+        "9 R",
+        "10 R",
+        "11 R",
+        "12 R",
+        "13 R",
+        "14 R",
+        "15 R",
+        "16 R",
+        "17 R",
+        "18 R",
+        "19 R",
+        "20 R",
+        "21 R",
+        "22 R",
+        "23 R",
+        "24 R",
+        "25 R",
+        "26 R",
+        "27 R",
+        "28 R",
+        "29 R",
+        "30 R",
+        "31 R",
+        "32 R",
+        "33 R",
+        "34 R",
+        "35 R",
+        "36 R",
+        "37 R",
+        "38 R",
+        "39 R",
+        "40 R",
+        "41 R",
+        "42 R",
+        "43 R",
+        "44 R",
+        "45 R",
+        "46 R",
+        "47 R",
+        "48 R",
+        "49 R",
+        "50 R"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "50 L"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 L"
+        },
+        {
+          "normalized": 0.5,
+          "display": "C"
+        },
+        {
+          "normalized": 0.75,
+          "display": "25 R"
+        },
+        {
+          "normalized": 1.0,
+          "display": "50 R"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 83,
+      "name": "cab_r_phase",
+      "host_name": "Cab R Phase",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "name": "room_r_active",
+      "host_name": "Room R Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "name": "room_r_level",
+      "host_name": "Room R Level",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "-60.0 dB",
+      "units": "dB",
+      "min_value": -60.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 722,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-60.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-42.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "-24.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "name": "room_r_distance",
+      "host_name": "Room R Distance",
+      "kind": "enum",
+      "default_normalized": 0.5,
+      "default_display": "Mid",
+      "num_steps": 3,
+      "valid_values": [
+        "Close",
+        "Mid",
+        "Far"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Close"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Close"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Mid"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Far"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Far"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 87,
+      "name": "active_eq_section",
+      "host_name": "Active EQ Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "name": "clean_eq_active",
+      "host_name": "Clean EQ Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "name": "clean_eq_hpf",
+      "host_name": "Clean EQ HPF",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "20 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 500.0,
+      "step_size": 1.0,
+      "num_steps": 481,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "68 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "171 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "317 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "500 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          25.0
+        ],
+        [
+          0.09375,
+          29.0
+        ],
+        [
+          0.125,
+          35.0
+        ],
+        [
+          0.15625,
+          42.0
+        ],
+        [
+          0.1875,
+          49.0
+        ],
+        [
+          0.21875,
+          58.0
+        ],
+        [
+          0.25,
+          68.0
+        ],
+        [
+          0.28125,
+          78.0
+        ],
+        [
+          0.3125,
+          89.0
+        ],
+        [
+          0.34375,
+          101.0
+        ],
+        [
+          0.375,
+          114.0
+        ],
+        [
+          0.40625,
+          127.0
+        ],
+        [
+          0.4375,
+          141.0
+        ],
+        [
+          0.46875,
+          156.0
+        ],
+        [
+          0.5,
+          171.0
+        ],
+        [
+          0.53125,
+          187.0
+        ],
+        [
+          0.5625,
+          204.0
+        ],
+        [
+          0.59375,
+          221.0
+        ],
+        [
+          0.625,
+          239.0
+        ],
+        [
+          0.65625,
+          258.0
+        ],
+        [
+          0.6875,
+          277.0
+        ],
+        [
+          0.71875,
+          297.0
+        ],
+        [
+          0.75,
+          317.0
+        ],
+        [
+          0.78125,
+          338.0
+        ],
+        [
+          0.8125,
+          360.0
+        ],
+        [
+          0.84375,
+          382.0
+        ],
+        [
+          0.875,
+          404.0
+        ],
+        [
+          0.90625,
+          427.0
+        ],
+        [
+          0.9375,
+          451.0
+        ],
+        [
+          0.96875,
+          475.0
+        ],
+        [
+          1.0,
+          500.0
+        ]
+      ]
+    },
+    {
+      "index": 90,
+      "name": "clean_eq_lo_freq",
+      "host_name": "Clean EQ Lo Freq",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "60 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 200.0,
+      "step_size": 1.0,
+      "num_steps": 181,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "28 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "60 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "100 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "200 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          21.0
+        ],
+        [
+          0.09375,
+          22.0
+        ],
+        [
+          0.125,
+          22.0
+        ],
+        [
+          0.15625,
+          24.0
+        ],
+        [
+          0.1875,
+          25.0
+        ],
+        [
+          0.21875,
+          27.0
+        ],
+        [
+          0.25,
+          28.0
+        ],
+        [
+          0.28125,
+          31.0
+        ],
+        [
+          0.3125,
+          34.0
+        ],
+        [
+          0.34375,
+          37.0
+        ],
+        [
+          0.375,
+          40.0
+        ],
+        [
+          0.40625,
+          45.0
+        ],
+        [
+          0.4375,
+          50.0
+        ],
+        [
+          0.46875,
+          55.0
+        ],
+        [
+          0.5,
+          60.0
+        ],
+        [
+          0.53125,
+          65.0
+        ],
+        [
+          0.5625,
+          70.0
+        ],
+        [
+          0.59375,
+          75.0
+        ],
+        [
+          0.625,
+          80.0
+        ],
+        [
+          0.65625,
+          85.0
+        ],
+        [
+          0.6875,
+          90.0
+        ],
+        [
+          0.71875,
+          95.0
+        ],
+        [
+          0.75,
+          100.0
+        ],
+        [
+          0.78125,
+          113.0
+        ],
+        [
+          0.8125,
+          125.0
+        ],
+        [
+          0.84375,
+          138.0
+        ],
+        [
+          0.875,
+          150.0
+        ],
+        [
+          0.90625,
+          163.0
+        ],
+        [
+          0.9375,
+          175.0
+        ],
+        [
+          0.96875,
+          188.0
+        ],
+        [
+          1.0,
+          200.0
+        ]
+      ]
+    },
+    {
+      "index": 91,
+      "name": "clean_eq_lo_mid_freq",
+      "host_name": "Clean EQ Lo-Mid Freq",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "260 Hz",
+      "units": "Hz",
+      "min_value": 100.0,
+      "max_value": 1000.0,
+      "step_size": 2.5,
+      "num_steps": 601,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "100 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "140 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "260 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "500 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          100.0
+        ],
+        [
+          0.03125,
+          103.0
+        ],
+        [
+          0.0625,
+          105.0
+        ],
+        [
+          0.09375,
+          108.0
+        ],
+        [
+          0.125,
+          110.0
+        ],
+        [
+          0.15625,
+          118.0
+        ],
+        [
+          0.1875,
+          125.0
+        ],
+        [
+          0.21875,
+          133.0
+        ],
+        [
+          0.25,
+          140.0
+        ],
+        [
+          0.28125,
+          155.0
+        ],
+        [
+          0.3125,
+          170.0
+        ],
+        [
+          0.34375,
+          185.0
+        ],
+        [
+          0.375,
+          200.0
+        ],
+        [
+          0.40625,
+          215.0
+        ],
+        [
+          0.4375,
+          230.0
+        ],
+        [
+          0.46875,
+          245.0
+        ],
+        [
+          0.5,
+          260.0
+        ],
+        [
+          0.53125,
+          283.0
+        ],
+        [
+          0.5625,
+          305.0
+        ],
+        [
+          0.59375,
+          328.0
+        ],
+        [
+          0.625,
+          350.0
+        ],
+        [
+          0.65625,
+          388.0
+        ],
+        [
+          0.6875,
+          425.0
+        ],
+        [
+          0.71875,
+          463.0
+        ],
+        [
+          0.75,
+          500.0
+        ],
+        [
+          0.78125,
+          525.0
+        ],
+        [
+          0.8125,
+          550.0
+        ],
+        [
+          0.84375,
+          575.0
+        ],
+        [
+          0.875,
+          600.0
+        ],
+        [
+          0.90625,
+          700.0
+        ],
+        [
+          0.9375,
+          800.0
+        ],
+        [
+          0.96875,
+          900.0
+        ],
+        [
+          1.0,
+          1000.0
+        ]
+      ]
+    },
+    {
+      "index": 92,
+      "name": "clean_eq_hi_mid_freq",
+      "host_name": "Clean EQ Hi-Mid Freq",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "1.2 kHz",
+      "units": "Hz",
+      "min_value": 500.0,
+      "max_value": 5000.0,
+      "step_size": 26.5,
+      "num_steps": 341,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "500 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "700 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1.2 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "3.0 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "5.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          500.0
+        ],
+        [
+          0.03125,
+          513.0
+        ],
+        [
+          0.0625,
+          525.0
+        ],
+        [
+          0.09375,
+          538.0
+        ],
+        [
+          0.125,
+          550.0
+        ],
+        [
+          0.15625,
+          588.0
+        ],
+        [
+          0.1875,
+          625.0
+        ],
+        [
+          0.21875,
+          663.0
+        ],
+        [
+          0.25,
+          700.0
+        ],
+        [
+          0.28125,
+          775.0
+        ],
+        [
+          0.3125,
+          850.0
+        ],
+        [
+          0.34375,
+          925.0
+        ],
+        [
+          0.375,
+          1000.0
+        ],
+        [
+          0.40625,
+          1100.0
+        ],
+        [
+          0.4375,
+          1100.0
+        ],
+        [
+          0.46875,
+          1200.0
+        ],
+        [
+          0.5,
+          1200.0
+        ],
+        [
+          0.53125,
+          1400.0
+        ],
+        [
+          0.5625,
+          1600.0
+        ],
+        [
+          0.59375,
+          1800.0
+        ],
+        [
+          0.625,
+          2000.0
+        ],
+        [
+          0.65625,
+          2200.0
+        ],
+        [
+          0.6875,
+          2500.0
+        ],
+        [
+          0.71875,
+          2800.0
+        ],
+        [
+          0.75,
+          3000.0
+        ],
+        [
+          0.78125,
+          3200.0
+        ],
+        [
+          0.8125,
+          3500.0
+        ],
+        [
+          0.84375,
+          3800.0
+        ],
+        [
+          0.875,
+          4000.0
+        ],
+        [
+          0.90625,
+          4200.0
+        ],
+        [
+          0.9375,
+          4500.0
+        ],
+        [
+          0.96875,
+          4800.0
+        ],
+        [
+          1.0,
+          5000.0
+        ]
+      ]
+    },
+    {
+      "index": 93,
+      "name": "clean_eq_hi_freq",
+      "host_name": "Clean EQ Hi Freq",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "6.0 kHz",
+      "units": "Hz",
+      "min_value": 2000.0,
+      "max_value": 20000.0,
+      "step_size": 100.0,
+      "num_steps": 181,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "2.0 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.8 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.0 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.0 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          2000.0
+        ],
+        [
+          0.03125,
+          2000.0
+        ],
+        [
+          0.0625,
+          2100.0
+        ],
+        [
+          0.09375,
+          2100.0
+        ],
+        [
+          0.125,
+          2200.0
+        ],
+        [
+          0.15625,
+          2400.0
+        ],
+        [
+          0.1875,
+          2500.0
+        ],
+        [
+          0.21875,
+          2600.0
+        ],
+        [
+          0.25,
+          2800.0
+        ],
+        [
+          0.28125,
+          3100.0
+        ],
+        [
+          0.3125,
+          3400.0
+        ],
+        [
+          0.34375,
+          3700.0
+        ],
+        [
+          0.375,
+          4000.0
+        ],
+        [
+          0.40625,
+          4500.0
+        ],
+        [
+          0.4375,
+          5000.0
+        ],
+        [
+          0.46875,
+          5500.0
+        ],
+        [
+          0.5,
+          6000.0
+        ],
+        [
+          0.53125,
+          6500.0
+        ],
+        [
+          0.5625,
+          7000.0
+        ],
+        [
+          0.59375,
+          7500.0
+        ],
+        [
+          0.625,
+          8000.0
+        ],
+        [
+          0.65625,
+          9000.0
+        ],
+        [
+          0.6875,
+          10000.0
+        ],
+        [
+          0.71875,
+          11000.0
+        ],
+        [
+          0.75,
+          12000.0
+        ],
+        [
+          0.78125,
+          13000.0
+        ],
+        [
+          0.8125,
+          14000.0
+        ],
+        [
+          0.84375,
+          15000.0
+        ],
+        [
+          0.875,
+          16000.0
+        ],
+        [
+          0.90625,
+          17000.0
+        ],
+        [
+          0.9375,
+          18000.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 94,
+      "name": "clean_eq_lpf",
+      "host_name": "Clean EQ LPF",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "20.0 kHz",
+      "units": "Hz",
+      "min_value": 1000.0,
+      "max_value": 20000.0,
+      "step_size": 40.0,
+      "num_steps": 669,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1.00 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.89 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.98 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.8 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          1000.0
+        ],
+        [
+          0.03125,
+          1060.0
+        ],
+        [
+          0.0625,
+          1190.0
+        ],
+        [
+          0.09375,
+          1370.0
+        ],
+        [
+          0.125,
+          1590.0
+        ],
+        [
+          0.15625,
+          1860.0
+        ],
+        [
+          0.1875,
+          2170.0
+        ],
+        [
+          0.21875,
+          2510.0
+        ],
+        [
+          0.25,
+          2890.0
+        ],
+        [
+          0.28125,
+          3290.0
+        ],
+        [
+          0.3125,
+          3730.0
+        ],
+        [
+          0.34375,
+          4200.0
+        ],
+        [
+          0.375,
+          4710.0
+        ],
+        [
+          0.40625,
+          5230.0
+        ],
+        [
+          0.4375,
+          5790.0
+        ],
+        [
+          0.46875,
+          6370.0
+        ],
+        [
+          0.5,
+          6980.0
+        ],
+        [
+          0.53125,
+          7620.0
+        ],
+        [
+          0.5625,
+          8280.0
+        ],
+        [
+          0.59375,
+          8970.0
+        ],
+        [
+          0.625,
+          9680.0
+        ],
+        [
+          0.65625,
+          10400.0
+        ],
+        [
+          0.6875,
+          11200.0
+        ],
+        [
+          0.71875,
+          12000.0
+        ],
+        [
+          0.75,
+          12800.0
+        ],
+        [
+          0.78125,
+          13600.0
+        ],
+        [
+          0.8125,
+          14400.0
+        ],
+        [
+          0.84375,
+          15300.0
+        ],
+        [
+          0.875,
+          16200.0
+        ],
+        [
+          0.90625,
+          17100.0
+        ],
+        [
+          0.9375,
+          18100.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 95,
+      "name": "clean_eq_lo_gain",
+      "host_name": "Clean EQ Lo Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "name": "clean_eq_lo_mid_gain",
+      "host_name": "Clean EQ Lo-Mid Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "name": "clean_eq_hi_mid_gain",
+      "host_name": "Clean EQ Hi-Mid Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "name": "clean_eq_hi_gain",
+      "host_name": "Clean EQ Hi Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "name": "rhythm_eq_active",
+      "host_name": "Rhythm EQ Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "name": "rhythm_eq_hpf",
+      "host_name": "Rhythm EQ HPF",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "20 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 500.0,
+      "step_size": 1.0,
+      "num_steps": 481,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "68 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "171 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "317 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "500 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          25.0
+        ],
+        [
+          0.09375,
+          29.0
+        ],
+        [
+          0.125,
+          35.0
+        ],
+        [
+          0.15625,
+          42.0
+        ],
+        [
+          0.1875,
+          49.0
+        ],
+        [
+          0.21875,
+          58.0
+        ],
+        [
+          0.25,
+          68.0
+        ],
+        [
+          0.28125,
+          78.0
+        ],
+        [
+          0.3125,
+          89.0
+        ],
+        [
+          0.34375,
+          101.0
+        ],
+        [
+          0.375,
+          114.0
+        ],
+        [
+          0.40625,
+          127.0
+        ],
+        [
+          0.4375,
+          141.0
+        ],
+        [
+          0.46875,
+          156.0
+        ],
+        [
+          0.5,
+          171.0
+        ],
+        [
+          0.53125,
+          187.0
+        ],
+        [
+          0.5625,
+          204.0
+        ],
+        [
+          0.59375,
+          221.0
+        ],
+        [
+          0.625,
+          239.0
+        ],
+        [
+          0.65625,
+          258.0
+        ],
+        [
+          0.6875,
+          277.0
+        ],
+        [
+          0.71875,
+          297.0
+        ],
+        [
+          0.75,
+          317.0
+        ],
+        [
+          0.78125,
+          338.0
+        ],
+        [
+          0.8125,
+          360.0
+        ],
+        [
+          0.84375,
+          382.0
+        ],
+        [
+          0.875,
+          404.0
+        ],
+        [
+          0.90625,
+          427.0
+        ],
+        [
+          0.9375,
+          451.0
+        ],
+        [
+          0.96875,
+          475.0
+        ],
+        [
+          1.0,
+          500.0
+        ]
+      ]
+    },
+    {
+      "index": 101,
+      "name": "rhythm_eq_lo_freq",
+      "host_name": "Rhythm EQ Lo Freq",
+      "kind": "numeric",
+      "default_normalized": 0.5189999938011169,
+      "default_display": "63 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 200.0,
+      "step_size": 1.0,
+      "num_steps": 181,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "28 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "60 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "100 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "200 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          21.0
+        ],
+        [
+          0.09375,
+          22.0
+        ],
+        [
+          0.125,
+          22.0
+        ],
+        [
+          0.15625,
+          24.0
+        ],
+        [
+          0.1875,
+          25.0
+        ],
+        [
+          0.21875,
+          27.0
+        ],
+        [
+          0.25,
+          28.0
+        ],
+        [
+          0.28125,
+          31.0
+        ],
+        [
+          0.3125,
+          34.0
+        ],
+        [
+          0.34375,
+          37.0
+        ],
+        [
+          0.375,
+          40.0
+        ],
+        [
+          0.40625,
+          45.0
+        ],
+        [
+          0.4375,
+          50.0
+        ],
+        [
+          0.46875,
+          55.0
+        ],
+        [
+          0.5,
+          60.0
+        ],
+        [
+          0.53125,
+          65.0
+        ],
+        [
+          0.5625,
+          70.0
+        ],
+        [
+          0.59375,
+          75.0
+        ],
+        [
+          0.625,
+          80.0
+        ],
+        [
+          0.65625,
+          85.0
+        ],
+        [
+          0.6875,
+          90.0
+        ],
+        [
+          0.71875,
+          95.0
+        ],
+        [
+          0.75,
+          100.0
+        ],
+        [
+          0.78125,
+          113.0
+        ],
+        [
+          0.8125,
+          125.0
+        ],
+        [
+          0.84375,
+          138.0
+        ],
+        [
+          0.875,
+          150.0
+        ],
+        [
+          0.90625,
+          163.0
+        ],
+        [
+          0.9375,
+          175.0
+        ],
+        [
+          0.96875,
+          188.0
+        ],
+        [
+          1.0,
+          200.0
+        ]
+      ]
+    },
+    {
+      "index": 102,
+      "name": "rhythm_eq_lo_mid_freq",
+      "host_name": "Rhythm EQ Lo-Mid Freq",
+      "kind": "numeric",
+      "default_normalized": 0.5320000052452087,
+      "default_display": "283 Hz",
+      "units": "Hz",
+      "min_value": 100.0,
+      "max_value": 1000.0,
+      "step_size": 2.5,
+      "num_steps": 601,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "100 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "140 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "260 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "500 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          100.0
+        ],
+        [
+          0.03125,
+          103.0
+        ],
+        [
+          0.0625,
+          105.0
+        ],
+        [
+          0.09375,
+          108.0
+        ],
+        [
+          0.125,
+          110.0
+        ],
+        [
+          0.15625,
+          118.0
+        ],
+        [
+          0.1875,
+          125.0
+        ],
+        [
+          0.21875,
+          133.0
+        ],
+        [
+          0.25,
+          140.0
+        ],
+        [
+          0.28125,
+          155.0
+        ],
+        [
+          0.3125,
+          170.0
+        ],
+        [
+          0.34375,
+          185.0
+        ],
+        [
+          0.375,
+          200.0
+        ],
+        [
+          0.40625,
+          215.0
+        ],
+        [
+          0.4375,
+          230.0
+        ],
+        [
+          0.46875,
+          245.0
+        ],
+        [
+          0.5,
+          260.0
+        ],
+        [
+          0.53125,
+          283.0
+        ],
+        [
+          0.5625,
+          305.0
+        ],
+        [
+          0.59375,
+          328.0
+        ],
+        [
+          0.625,
+          350.0
+        ],
+        [
+          0.65625,
+          388.0
+        ],
+        [
+          0.6875,
+          425.0
+        ],
+        [
+          0.71875,
+          463.0
+        ],
+        [
+          0.75,
+          500.0
+        ],
+        [
+          0.78125,
+          525.0
+        ],
+        [
+          0.8125,
+          550.0
+        ],
+        [
+          0.84375,
+          575.0
+        ],
+        [
+          0.875,
+          600.0
+        ],
+        [
+          0.90625,
+          700.0
+        ],
+        [
+          0.9375,
+          800.0
+        ],
+        [
+          0.96875,
+          900.0
+        ],
+        [
+          1.0,
+          1000.0
+        ]
+      ]
+    },
+    {
+      "index": 103,
+      "name": "rhythm_eq_hi_mid_freq",
+      "host_name": "Rhythm EQ Hi-Mid Freq",
+      "kind": "numeric",
+      "default_normalized": 0.8119999766349792,
+      "default_display": "3.5 kHz",
+      "units": "Hz",
+      "min_value": 500.0,
+      "max_value": 5000.0,
+      "step_size": 26.5,
+      "num_steps": 341,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "500 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "700 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1.2 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "3.0 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "5.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          500.0
+        ],
+        [
+          0.03125,
+          513.0
+        ],
+        [
+          0.0625,
+          525.0
+        ],
+        [
+          0.09375,
+          538.0
+        ],
+        [
+          0.125,
+          550.0
+        ],
+        [
+          0.15625,
+          588.0
+        ],
+        [
+          0.1875,
+          625.0
+        ],
+        [
+          0.21875,
+          663.0
+        ],
+        [
+          0.25,
+          700.0
+        ],
+        [
+          0.28125,
+          775.0
+        ],
+        [
+          0.3125,
+          850.0
+        ],
+        [
+          0.34375,
+          925.0
+        ],
+        [
+          0.375,
+          1000.0
+        ],
+        [
+          0.40625,
+          1100.0
+        ],
+        [
+          0.4375,
+          1100.0
+        ],
+        [
+          0.46875,
+          1200.0
+        ],
+        [
+          0.5,
+          1200.0
+        ],
+        [
+          0.53125,
+          1400.0
+        ],
+        [
+          0.5625,
+          1600.0
+        ],
+        [
+          0.59375,
+          1800.0
+        ],
+        [
+          0.625,
+          2000.0
+        ],
+        [
+          0.65625,
+          2200.0
+        ],
+        [
+          0.6875,
+          2500.0
+        ],
+        [
+          0.71875,
+          2800.0
+        ],
+        [
+          0.75,
+          3000.0
+        ],
+        [
+          0.78125,
+          3200.0
+        ],
+        [
+          0.8125,
+          3500.0
+        ],
+        [
+          0.84375,
+          3800.0
+        ],
+        [
+          0.875,
+          4000.0
+        ],
+        [
+          0.90625,
+          4200.0
+        ],
+        [
+          0.9375,
+          4500.0
+        ],
+        [
+          0.96875,
+          4800.0
+        ],
+        [
+          1.0,
+          5000.0
+        ]
+      ]
+    },
+    {
+      "index": 104,
+      "name": "rhythm_eq_hi_freq",
+      "host_name": "Rhythm EQ Hi Freq",
+      "kind": "numeric",
+      "default_normalized": 0.8019999861717224,
+      "default_display": "13.7 kHz",
+      "units": "Hz",
+      "min_value": 2000.0,
+      "max_value": 20000.0,
+      "step_size": 100.0,
+      "num_steps": 181,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "2.0 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.8 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.0 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.0 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          2000.0
+        ],
+        [
+          0.03125,
+          2000.0
+        ],
+        [
+          0.0625,
+          2100.0
+        ],
+        [
+          0.09375,
+          2100.0
+        ],
+        [
+          0.125,
+          2200.0
+        ],
+        [
+          0.15625,
+          2400.0
+        ],
+        [
+          0.1875,
+          2500.0
+        ],
+        [
+          0.21875,
+          2600.0
+        ],
+        [
+          0.25,
+          2800.0
+        ],
+        [
+          0.28125,
+          3100.0
+        ],
+        [
+          0.3125,
+          3400.0
+        ],
+        [
+          0.34375,
+          3700.0
+        ],
+        [
+          0.375,
+          4000.0
+        ],
+        [
+          0.40625,
+          4500.0
+        ],
+        [
+          0.4375,
+          5000.0
+        ],
+        [
+          0.46875,
+          5500.0
+        ],
+        [
+          0.5,
+          6000.0
+        ],
+        [
+          0.53125,
+          6500.0
+        ],
+        [
+          0.5625,
+          7000.0
+        ],
+        [
+          0.59375,
+          7500.0
+        ],
+        [
+          0.625,
+          8000.0
+        ],
+        [
+          0.65625,
+          9000.0
+        ],
+        [
+          0.6875,
+          10000.0
+        ],
+        [
+          0.71875,
+          11000.0
+        ],
+        [
+          0.75,
+          12000.0
+        ],
+        [
+          0.78125,
+          13000.0
+        ],
+        [
+          0.8125,
+          14000.0
+        ],
+        [
+          0.84375,
+          15000.0
+        ],
+        [
+          0.875,
+          16000.0
+        ],
+        [
+          0.90625,
+          17000.0
+        ],
+        [
+          0.9375,
+          18000.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 105,
+      "name": "rhythm_eq_lpf",
+      "host_name": "Rhythm EQ LPF",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "20.0 kHz",
+      "units": "Hz",
+      "min_value": 1000.0,
+      "max_value": 20000.0,
+      "step_size": 40.0,
+      "num_steps": 669,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1.00 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.89 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.98 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.8 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          1000.0
+        ],
+        [
+          0.03125,
+          1060.0
+        ],
+        [
+          0.0625,
+          1190.0
+        ],
+        [
+          0.09375,
+          1370.0
+        ],
+        [
+          0.125,
+          1590.0
+        ],
+        [
+          0.15625,
+          1860.0
+        ],
+        [
+          0.1875,
+          2170.0
+        ],
+        [
+          0.21875,
+          2510.0
+        ],
+        [
+          0.25,
+          2890.0
+        ],
+        [
+          0.28125,
+          3290.0
+        ],
+        [
+          0.3125,
+          3730.0
+        ],
+        [
+          0.34375,
+          4200.0
+        ],
+        [
+          0.375,
+          4710.0
+        ],
+        [
+          0.40625,
+          5230.0
+        ],
+        [
+          0.4375,
+          5790.0
+        ],
+        [
+          0.46875,
+          6370.0
+        ],
+        [
+          0.5,
+          6980.0
+        ],
+        [
+          0.53125,
+          7620.0
+        ],
+        [
+          0.5625,
+          8280.0
+        ],
+        [
+          0.59375,
+          8970.0
+        ],
+        [
+          0.625,
+          9680.0
+        ],
+        [
+          0.65625,
+          10400.0
+        ],
+        [
+          0.6875,
+          11200.0
+        ],
+        [
+          0.71875,
+          12000.0
+        ],
+        [
+          0.75,
+          12800.0
+        ],
+        [
+          0.78125,
+          13600.0
+        ],
+        [
+          0.8125,
+          14400.0
+        ],
+        [
+          0.84375,
+          15300.0
+        ],
+        [
+          0.875,
+          16200.0
+        ],
+        [
+          0.90625,
+          17100.0
+        ],
+        [
+          0.9375,
+          18100.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 106,
+      "name": "rhythm_eq_lo_gain",
+      "host_name": "Rhythm EQ Lo Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5541666746139526,
+      "default_display": "+1.3 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "name": "rhythm_eq_lo_mid_gain",
+      "host_name": "Rhythm EQ Lo-Mid Gain",
+      "kind": "numeric",
+      "default_normalized": 0.37916669249534607,
+      "default_display": "-2.9 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "name": "rhythm_eq_hi_mid_gain",
+      "host_name": "Rhythm EQ Hi-Mid Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5250000357627869,
+      "default_display": "+0.6 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "name": "rhythm_eq_hi_gain",
+      "host_name": "Rhythm EQ Hi Gain",
+      "kind": "numeric",
+      "default_normalized": 0.4375,
+      "default_display": "-1.5 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "name": "lead_eq_active",
+      "host_name": "Lead EQ Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "name": "lead_eq_hpf",
+      "host_name": "Lead EQ HPF",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "20 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 500.0,
+      "step_size": 1.0,
+      "num_steps": 481,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "68 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "171 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "317 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "500 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          25.0
+        ],
+        [
+          0.09375,
+          29.0
+        ],
+        [
+          0.125,
+          35.0
+        ],
+        [
+          0.15625,
+          42.0
+        ],
+        [
+          0.1875,
+          49.0
+        ],
+        [
+          0.21875,
+          58.0
+        ],
+        [
+          0.25,
+          68.0
+        ],
+        [
+          0.28125,
+          78.0
+        ],
+        [
+          0.3125,
+          89.0
+        ],
+        [
+          0.34375,
+          101.0
+        ],
+        [
+          0.375,
+          114.0
+        ],
+        [
+          0.40625,
+          127.0
+        ],
+        [
+          0.4375,
+          141.0
+        ],
+        [
+          0.46875,
+          156.0
+        ],
+        [
+          0.5,
+          171.0
+        ],
+        [
+          0.53125,
+          187.0
+        ],
+        [
+          0.5625,
+          204.0
+        ],
+        [
+          0.59375,
+          221.0
+        ],
+        [
+          0.625,
+          239.0
+        ],
+        [
+          0.65625,
+          258.0
+        ],
+        [
+          0.6875,
+          277.0
+        ],
+        [
+          0.71875,
+          297.0
+        ],
+        [
+          0.75,
+          317.0
+        ],
+        [
+          0.78125,
+          338.0
+        ],
+        [
+          0.8125,
+          360.0
+        ],
+        [
+          0.84375,
+          382.0
+        ],
+        [
+          0.875,
+          404.0
+        ],
+        [
+          0.90625,
+          427.0
+        ],
+        [
+          0.9375,
+          451.0
+        ],
+        [
+          0.96875,
+          475.0
+        ],
+        [
+          1.0,
+          500.0
+        ]
+      ]
+    },
+    {
+      "index": 112,
+      "name": "lead_eq_lo_freq",
+      "host_name": "Lead EQ Lo Freq",
+      "kind": "numeric",
+      "default_normalized": 0.6129999756813049,
+      "default_display": "78 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 200.0,
+      "step_size": 1.0,
+      "num_steps": 181,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "28 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "60 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "100 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "200 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          21.0
+        ],
+        [
+          0.0625,
+          21.0
+        ],
+        [
+          0.09375,
+          22.0
+        ],
+        [
+          0.125,
+          22.0
+        ],
+        [
+          0.15625,
+          24.0
+        ],
+        [
+          0.1875,
+          25.0
+        ],
+        [
+          0.21875,
+          27.0
+        ],
+        [
+          0.25,
+          28.0
+        ],
+        [
+          0.28125,
+          31.0
+        ],
+        [
+          0.3125,
+          34.0
+        ],
+        [
+          0.34375,
+          37.0
+        ],
+        [
+          0.375,
+          40.0
+        ],
+        [
+          0.40625,
+          45.0
+        ],
+        [
+          0.4375,
+          50.0
+        ],
+        [
+          0.46875,
+          55.0
+        ],
+        [
+          0.5,
+          60.0
+        ],
+        [
+          0.53125,
+          65.0
+        ],
+        [
+          0.5625,
+          70.0
+        ],
+        [
+          0.59375,
+          75.0
+        ],
+        [
+          0.625,
+          80.0
+        ],
+        [
+          0.65625,
+          85.0
+        ],
+        [
+          0.6875,
+          90.0
+        ],
+        [
+          0.71875,
+          95.0
+        ],
+        [
+          0.75,
+          100.0
+        ],
+        [
+          0.78125,
+          113.0
+        ],
+        [
+          0.8125,
+          125.0
+        ],
+        [
+          0.84375,
+          138.0
+        ],
+        [
+          0.875,
+          150.0
+        ],
+        [
+          0.90625,
+          163.0
+        ],
+        [
+          0.9375,
+          175.0
+        ],
+        [
+          0.96875,
+          188.0
+        ],
+        [
+          1.0,
+          200.0
+        ]
+      ]
+    },
+    {
+      "index": 113,
+      "name": "lead_eq_lo_mid_freq",
+      "host_name": "Lead EQ Lo-Mid Freq",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "260 Hz",
+      "units": "Hz",
+      "min_value": 100.0,
+      "max_value": 1000.0,
+      "step_size": 2.5,
+      "num_steps": 601,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "100 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "140 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "260 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "500 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          100.0
+        ],
+        [
+          0.03125,
+          103.0
+        ],
+        [
+          0.0625,
+          105.0
+        ],
+        [
+          0.09375,
+          108.0
+        ],
+        [
+          0.125,
+          110.0
+        ],
+        [
+          0.15625,
+          118.0
+        ],
+        [
+          0.1875,
+          125.0
+        ],
+        [
+          0.21875,
+          133.0
+        ],
+        [
+          0.25,
+          140.0
+        ],
+        [
+          0.28125,
+          155.0
+        ],
+        [
+          0.3125,
+          170.0
+        ],
+        [
+          0.34375,
+          185.0
+        ],
+        [
+          0.375,
+          200.0
+        ],
+        [
+          0.40625,
+          215.0
+        ],
+        [
+          0.4375,
+          230.0
+        ],
+        [
+          0.46875,
+          245.0
+        ],
+        [
+          0.5,
+          260.0
+        ],
+        [
+          0.53125,
+          283.0
+        ],
+        [
+          0.5625,
+          305.0
+        ],
+        [
+          0.59375,
+          328.0
+        ],
+        [
+          0.625,
+          350.0
+        ],
+        [
+          0.65625,
+          388.0
+        ],
+        [
+          0.6875,
+          425.0
+        ],
+        [
+          0.71875,
+          463.0
+        ],
+        [
+          0.75,
+          500.0
+        ],
+        [
+          0.78125,
+          525.0
+        ],
+        [
+          0.8125,
+          550.0
+        ],
+        [
+          0.84375,
+          575.0
+        ],
+        [
+          0.875,
+          600.0
+        ],
+        [
+          0.90625,
+          700.0
+        ],
+        [
+          0.9375,
+          800.0
+        ],
+        [
+          0.96875,
+          900.0
+        ],
+        [
+          1.0,
+          1000.0
+        ]
+      ]
+    },
+    {
+      "index": 114,
+      "name": "lead_eq_hi_mid_freq",
+      "host_name": "Lead EQ Hi-Mid Freq",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "1.2 kHz",
+      "units": "Hz",
+      "min_value": 500.0,
+      "max_value": 5000.0,
+      "step_size": 26.5,
+      "num_steps": 341,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "500 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "700 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1.2 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "3.0 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "5.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          500.0
+        ],
+        [
+          0.03125,
+          513.0
+        ],
+        [
+          0.0625,
+          525.0
+        ],
+        [
+          0.09375,
+          538.0
+        ],
+        [
+          0.125,
+          550.0
+        ],
+        [
+          0.15625,
+          588.0
+        ],
+        [
+          0.1875,
+          625.0
+        ],
+        [
+          0.21875,
+          663.0
+        ],
+        [
+          0.25,
+          700.0
+        ],
+        [
+          0.28125,
+          775.0
+        ],
+        [
+          0.3125,
+          850.0
+        ],
+        [
+          0.34375,
+          925.0
+        ],
+        [
+          0.375,
+          1000.0
+        ],
+        [
+          0.40625,
+          1100.0
+        ],
+        [
+          0.4375,
+          1100.0
+        ],
+        [
+          0.46875,
+          1200.0
+        ],
+        [
+          0.5,
+          1200.0
+        ],
+        [
+          0.53125,
+          1400.0
+        ],
+        [
+          0.5625,
+          1600.0
+        ],
+        [
+          0.59375,
+          1800.0
+        ],
+        [
+          0.625,
+          2000.0
+        ],
+        [
+          0.65625,
+          2200.0
+        ],
+        [
+          0.6875,
+          2500.0
+        ],
+        [
+          0.71875,
+          2800.0
+        ],
+        [
+          0.75,
+          3000.0
+        ],
+        [
+          0.78125,
+          3200.0
+        ],
+        [
+          0.8125,
+          3500.0
+        ],
+        [
+          0.84375,
+          3800.0
+        ],
+        [
+          0.875,
+          4000.0
+        ],
+        [
+          0.90625,
+          4200.0
+        ],
+        [
+          0.9375,
+          4500.0
+        ],
+        [
+          0.96875,
+          4800.0
+        ],
+        [
+          1.0,
+          5000.0
+        ]
+      ]
+    },
+    {
+      "index": 115,
+      "name": "lead_eq_hi_freq",
+      "host_name": "Lead EQ Hi Freq",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "6.0 kHz",
+      "units": "Hz",
+      "min_value": 2000.0,
+      "max_value": 20000.0,
+      "step_size": 100.0,
+      "num_steps": 181,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "2.0 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.8 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.0 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.0 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          2000.0
+        ],
+        [
+          0.03125,
+          2000.0
+        ],
+        [
+          0.0625,
+          2100.0
+        ],
+        [
+          0.09375,
+          2100.0
+        ],
+        [
+          0.125,
+          2200.0
+        ],
+        [
+          0.15625,
+          2400.0
+        ],
+        [
+          0.1875,
+          2500.0
+        ],
+        [
+          0.21875,
+          2600.0
+        ],
+        [
+          0.25,
+          2800.0
+        ],
+        [
+          0.28125,
+          3100.0
+        ],
+        [
+          0.3125,
+          3400.0
+        ],
+        [
+          0.34375,
+          3700.0
+        ],
+        [
+          0.375,
+          4000.0
+        ],
+        [
+          0.40625,
+          4500.0
+        ],
+        [
+          0.4375,
+          5000.0
+        ],
+        [
+          0.46875,
+          5500.0
+        ],
+        [
+          0.5,
+          6000.0
+        ],
+        [
+          0.53125,
+          6500.0
+        ],
+        [
+          0.5625,
+          7000.0
+        ],
+        [
+          0.59375,
+          7500.0
+        ],
+        [
+          0.625,
+          8000.0
+        ],
+        [
+          0.65625,
+          9000.0
+        ],
+        [
+          0.6875,
+          10000.0
+        ],
+        [
+          0.71875,
+          11000.0
+        ],
+        [
+          0.75,
+          12000.0
+        ],
+        [
+          0.78125,
+          13000.0
+        ],
+        [
+          0.8125,
+          14000.0
+        ],
+        [
+          0.84375,
+          15000.0
+        ],
+        [
+          0.875,
+          16000.0
+        ],
+        [
+          0.90625,
+          17000.0
+        ],
+        [
+          0.9375,
+          18000.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 116,
+      "name": "lead_eq_lpf",
+      "host_name": "Lead EQ LPF",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "20.0 kHz",
+      "units": "Hz",
+      "min_value": 1000.0,
+      "max_value": 20000.0,
+      "step_size": 40.0,
+      "num_steps": 669,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1.00 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.89 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "6.98 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.8 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "20.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          1000.0
+        ],
+        [
+          0.03125,
+          1060.0
+        ],
+        [
+          0.0625,
+          1190.0
+        ],
+        [
+          0.09375,
+          1370.0
+        ],
+        [
+          0.125,
+          1590.0
+        ],
+        [
+          0.15625,
+          1860.0
+        ],
+        [
+          0.1875,
+          2170.0
+        ],
+        [
+          0.21875,
+          2510.0
+        ],
+        [
+          0.25,
+          2890.0
+        ],
+        [
+          0.28125,
+          3290.0
+        ],
+        [
+          0.3125,
+          3730.0
+        ],
+        [
+          0.34375,
+          4200.0
+        ],
+        [
+          0.375,
+          4710.0
+        ],
+        [
+          0.40625,
+          5230.0
+        ],
+        [
+          0.4375,
+          5790.0
+        ],
+        [
+          0.46875,
+          6370.0
+        ],
+        [
+          0.5,
+          6980.0
+        ],
+        [
+          0.53125,
+          7620.0
+        ],
+        [
+          0.5625,
+          8280.0
+        ],
+        [
+          0.59375,
+          8970.0
+        ],
+        [
+          0.625,
+          9680.0
+        ],
+        [
+          0.65625,
+          10400.0
+        ],
+        [
+          0.6875,
+          11200.0
+        ],
+        [
+          0.71875,
+          12000.0
+        ],
+        [
+          0.75,
+          12800.0
+        ],
+        [
+          0.78125,
+          13600.0
+        ],
+        [
+          0.8125,
+          14400.0
+        ],
+        [
+          0.84375,
+          15300.0
+        ],
+        [
+          0.875,
+          16200.0
+        ],
+        [
+          0.90625,
+          17100.0
+        ],
+        [
+          0.9375,
+          18100.0
+        ],
+        [
+          0.96875,
+          19000.0
+        ],
+        [
+          1.0,
+          20000.0
+        ]
+      ]
+    },
+    {
+      "index": 117,
+      "name": "lead_eq_lo_gain",
+      "host_name": "Lead EQ Lo Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5625,
+      "default_display": "+1.5 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 118,
+      "name": "lead_eq_lo_mid_gain",
+      "host_name": "Lead EQ Lo-Mid Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 119,
+      "name": "lead_eq_hi_mid_gain",
+      "host_name": "Lead EQ Hi-Mid Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 120,
+      "name": "lead_eq_hi_gain",
+      "host_name": "Lead EQ Hi Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0 dB",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.05,
+      "num_steps": 243,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0 dB"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0 dB"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0 dB"
+        },
+        {
+          "normalized": 0.75,
+          "display": "+6.0 dB"
+        },
+        {
+          "normalized": 1.0,
+          "display": "+12.0 dB"
+        }
+      ]
+    },
+    {
+      "index": 121,
+      "name": "active_volume_section",
+      "host_name": "Active Volume Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 122,
+      "name": "volume_mid_point",
+      "host_name": "Volume Mid Point",
+      "kind": "numeric",
+      "default_normalized": 0.29859718680381775,
+      "default_display": "15 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 50.0,
+      "step_size": 1.0,
+      "num_steps": 51,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "13 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "38 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "50 %"
+        }
+      ]
+    },
+    {
+      "index": 123,
+      "name": "volume_gain",
+      "host_name": "Volume Gain",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "100 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 124,
+      "name": "active_post_fx_section",
+      "host_name": "Active Post FX Section",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 125,
+      "name": "chorus_2_mix",
+      "host_name": "Chorus 2 Mix",
+      "kind": "numeric",
+      "default_normalized": 0.6000000238418579,
+      "default_display": "60 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 126,
+      "name": "chorus_2_mode",
+      "host_name": "Chorus 2 Mode",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Vintage",
+      "num_steps": 2,
+      "valid_values": [
+        "Vintage",
+        "Spatial"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Vintage"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Vintage"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Vintage"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Spatial"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Spatial"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 127,
+      "name": "chorus_2_rate",
+      "host_name": "Chorus 2 Rate",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 128,
+      "name": "chorus_2_depth",
+      "host_name": "Chorus 2 Depth",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 129,
+      "name": "chorus_2_active",
+      "host_name": "Chorus 2 Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 130,
+      "name": "delay_mix",
+      "host_name": "Delay Mix",
+      "kind": "numeric",
+      "default_normalized": 0.4300000071525574,
+      "default_display": "43 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 131,
+      "name": "delay_sync",
+      "host_name": "Delay Sync",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Free",
+      "num_steps": 3,
+      "valid_values": [
+        "Free",
+        "Daw",
+        "Tap"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Free"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Free"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Daw"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Tap"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Tap"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 132,
+      "name": "delay_mode",
+      "host_name": "Delay Mode",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Dual",
+      "num_steps": 2,
+      "valid_values": [
+        "Single",
+        "Dual"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Single"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Single"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Single"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Dual"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Dual"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 133,
+      "name": "delay_feedback",
+      "host_name": "Delay Feedback",
+      "kind": "numeric",
+      "default_normalized": 0.3199999928474426,
+      "default_display": "32 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 134,
+      "name": "delay_low_cut",
+      "host_name": "Delay Low Cut",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "20 Hz",
+      "units": "Hz",
+      "min_value": 20.0,
+      "max_value": 800.0,
+      "step_size": 1.5,
+      "num_steps": 731,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "20 Hz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "97 Hz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "266 Hz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "503 Hz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "800 Hz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.03125,
+          22.0
+        ],
+        [
+          0.0625,
+          28.0
+        ],
+        [
+          0.09375,
+          35.0
+        ],
+        [
+          0.125,
+          44.0
+        ],
+        [
+          0.15625,
+          55.0
+        ],
+        [
+          0.1875,
+          68.0
+        ],
+        [
+          0.21875,
+          82.0
+        ],
+        [
+          0.25,
+          97.0
+        ],
+        [
+          0.28125,
+          114.0
+        ],
+        [
+          0.3125,
+          132.0
+        ],
+        [
+          0.34375,
+          152.0
+        ],
+        [
+          0.375,
+          172.0
+        ],
+        [
+          0.40625,
+          194.0
+        ],
+        [
+          0.4375,
+          217.0
+        ],
+        [
+          0.46875,
+          241.0
+        ],
+        [
+          0.5,
+          266.0
+        ],
+        [
+          0.53125,
+          292.0
+        ],
+        [
+          0.5625,
+          319.0
+        ],
+        [
+          0.59375,
+          347.0
+        ],
+        [
+          0.625,
+          376.0
+        ],
+        [
+          0.65625,
+          407.0
+        ],
+        [
+          0.6875,
+          438.0
+        ],
+        [
+          0.71875,
+          470.0
+        ],
+        [
+          0.75,
+          503.0
+        ],
+        [
+          0.78125,
+          537.0
+        ],
+        [
+          0.8125,
+          572.0
+        ],
+        [
+          0.84375,
+          608.0
+        ],
+        [
+          0.875,
+          644.0
+        ],
+        [
+          0.90625,
+          682.0
+        ],
+        [
+          0.9375,
+          720.0
+        ],
+        [
+          0.96875,
+          760.0
+        ],
+        [
+          1.0,
+          800.0
+        ]
+      ]
+    },
+    {
+      "index": 135,
+      "name": "delay_time_l",
+      "host_name": "Delay Time L",
+      "kind": "numeric",
+      "default_normalized": 0.20795267820358276,
+      "default_display": "444 ms",
+      "units": "ms",
+      "min_value": 7.0,
+      "max_value": 6000.0,
+      "step_size": 5.5,
+      "num_steps": 988,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "7 ms"
+        },
+        {
+          "normalized": 0.25,
+          "display": "602 ms"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1895 ms"
+        },
+        {
+          "normalized": 0.75,
+          "display": "3717 ms"
+        },
+        {
+          "normalized": 1.0,
+          "display": "6000 ms"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          7.0
+        ],
+        [
+          0.03125,
+          26.0
+        ],
+        [
+          0.0625,
+          66.0
+        ],
+        [
+          0.09375,
+          123.0
+        ],
+        [
+          0.125,
+          194.0
+        ],
+        [
+          0.15625,
+          279.0
+        ],
+        [
+          0.1875,
+          375.0
+        ],
+        [
+          0.21875,
+          483.0
+        ],
+        [
+          0.25,
+          602.0
+        ],
+        [
+          0.28125,
+          731.0
+        ],
+        [
+          0.3125,
+          869.0
+        ],
+        [
+          0.34375,
+          1018.0
+        ],
+        [
+          0.375,
+          1176.0
+        ],
+        [
+          0.40625,
+          1342.0
+        ],
+        [
+          0.4375,
+          1518.0
+        ],
+        [
+          0.46875,
+          1702.0
+        ],
+        [
+          0.5,
+          1895.0
+        ],
+        [
+          0.53125,
+          2095.0
+        ],
+        [
+          0.5625,
+          2304.0
+        ],
+        [
+          0.59375,
+          2521.0
+        ],
+        [
+          0.625,
+          2745.0
+        ],
+        [
+          0.65625,
+          2977.0
+        ],
+        [
+          0.6875,
+          3216.0
+        ],
+        [
+          0.71875,
+          3463.0
+        ],
+        [
+          0.75,
+          3717.0
+        ],
+        [
+          0.78125,
+          3979.0
+        ],
+        [
+          0.8125,
+          4247.0
+        ],
+        [
+          0.84375,
+          4522.0
+        ],
+        [
+          0.875,
+          4804.0
+        ],
+        [
+          0.90625,
+          5093.0
+        ],
+        [
+          0.9375,
+          5389.0
+        ],
+        [
+          0.96875,
+          5691.0
+        ],
+        [
+          1.0,
+          6000.0
+        ]
+      ]
+    },
+    {
+      "index": 136,
+      "name": "delay_sync_note_l",
+      "host_name": "Delay Sync Note L",
+      "kind": "enum",
+      "default_normalized": 0.6499999761581421,
+      "default_display": "1/4",
+      "num_steps": 21,
+      "valid_values": [
+        "1/64T",
+        "1/64",
+        "1/32T",
+        "1/64D",
+        "1/32",
+        "1/16T",
+        "1/32D",
+        "1/16",
+        "1/8T",
+        "1/16D",
+        "1/8",
+        "1/4T",
+        "1/8D",
+        "1/4",
+        "1/2T",
+        "1/4D",
+        "1/2",
+        "1/1T",
+        "1/2D",
+        "1/1",
+        "1/1D"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1/64T"
+        },
+        {
+          "normalized": 0.25,
+          "display": "1/16T"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1/8"
+        },
+        {
+          "normalized": 0.75,
+          "display": "1/4D"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1/1D"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 137,
+      "name": "delay_crossfeed",
+      "host_name": "Delay Crossfeed",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 138,
+      "name": "delay_time_r",
+      "host_name": "Delay Time R",
+      "kind": "numeric",
+      "default_normalized": 0.24772487580776215,
+      "default_display": "593 ms",
+      "units": "ms",
+      "min_value": 7.0,
+      "max_value": 6000.0,
+      "step_size": 5.5,
+      "num_steps": 988,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "7 ms"
+        },
+        {
+          "normalized": 0.25,
+          "display": "602 ms"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1895 ms"
+        },
+        {
+          "normalized": 0.75,
+          "display": "3717 ms"
+        },
+        {
+          "normalized": 1.0,
+          "display": "6000 ms"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          7.0
+        ],
+        [
+          0.03125,
+          26.0
+        ],
+        [
+          0.0625,
+          66.0
+        ],
+        [
+          0.09375,
+          123.0
+        ],
+        [
+          0.125,
+          194.0
+        ],
+        [
+          0.15625,
+          279.0
+        ],
+        [
+          0.1875,
+          375.0
+        ],
+        [
+          0.21875,
+          483.0
+        ],
+        [
+          0.25,
+          602.0
+        ],
+        [
+          0.28125,
+          731.0
+        ],
+        [
+          0.3125,
+          869.0
+        ],
+        [
+          0.34375,
+          1018.0
+        ],
+        [
+          0.375,
+          1176.0
+        ],
+        [
+          0.40625,
+          1342.0
+        ],
+        [
+          0.4375,
+          1518.0
+        ],
+        [
+          0.46875,
+          1702.0
+        ],
+        [
+          0.5,
+          1895.0
+        ],
+        [
+          0.53125,
+          2095.0
+        ],
+        [
+          0.5625,
+          2304.0
+        ],
+        [
+          0.59375,
+          2521.0
+        ],
+        [
+          0.625,
+          2745.0
+        ],
+        [
+          0.65625,
+          2977.0
+        ],
+        [
+          0.6875,
+          3216.0
+        ],
+        [
+          0.71875,
+          3463.0
+        ],
+        [
+          0.75,
+          3717.0
+        ],
+        [
+          0.78125,
+          3979.0
+        ],
+        [
+          0.8125,
+          4247.0
+        ],
+        [
+          0.84375,
+          4522.0
+        ],
+        [
+          0.875,
+          4804.0
+        ],
+        [
+          0.90625,
+          5093.0
+        ],
+        [
+          0.9375,
+          5389.0
+        ],
+        [
+          0.96875,
+          5691.0
+        ],
+        [
+          1.0,
+          6000.0
+        ]
+      ]
+    },
+    {
+      "index": 139,
+      "name": "delay_sync_note_r",
+      "host_name": "Delay Sync Note R",
+      "kind": "enum",
+      "default_normalized": 0.699999988079071,
+      "default_display": "1/2T",
+      "num_steps": 21,
+      "valid_values": [
+        "1/64T",
+        "1/64",
+        "1/32T",
+        "1/64D",
+        "1/32",
+        "1/16T",
+        "1/32D",
+        "1/16",
+        "1/8T",
+        "1/16D",
+        "1/8",
+        "1/4T",
+        "1/8D",
+        "1/4",
+        "1/2T",
+        "1/4D",
+        "1/2",
+        "1/1T",
+        "1/2D",
+        "1/1",
+        "1/1D"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1/64T"
+        },
+        {
+          "normalized": 0.25,
+          "display": "1/16T"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1/8"
+        },
+        {
+          "normalized": 0.75,
+          "display": "1/4D"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1/1D"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 140,
+      "name": "delay_high_cut",
+      "host_name": "Delay High Cut",
+      "kind": "numeric",
+      "default_normalized": 0.5416969656944275,
+      "default_display": "6.4 kHz",
+      "units": "Hz",
+      "min_value": 1000.0,
+      "max_value": 16000.0,
+      "step_size": 100.0,
+      "num_steps": 151,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1.0 kHz"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2.5 kHz"
+        },
+        {
+          "normalized": 0.5,
+          "display": "5.7 kHz"
+        },
+        {
+          "normalized": 0.75,
+          "display": "10.3 kHz"
+        },
+        {
+          "normalized": 1.0,
+          "display": "16.0 kHz"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          1000.0
+        ],
+        [
+          0.03125,
+          1000.0
+        ],
+        [
+          0.0625,
+          1100.0
+        ],
+        [
+          0.09375,
+          1300.0
+        ],
+        [
+          0.125,
+          1500.0
+        ],
+        [
+          0.15625,
+          1700.0
+        ],
+        [
+          0.1875,
+          1900.0
+        ],
+        [
+          0.21875,
+          2200.0
+        ],
+        [
+          0.25,
+          2500.0
+        ],
+        [
+          0.28125,
+          2800.0
+        ],
+        [
+          0.3125,
+          3200.0
+        ],
+        [
+          0.34375,
+          3500.0
+        ],
+        [
+          0.375,
+          3900.0
+        ],
+        [
+          0.40625,
+          4300.0
+        ],
+        [
+          0.4375,
+          4800.0
+        ],
+        [
+          0.46875,
+          5200.0
+        ],
+        [
+          0.5,
+          5700.0
+        ],
+        [
+          0.53125,
+          6200.0
+        ],
+        [
+          0.5625,
+          6700.0
+        ],
+        [
+          0.59375,
+          7300.0
+        ],
+        [
+          0.625,
+          7900.0
+        ],
+        [
+          0.65625,
+          8400.0
+        ],
+        [
+          0.6875,
+          9000.0
+        ],
+        [
+          0.71875,
+          9700.0
+        ],
+        [
+          0.75,
+          10300.0
+        ],
+        [
+          0.78125,
+          10900.0
+        ],
+        [
+          0.8125,
+          11600.0
+        ],
+        [
+          0.84375,
+          12300.0
+        ],
+        [
+          0.875,
+          13000.0
+        ],
+        [
+          0.90625,
+          13700.0
+        ],
+        [
+          0.9375,
+          14500.0
+        ],
+        [
+          0.96875,
+          15200.0
+        ],
+        [
+          1.0,
+          16000.0
+        ]
+      ]
+    },
+    {
+      "index": 141,
+      "name": "delay_crystals",
+      "host_name": "Delay Crystals",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 142,
+      "name": "delay_tape",
+      "host_name": "Delay Tape",
+      "kind": "numeric",
+      "default_normalized": 0.28999999165534973,
+      "default_display": "29 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 143,
+      "name": "delay_modulation",
+      "host_name": "Delay Modulation",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 144,
+      "name": "delay_tempo",
+      "host_name": "Delay Tempo",
+      "kind": "enum",
+      "default_normalized": 0.4749999940395355,
+      "default_display": "135.0 BPM",
+      "num_steps": 1001,
+      "valid_values": [
+        "40.0 BPM",
+        "40.2 BPM",
+        "40.4 BPM",
+        "40.6 BPM",
+        "40.8 BPM",
+        "41.0 BPM",
+        "41.2 BPM",
+        "41.4 BPM",
+        "41.6 BPM",
+        "41.8 BPM",
+        "42.0 BPM",
+        "42.2 BPM",
+        "42.4 BPM",
+        "42.6 BPM",
+        "42.8 BPM",
+        "43.0 BPM",
+        "43.2 BPM",
+        "43.4 BPM",
+        "43.6 BPM",
+        "43.8 BPM",
+        "44.0 BPM",
+        "44.2 BPM",
+        "44.4 BPM",
+        "44.6 BPM",
+        "44.8 BPM",
+        "45.0 BPM",
+        "45.2 BPM",
+        "45.4 BPM",
+        "45.6 BPM",
+        "45.8 BPM",
+        "46.0 BPM",
+        "46.2 BPM",
+        "46.4 BPM",
+        "46.6 BPM",
+        "46.8 BPM",
+        "47.0 BPM",
+        "47.2 BPM",
+        "47.4 BPM",
+        "47.6 BPM",
+        "47.8 BPM",
+        "48.0 BPM",
+        "48.2 BPM",
+        "48.4 BPM",
+        "48.6 BPM",
+        "48.8 BPM",
+        "49.0 BPM",
+        "49.2 BPM",
+        "49.4 BPM",
+        "49.6 BPM",
+        "49.8 BPM",
+        "50.0 BPM",
+        "50.2 BPM",
+        "50.4 BPM",
+        "50.6 BPM",
+        "50.8 BPM",
+        "51.0 BPM",
+        "51.2 BPM",
+        "51.4 BPM",
+        "51.6 BPM",
+        "51.8 BPM",
+        "52.0 BPM",
+        "52.2 BPM",
+        "52.4 BPM",
+        "52.6 BPM",
+        "52.8 BPM",
+        "53.0 BPM",
+        "53.2 BPM",
+        "53.4 BPM",
+        "53.6 BPM",
+        "53.8 BPM",
+        "54.0 BPM",
+        "54.2 BPM",
+        "54.4 BPM",
+        "54.6 BPM",
+        "54.8 BPM",
+        "55.0 BPM",
+        "55.2 BPM",
+        "55.4 BPM",
+        "55.6 BPM",
+        "55.8 BPM",
+        "56.0 BPM",
+        "56.2 BPM",
+        "56.4 BPM",
+        "56.6 BPM",
+        "56.8 BPM",
+        "57.0 BPM",
+        "57.2 BPM",
+        "57.4 BPM",
+        "57.6 BPM",
+        "57.8 BPM",
+        "58.0 BPM",
+        "58.2 BPM",
+        "58.4 BPM",
+        "58.6 BPM",
+        "58.8 BPM",
+        "59.0 BPM",
+        "59.2 BPM",
+        "59.4 BPM",
+        "59.6 BPM",
+        "59.8 BPM",
+        "60.0 BPM",
+        "60.2 BPM",
+        "60.4 BPM",
+        "60.6 BPM",
+        "60.8 BPM",
+        "61.0 BPM",
+        "61.2 BPM",
+        "61.4 BPM",
+        "61.6 BPM",
+        "61.8 BPM",
+        "62.0 BPM",
+        "62.2 BPM",
+        "62.4 BPM",
+        "62.6 BPM",
+        "62.8 BPM",
+        "63.0 BPM",
+        "63.2 BPM",
+        "63.4 BPM",
+        "63.6 BPM",
+        "63.8 BPM",
+        "64.0 BPM",
+        "64.2 BPM",
+        "64.4 BPM",
+        "64.6 BPM",
+        "64.8 BPM",
+        "65.0 BPM",
+        "65.2 BPM",
+        "65.4 BPM",
+        "65.6 BPM",
+        "65.8 BPM",
+        "66.0 BPM",
+        "66.2 BPM",
+        "66.4 BPM",
+        "66.6 BPM",
+        "66.8 BPM",
+        "67.0 BPM",
+        "67.2 BPM",
+        "67.4 BPM",
+        "67.6 BPM",
+        "67.8 BPM",
+        "68.0 BPM",
+        "68.2 BPM",
+        "68.4 BPM",
+        "68.6 BPM",
+        "68.8 BPM",
+        "69.0 BPM",
+        "69.2 BPM",
+        "69.4 BPM",
+        "69.6 BPM",
+        "69.8 BPM",
+        "70.0 BPM",
+        "70.2 BPM",
+        "70.4 BPM",
+        "70.6 BPM",
+        "70.8 BPM",
+        "71.0 BPM",
+        "71.2 BPM",
+        "71.4 BPM",
+        "71.6 BPM",
+        "71.8 BPM",
+        "72.0 BPM",
+        "72.2 BPM",
+        "72.4 BPM",
+        "72.6 BPM",
+        "72.8 BPM",
+        "73.0 BPM",
+        "73.2 BPM",
+        "73.4 BPM",
+        "73.6 BPM",
+        "73.8 BPM",
+        "74.0 BPM",
+        "74.2 BPM",
+        "74.4 BPM",
+        "74.6 BPM",
+        "74.8 BPM",
+        "75.0 BPM",
+        "75.2 BPM",
+        "75.4 BPM",
+        "75.6 BPM",
+        "75.8 BPM",
+        "76.0 BPM",
+        "76.2 BPM",
+        "76.4 BPM",
+        "76.6 BPM",
+        "76.8 BPM",
+        "77.0 BPM",
+        "77.2 BPM",
+        "77.4 BPM",
+        "77.6 BPM",
+        "77.8 BPM",
+        "78.0 BPM",
+        "78.2 BPM",
+        "78.4 BPM",
+        "78.6 BPM",
+        "78.8 BPM",
+        "79.0 BPM",
+        "79.2 BPM",
+        "79.4 BPM",
+        "79.6 BPM",
+        "79.8 BPM",
+        "80.0 BPM",
+        "80.2 BPM",
+        "80.4 BPM",
+        "80.6 BPM",
+        "80.8 BPM",
+        "81.0 BPM",
+        "81.2 BPM",
+        "81.4 BPM",
+        "81.6 BPM",
+        "81.8 BPM",
+        "82.0 BPM",
+        "82.2 BPM",
+        "82.4 BPM",
+        "82.6 BPM",
+        "82.8 BPM",
+        "83.0 BPM",
+        "83.2 BPM",
+        "83.4 BPM",
+        "83.6 BPM",
+        "83.8 BPM",
+        "84.0 BPM",
+        "84.2 BPM",
+        "84.4 BPM",
+        "84.6 BPM",
+        "84.8 BPM",
+        "85.0 BPM",
+        "85.2 BPM",
+        "85.4 BPM",
+        "85.6 BPM",
+        "85.8 BPM",
+        "86.0 BPM",
+        "86.2 BPM",
+        "86.4 BPM",
+        "86.6 BPM",
+        "86.8 BPM",
+        "87.0 BPM",
+        "87.2 BPM",
+        "87.4 BPM",
+        "87.6 BPM",
+        "87.8 BPM",
+        "88.0 BPM",
+        "88.2 BPM",
+        "88.4 BPM",
+        "88.6 BPM",
+        "88.8 BPM",
+        "89.0 BPM",
+        "89.2 BPM",
+        "89.4 BPM",
+        "89.6 BPM",
+        "89.8 BPM",
+        "90.0 BPM",
+        "90.2 BPM",
+        "90.4 BPM",
+        "90.6 BPM",
+        "90.8 BPM",
+        "91.0 BPM",
+        "91.2 BPM",
+        "91.4 BPM",
+        "91.6 BPM",
+        "91.8 BPM",
+        "92.0 BPM",
+        "92.2 BPM",
+        "92.4 BPM",
+        "92.6 BPM",
+        "92.8 BPM",
+        "93.0 BPM",
+        "93.2 BPM",
+        "93.4 BPM",
+        "93.6 BPM",
+        "93.8 BPM",
+        "94.0 BPM",
+        "94.2 BPM",
+        "94.4 BPM",
+        "94.6 BPM",
+        "94.8 BPM",
+        "95.0 BPM",
+        "95.2 BPM",
+        "95.4 BPM",
+        "95.6 BPM",
+        "95.8 BPM",
+        "96.0 BPM",
+        "96.2 BPM",
+        "96.4 BPM",
+        "96.6 BPM",
+        "96.8 BPM",
+        "97.0 BPM",
+        "97.2 BPM",
+        "97.4 BPM",
+        "97.6 BPM",
+        "97.8 BPM",
+        "98.0 BPM",
+        "98.2 BPM",
+        "98.4 BPM",
+        "98.6 BPM",
+        "98.8 BPM",
+        "99.0 BPM",
+        "99.2 BPM",
+        "99.4 BPM",
+        "99.6 BPM",
+        "99.8 BPM",
+        "100.0 BPM",
+        "100.2 BPM",
+        "100.4 BPM",
+        "100.6 BPM",
+        "100.8 BPM",
+        "101.0 BPM",
+        "101.2 BPM",
+        "101.4 BPM",
+        "101.6 BPM",
+        "101.8 BPM",
+        "102.0 BPM",
+        "102.2 BPM",
+        "102.4 BPM",
+        "102.6 BPM",
+        "102.8 BPM",
+        "103.0 BPM",
+        "103.2 BPM",
+        "103.4 BPM",
+        "103.6 BPM",
+        "103.8 BPM",
+        "104.0 BPM",
+        "104.2 BPM",
+        "104.4 BPM",
+        "104.6 BPM",
+        "104.8 BPM",
+        "105.0 BPM",
+        "105.2 BPM",
+        "105.4 BPM",
+        "105.6 BPM",
+        "105.8 BPM",
+        "106.0 BPM",
+        "106.2 BPM",
+        "106.4 BPM",
+        "106.6 BPM",
+        "106.8 BPM",
+        "107.0 BPM",
+        "107.2 BPM",
+        "107.4 BPM",
+        "107.6 BPM",
+        "107.8 BPM",
+        "108.0 BPM",
+        "108.2 BPM",
+        "108.4 BPM",
+        "108.6 BPM",
+        "108.8 BPM",
+        "109.0 BPM",
+        "109.2 BPM",
+        "109.4 BPM",
+        "109.6 BPM",
+        "109.8 BPM",
+        "110.0 BPM",
+        "110.2 BPM",
+        "110.4 BPM",
+        "110.6 BPM",
+        "110.8 BPM",
+        "111.0 BPM",
+        "111.2 BPM",
+        "111.4 BPM",
+        "111.6 BPM",
+        "111.8 BPM",
+        "112.0 BPM",
+        "112.2 BPM",
+        "112.4 BPM",
+        "112.6 BPM",
+        "112.8 BPM",
+        "113.0 BPM",
+        "113.2 BPM",
+        "113.4 BPM",
+        "113.6 BPM",
+        "113.8 BPM",
+        "114.0 BPM",
+        "114.2 BPM",
+        "114.4 BPM",
+        "114.6 BPM",
+        "114.8 BPM",
+        "115.0 BPM",
+        "115.2 BPM",
+        "115.4 BPM",
+        "115.6 BPM",
+        "115.8 BPM",
+        "116.0 BPM",
+        "116.2 BPM",
+        "116.4 BPM",
+        "116.6 BPM",
+        "116.8 BPM",
+        "117.0 BPM",
+        "117.2 BPM",
+        "117.4 BPM",
+        "117.6 BPM",
+        "117.8 BPM",
+        "118.0 BPM",
+        "118.2 BPM",
+        "118.4 BPM",
+        "118.6 BPM",
+        "118.8 BPM",
+        "119.0 BPM",
+        "119.2 BPM",
+        "119.4 BPM",
+        "119.6 BPM",
+        "119.8 BPM",
+        "120.0 BPM",
+        "120.2 BPM",
+        "120.4 BPM",
+        "120.6 BPM",
+        "120.8 BPM",
+        "121.0 BPM",
+        "121.2 BPM",
+        "121.4 BPM",
+        "121.6 BPM",
+        "121.8 BPM",
+        "122.0 BPM",
+        "122.2 BPM",
+        "122.4 BPM",
+        "122.6 BPM",
+        "122.8 BPM",
+        "123.0 BPM",
+        "123.2 BPM",
+        "123.4 BPM",
+        "123.6 BPM",
+        "123.8 BPM",
+        "124.0 BPM",
+        "124.2 BPM",
+        "124.4 BPM",
+        "124.6 BPM",
+        "124.8 BPM",
+        "125.0 BPM",
+        "125.2 BPM",
+        "125.4 BPM",
+        "125.6 BPM",
+        "125.8 BPM",
+        "126.0 BPM",
+        "126.2 BPM",
+        "126.4 BPM",
+        "126.6 BPM",
+        "126.8 BPM",
+        "127.0 BPM",
+        "127.2 BPM",
+        "127.4 BPM",
+        "127.6 BPM",
+        "127.8 BPM",
+        "128.0 BPM",
+        "128.2 BPM",
+        "128.4 BPM",
+        "128.6 BPM",
+        "128.8 BPM",
+        "129.0 BPM",
+        "129.2 BPM",
+        "129.4 BPM",
+        "129.6 BPM",
+        "129.8 BPM",
+        "130.0 BPM",
+        "130.2 BPM",
+        "130.4 BPM",
+        "130.6 BPM",
+        "130.8 BPM",
+        "131.0 BPM",
+        "131.2 BPM",
+        "131.4 BPM",
+        "131.6 BPM",
+        "131.8 BPM",
+        "132.0 BPM",
+        "132.2 BPM",
+        "132.4 BPM",
+        "132.6 BPM",
+        "132.8 BPM",
+        "133.0 BPM",
+        "133.2 BPM",
+        "133.4 BPM",
+        "133.6 BPM",
+        "133.8 BPM",
+        "134.0 BPM",
+        "134.2 BPM",
+        "134.4 BPM",
+        "134.6 BPM",
+        "134.8 BPM",
+        "135.0 BPM",
+        "135.2 BPM",
+        "135.4 BPM",
+        "135.6 BPM",
+        "135.8 BPM",
+        "136.0 BPM",
+        "136.2 BPM",
+        "136.4 BPM",
+        "136.6 BPM",
+        "136.8 BPM",
+        "137.0 BPM",
+        "137.2 BPM",
+        "137.4 BPM",
+        "137.6 BPM",
+        "137.8 BPM",
+        "138.0 BPM",
+        "138.2 BPM",
+        "138.4 BPM",
+        "138.6 BPM",
+        "138.8 BPM",
+        "139.0 BPM",
+        "139.2 BPM",
+        "139.4 BPM",
+        "139.6 BPM",
+        "139.8 BPM",
+        "140.0 BPM",
+        "140.2 BPM",
+        "140.4 BPM",
+        "140.6 BPM",
+        "140.8 BPM",
+        "141.0 BPM",
+        "141.2 BPM",
+        "141.4 BPM",
+        "141.6 BPM",
+        "141.8 BPM",
+        "142.0 BPM",
+        "142.2 BPM",
+        "142.4 BPM",
+        "142.6 BPM",
+        "142.8 BPM",
+        "143.0 BPM",
+        "143.2 BPM",
+        "143.4 BPM",
+        "143.6 BPM",
+        "143.8 BPM",
+        "144.0 BPM",
+        "144.2 BPM",
+        "144.4 BPM",
+        "144.6 BPM",
+        "144.8 BPM",
+        "145.0 BPM",
+        "145.2 BPM",
+        "145.4 BPM",
+        "145.6 BPM",
+        "145.8 BPM",
+        "146.0 BPM",
+        "146.2 BPM",
+        "146.4 BPM",
+        "146.6 BPM",
+        "146.8 BPM",
+        "147.0 BPM",
+        "147.2 BPM",
+        "147.4 BPM",
+        "147.6 BPM",
+        "147.8 BPM",
+        "148.0 BPM",
+        "148.2 BPM",
+        "148.4 BPM",
+        "148.6 BPM",
+        "148.8 BPM",
+        "149.0 BPM",
+        "149.2 BPM",
+        "149.4 BPM",
+        "149.6 BPM",
+        "149.8 BPM",
+        "150.0 BPM",
+        "150.2 BPM",
+        "150.4 BPM",
+        "150.6 BPM",
+        "150.8 BPM",
+        "151.0 BPM",
+        "151.2 BPM",
+        "151.4 BPM",
+        "151.6 BPM",
+        "151.8 BPM",
+        "152.0 BPM",
+        "152.2 BPM",
+        "152.4 BPM",
+        "152.6 BPM",
+        "152.8 BPM",
+        "153.0 BPM",
+        "153.2 BPM",
+        "153.4 BPM",
+        "153.6 BPM",
+        "153.8 BPM",
+        "154.0 BPM",
+        "154.2 BPM",
+        "154.4 BPM",
+        "154.6 BPM",
+        "154.8 BPM",
+        "155.0 BPM",
+        "155.2 BPM",
+        "155.4 BPM",
+        "155.6 BPM",
+        "155.8 BPM",
+        "156.0 BPM",
+        "156.2 BPM",
+        "156.4 BPM",
+        "156.6 BPM",
+        "156.8 BPM",
+        "157.0 BPM",
+        "157.2 BPM",
+        "157.4 BPM",
+        "157.6 BPM",
+        "157.8 BPM",
+        "158.0 BPM",
+        "158.2 BPM",
+        "158.4 BPM",
+        "158.6 BPM",
+        "158.8 BPM",
+        "159.0 BPM",
+        "159.2 BPM",
+        "159.4 BPM",
+        "159.6 BPM",
+        "159.8 BPM",
+        "160.0 BPM",
+        "160.2 BPM",
+        "160.4 BPM",
+        "160.6 BPM",
+        "160.8 BPM",
+        "161.0 BPM",
+        "161.2 BPM",
+        "161.4 BPM",
+        "161.6 BPM",
+        "161.8 BPM",
+        "162.0 BPM",
+        "162.2 BPM",
+        "162.4 BPM",
+        "162.6 BPM",
+        "162.8 BPM",
+        "163.0 BPM",
+        "163.2 BPM",
+        "163.4 BPM",
+        "163.6 BPM",
+        "163.8 BPM",
+        "164.0 BPM",
+        "164.2 BPM",
+        "164.4 BPM",
+        "164.6 BPM",
+        "164.8 BPM",
+        "165.0 BPM",
+        "165.2 BPM",
+        "165.4 BPM",
+        "165.6 BPM",
+        "165.8 BPM",
+        "166.0 BPM",
+        "166.2 BPM",
+        "166.4 BPM",
+        "166.6 BPM",
+        "166.8 BPM",
+        "167.0 BPM",
+        "167.2 BPM",
+        "167.4 BPM",
+        "167.6 BPM",
+        "167.8 BPM",
+        "168.0 BPM",
+        "168.2 BPM",
+        "168.4 BPM",
+        "168.6 BPM",
+        "168.8 BPM",
+        "169.0 BPM",
+        "169.2 BPM",
+        "169.4 BPM",
+        "169.6 BPM",
+        "169.8 BPM",
+        "170.0 BPM",
+        "170.2 BPM",
+        "170.4 BPM",
+        "170.6 BPM",
+        "170.8 BPM",
+        "171.0 BPM",
+        "171.2 BPM",
+        "171.4 BPM",
+        "171.6 BPM",
+        "171.8 BPM",
+        "172.0 BPM",
+        "172.2 BPM",
+        "172.4 BPM",
+        "172.6 BPM",
+        "172.8 BPM",
+        "173.0 BPM",
+        "173.2 BPM",
+        "173.4 BPM",
+        "173.6 BPM",
+        "173.8 BPM",
+        "174.0 BPM",
+        "174.2 BPM",
+        "174.4 BPM",
+        "174.6 BPM",
+        "174.8 BPM",
+        "175.0 BPM",
+        "175.2 BPM",
+        "175.4 BPM",
+        "175.6 BPM",
+        "175.8 BPM",
+        "176.0 BPM",
+        "176.2 BPM",
+        "176.4 BPM",
+        "176.6 BPM",
+        "176.8 BPM",
+        "177.0 BPM",
+        "177.2 BPM",
+        "177.4 BPM",
+        "177.6 BPM",
+        "177.8 BPM",
+        "178.0 BPM",
+        "178.2 BPM",
+        "178.4 BPM",
+        "178.6 BPM",
+        "178.8 BPM",
+        "179.0 BPM",
+        "179.2 BPM",
+        "179.4 BPM",
+        "179.6 BPM",
+        "179.8 BPM",
+        "180.0 BPM",
+        "180.2 BPM",
+        "180.4 BPM",
+        "180.6 BPM",
+        "180.8 BPM",
+        "181.0 BPM",
+        "181.2 BPM",
+        "181.4 BPM",
+        "181.6 BPM",
+        "181.8 BPM",
+        "182.0 BPM",
+        "182.2 BPM",
+        "182.4 BPM",
+        "182.6 BPM",
+        "182.8 BPM",
+        "183.0 BPM",
+        "183.2 BPM",
+        "183.4 BPM",
+        "183.6 BPM",
+        "183.8 BPM",
+        "184.0 BPM",
+        "184.2 BPM",
+        "184.4 BPM",
+        "184.6 BPM",
+        "184.8 BPM",
+        "185.0 BPM",
+        "185.2 BPM",
+        "185.4 BPM",
+        "185.6 BPM",
+        "185.8 BPM",
+        "186.0 BPM",
+        "186.2 BPM",
+        "186.4 BPM",
+        "186.6 BPM",
+        "186.8 BPM",
+        "187.0 BPM",
+        "187.2 BPM",
+        "187.4 BPM",
+        "187.6 BPM",
+        "187.8 BPM",
+        "188.0 BPM",
+        "188.2 BPM",
+        "188.4 BPM",
+        "188.6 BPM",
+        "188.8 BPM",
+        "189.0 BPM",
+        "189.2 BPM",
+        "189.4 BPM",
+        "189.6 BPM",
+        "189.8 BPM",
+        "190.0 BPM",
+        "190.2 BPM",
+        "190.4 BPM",
+        "190.6 BPM",
+        "190.8 BPM",
+        "191.0 BPM",
+        "191.2 BPM",
+        "191.4 BPM",
+        "191.6 BPM",
+        "191.8 BPM",
+        "192.0 BPM",
+        "192.2 BPM",
+        "192.4 BPM",
+        "192.6 BPM",
+        "192.8 BPM",
+        "193.0 BPM",
+        "193.2 BPM",
+        "193.4 BPM",
+        "193.6 BPM",
+        "193.8 BPM",
+        "194.0 BPM",
+        "194.2 BPM",
+        "194.4 BPM",
+        "194.6 BPM",
+        "194.8 BPM",
+        "195.0 BPM",
+        "195.2 BPM",
+        "195.4 BPM",
+        "195.6 BPM",
+        "195.8 BPM",
+        "196.0 BPM",
+        "196.2 BPM",
+        "196.4 BPM",
+        "196.6 BPM",
+        "196.8 BPM",
+        "197.0 BPM",
+        "197.2 BPM",
+        "197.4 BPM",
+        "197.6 BPM",
+        "197.8 BPM",
+        "198.0 BPM",
+        "198.2 BPM",
+        "198.4 BPM",
+        "198.6 BPM",
+        "198.8 BPM",
+        "199.0 BPM",
+        "199.2 BPM",
+        "199.4 BPM",
+        "199.6 BPM",
+        "199.8 BPM",
+        "200.0 BPM",
+        "200.2 BPM",
+        "200.4 BPM",
+        "200.6 BPM",
+        "200.8 BPM",
+        "201.0 BPM",
+        "201.2 BPM",
+        "201.4 BPM",
+        "201.6 BPM",
+        "201.8 BPM",
+        "202.0 BPM",
+        "202.2 BPM",
+        "202.4 BPM",
+        "202.6 BPM",
+        "202.8 BPM",
+        "203.0 BPM",
+        "203.2 BPM",
+        "203.4 BPM",
+        "203.6 BPM",
+        "203.8 BPM",
+        "204.0 BPM",
+        "204.2 BPM",
+        "204.4 BPM",
+        "204.6 BPM",
+        "204.8 BPM",
+        "205.0 BPM",
+        "205.2 BPM",
+        "205.4 BPM",
+        "205.6 BPM",
+        "205.8 BPM",
+        "206.0 BPM",
+        "206.2 BPM",
+        "206.4 BPM",
+        "206.6 BPM",
+        "206.8 BPM",
+        "207.0 BPM",
+        "207.2 BPM",
+        "207.4 BPM",
+        "207.6 BPM",
+        "207.8 BPM",
+        "208.0 BPM",
+        "208.2 BPM",
+        "208.4 BPM",
+        "208.6 BPM",
+        "208.8 BPM",
+        "209.0 BPM",
+        "209.2 BPM",
+        "209.4 BPM",
+        "209.6 BPM",
+        "209.8 BPM",
+        "210.0 BPM",
+        "210.2 BPM",
+        "210.4 BPM",
+        "210.6 BPM",
+        "210.8 BPM",
+        "211.0 BPM",
+        "211.2 BPM",
+        "211.4 BPM",
+        "211.6 BPM",
+        "211.8 BPM",
+        "212.0 BPM",
+        "212.2 BPM",
+        "212.4 BPM",
+        "212.6 BPM",
+        "212.8 BPM",
+        "213.0 BPM",
+        "213.2 BPM",
+        "213.4 BPM",
+        "213.6 BPM",
+        "213.8 BPM",
+        "214.0 BPM",
+        "214.2 BPM",
+        "214.4 BPM",
+        "214.6 BPM",
+        "214.8 BPM",
+        "215.0 BPM",
+        "215.2 BPM",
+        "215.4 BPM",
+        "215.6 BPM",
+        "215.8 BPM",
+        "216.0 BPM",
+        "216.2 BPM",
+        "216.4 BPM",
+        "216.6 BPM",
+        "216.8 BPM",
+        "217.0 BPM",
+        "217.2 BPM",
+        "217.4 BPM",
+        "217.6 BPM",
+        "217.8 BPM",
+        "218.0 BPM",
+        "218.2 BPM",
+        "218.4 BPM",
+        "218.6 BPM",
+        "218.8 BPM",
+        "219.0 BPM",
+        "219.2 BPM",
+        "219.4 BPM",
+        "219.6 BPM",
+        "219.8 BPM",
+        "220.0 BPM",
+        "220.2 BPM",
+        "220.4 BPM",
+        "220.6 BPM",
+        "220.8 BPM",
+        "221.0 BPM",
+        "221.2 BPM",
+        "221.4 BPM",
+        "221.6 BPM",
+        "221.8 BPM",
+        "222.0 BPM",
+        "222.2 BPM",
+        "222.4 BPM",
+        "222.6 BPM",
+        "222.8 BPM",
+        "223.0 BPM",
+        "223.2 BPM",
+        "223.4 BPM",
+        "223.6 BPM",
+        "223.8 BPM",
+        "224.0 BPM",
+        "224.2 BPM",
+        "224.4 BPM",
+        "224.6 BPM",
+        "224.8 BPM",
+        "225.0 BPM",
+        "225.2 BPM",
+        "225.4 BPM",
+        "225.6 BPM",
+        "225.8 BPM",
+        "226.0 BPM",
+        "226.2 BPM",
+        "226.4 BPM",
+        "226.6 BPM",
+        "226.8 BPM",
+        "227.0 BPM",
+        "227.2 BPM",
+        "227.4 BPM",
+        "227.6 BPM",
+        "227.8 BPM",
+        "228.0 BPM",
+        "228.2 BPM",
+        "228.4 BPM",
+        "228.6 BPM",
+        "228.8 BPM",
+        "229.0 BPM",
+        "229.2 BPM",
+        "229.4 BPM",
+        "229.6 BPM",
+        "229.8 BPM",
+        "230.0 BPM",
+        "230.2 BPM",
+        "230.4 BPM",
+        "230.6 BPM",
+        "230.8 BPM",
+        "231.0 BPM",
+        "231.2 BPM",
+        "231.4 BPM",
+        "231.6 BPM",
+        "231.8 BPM",
+        "232.0 BPM",
+        "232.2 BPM",
+        "232.4 BPM",
+        "232.6 BPM",
+        "232.8 BPM",
+        "233.0 BPM",
+        "233.2 BPM",
+        "233.4 BPM",
+        "233.6 BPM",
+        "233.8 BPM",
+        "234.0 BPM",
+        "234.2 BPM",
+        "234.4 BPM",
+        "234.6 BPM",
+        "234.8 BPM",
+        "235.0 BPM",
+        "235.2 BPM",
+        "235.4 BPM",
+        "235.6 BPM",
+        "235.8 BPM",
+        "236.0 BPM",
+        "236.2 BPM",
+        "236.4 BPM",
+        "236.6 BPM",
+        "236.8 BPM",
+        "237.0 BPM",
+        "237.2 BPM",
+        "237.4 BPM",
+        "237.6 BPM",
+        "237.8 BPM",
+        "238.0 BPM",
+        "238.2 BPM",
+        "238.4 BPM",
+        "238.6 BPM",
+        "238.8 BPM",
+        "239.0 BPM",
+        "239.2 BPM",
+        "239.4 BPM",
+        "239.6 BPM",
+        "239.8 BPM",
+        "240.0 BPM"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "40.0 BPM"
+        },
+        {
+          "normalized": 0.25,
+          "display": "90.0 BPM"
+        },
+        {
+          "normalized": 0.5,
+          "display": "140.0 BPM"
+        },
+        {
+          "normalized": 0.75,
+          "display": "190.0 BPM"
+        },
+        {
+          "normalized": 1.0,
+          "display": "240.0 BPM"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 145,
+      "name": "delay_active",
+      "host_name": "Delay Active",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 146,
+      "name": "reverb_mix",
+      "host_name": "Reverb Mix",
+      "kind": "numeric",
+      "default_normalized": 0.14000000059604645,
+      "default_display": "14 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 147,
+      "name": "reverb_shimmer",
+      "host_name": "Reverb Shimmer",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 148,
+      "name": "reverb_pre_delay",
+      "host_name": "Reverb Pre-Delay",
+      "kind": "numeric",
+      "default_normalized": 0.2890000641345978,
+      "default_display": "26 ms",
+      "units": "ms",
+      "min_value": 1.0,
+      "max_value": 200.0,
+      "step_size": 1.0,
+      "num_steps": 200,
+      "linear": false,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1 ms"
+        },
+        {
+          "normalized": 0.25,
+          "display": "21 ms"
+        },
+        {
+          "normalized": 0.5,
+          "display": "64 ms"
+        },
+        {
+          "normalized": 0.75,
+          "display": "124 ms"
+        },
+        {
+          "normalized": 1.0,
+          "display": "200 ms"
+        }
+      ],
+      "curve": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.03125,
+          2.0
+        ],
+        [
+          0.0625,
+          3.0
+        ],
+        [
+          0.09375,
+          5.0
+        ],
+        [
+          0.125,
+          7.0
+        ],
+        [
+          0.15625,
+          10.0
+        ],
+        [
+          0.1875,
+          13.0
+        ],
+        [
+          0.21875,
+          17.0
+        ],
+        [
+          0.25,
+          21.0
+        ],
+        [
+          0.28125,
+          25.0
+        ],
+        [
+          0.3125,
+          30.0
+        ],
+        [
+          0.34375,
+          35.0
+        ],
+        [
+          0.375,
+          40.0
+        ],
+        [
+          0.40625,
+          45.0
+        ],
+        [
+          0.4375,
+          51.0
+        ],
+        [
+          0.46875,
+          57.0
+        ],
+        [
+          0.5,
+          64.0
+        ],
+        [
+          0.53125,
+          70.0
+        ],
+        [
+          0.5625,
+          77.0
+        ],
+        [
+          0.59375,
+          84.0
+        ],
+        [
+          0.625,
+          92.0
+        ],
+        [
+          0.65625,
+          100.0
+        ],
+        [
+          0.6875,
+          108.0
+        ],
+        [
+          0.71875,
+          116.0
+        ],
+        [
+          0.75,
+          124.0
+        ],
+        [
+          0.78125,
+          133.0
+        ],
+        [
+          0.8125,
+          142.0
+        ],
+        [
+          0.84375,
+          151.0
+        ],
+        [
+          0.875,
+          160.0
+        ],
+        [
+          0.90625,
+          170.0
+        ],
+        [
+          0.9375,
+          180.0
+        ],
+        [
+          0.96875,
+          190.0
+        ],
+        [
+          1.0,
+          200.0
+        ]
+      ]
+    },
+    {
+      "index": 149,
+      "name": "reverb_decay",
+      "host_name": "Reverb Decay",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "50 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 150,
+      "name": "reverb_low_cut",
+      "host_name": "Reverb Low Cut",
+      "kind": "numeric",
+      "default_normalized": 0.06615380197763443,
+      "default_display": "7 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 151,
+      "name": "reverb_high_cut",
+      "host_name": "Reverb High Cut",
+      "kind": "numeric",
+      "default_normalized": 1.0,
+      "default_display": "100 %",
+      "units": "%",
+      "min_value": 0.0,
+      "max_value": 100.0,
+      "step_size": 1.0,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0 %"
+        },
+        {
+          "normalized": 0.25,
+          "display": "25 %"
+        },
+        {
+          "normalized": 0.5,
+          "display": "50 %"
+        },
+        {
+          "normalized": 0.75,
+          "display": "75 %"
+        },
+        {
+          "normalized": 1.0,
+          "display": "100 %"
+        }
+      ]
+    },
+    {
+      "index": 152,
+      "name": "reverb_active",
+      "host_name": "Reverb Active",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 153,
+      "name": "preset_previous",
+      "host_name": "Preset Previous",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 154,
+      "name": "preset_next",
+      "host_name": "Preset Next",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 155,
+      "name": "bypass",
+      "host_name": "Bypass",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "On"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    }
+  ]
+}

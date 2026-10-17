@@ -1,0 +1,39 @@
+{
+  "preset_name": "lead_guitar_solo_singing_lead",
+  "target_plugin": "Archetype John Mayer X.vst3",
+  "track_config": {
+    "track_name": "Lead Gtr",
+    "double_tracked": false,
+    "panning": [
+      0.0
+    ],
+    "input_gain_db": 0.0
+  },
+  "signal_chain_summary": {
+    "Gate": "on @ -67 dB",
+    "Overdrive": "none",
+    "Amp": "Signature 83, gain 43%, bass 0.43 mid 0.86 treble 0.72",
+    "Graphic EQ": "no 9-band EQ matched; amp tone controls only",
+    "Cab": "default mic/position (left/primary cab on, second cab for width)",
+    "Post-FX": "reverb off, delay off",
+    "Intent": "audio: crest 16.4 dB, centroid 2216 Hz, rise 23.7 ms, width 0.16; prompt hints: {'gain': 0.42}"
+  },
+  "vst_parameters": {
+    "active_pre_fx_section": 1.0,
+    "active_gravity_tank_section": 1.0,
+    "active_amp_section": 1.0,
+    "active_cab_section": 1.0,
+    "active_eq_comp_section": 1.0,
+    "active_post_fx_section": 1.0,
+    "bypass": 0.0,
+    "input_gain": 0.5,
+    "output_gain": 0.5,
+    "gate_active": 1.0,
+    "gate_threshold": 0.307292,
+    "amp_type": 0.666667,
+    "doubler_active": 0.0,
+    "doubler_spread": 0.176,
+    "spring_reverb_active": 0.0,
+    "millipede_delay_active": 0.0
+  }
+}

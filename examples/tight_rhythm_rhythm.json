@@ -1,0 +1,63 @@
+{
+  "preset_name": "tight_rhythm_rhythm",
+  "target_plugin": "Archetype Nolly X.vst3",
+  "track_config": {
+    "track_name": "Rhythm Gtr",
+    "double_tracked": false,
+    "panning": [
+      0.0
+    ],
+    "input_gain_db": 0.0
+  },
+  "signal_chain_summary": {
+    "Gate": "on @ -62 dB",
+    "Overdrive": "off",
+    "Amp": "Crunch, gain 40%, bass 1.00 mid 0.27 treble 0.53",
+    "Graphic EQ": "9-band: +4 +3 +2 +1 -2 -1 -0 +0 -1 dB (octave centres 63 Hz-16 kHz, assumed)",
+    "Cab": "default mic/position (left/primary cab on, second cab for width)",
+    "Post-FX": "reverb off, delay off",
+    "Intent": "audio: crest 14.3 dB, centroid 1638 Hz, rise 30.5 ms, width 0.01; prompt hints: {'tight': 0.85}"
+  },
+  "vst_parameters": {
+    "active_pre_fx_section": 1.0,
+    "active_amp_section": 1.0,
+    "active_cab_section": 1.0,
+    "active_eq_section": 1.0,
+    "active_post_fx_section": 1.0,
+    "bypass": 0.0,
+    "input_gain": 0.5,
+    "output_gain": 0.5,
+    "gate_active": 1.0,
+    "gate_threshold": 0.35,
+    "overdrive_1_active": 0.0,
+    "overdrive_1_drive": 0.12,
+    "overdrive_1_level": 0.62,
+    "overdrive_1_tone": 0.63,
+    "amp_type": 0.333333,
+    "crunch_amp_gain": 0.44,
+    "crunch_amp_bass": 0.8,
+    "crunch_amp_mid": 0.36,
+    "crunch_amp_treble": 0.54,
+    "crunch_amp_presence": 0.52,
+    "crunch_amp_depth": 0.75,
+    "crunch_amp_master": 0.5,
+    "crunch_amp_eq_active": 1.0,
+    "crunch_amp_eq_band_1": 0.665289,
+    "crunch_amp_eq_band_2": 0.623967,
+    "crunch_amp_eq_band_3": 0.582645,
+    "crunch_amp_eq_band_4": 0.524793,
+    "crunch_amp_eq_band_5": 0.429752,
+    "crunch_amp_eq_band_6": 0.454545,
+    "crunch_amp_eq_band_7": 0.5,
+    "crunch_amp_eq_band_8": 0.508264,
+    "crunch_amp_eq_band_9": 0.458678,
+    "crunch_amp_eq_high_pass": 0.370833,
+    "crunch_amp_eq_low_pass": 0.332335,
+    "cab_l_active": 1.0,
+    "cab_r_active": 1.0,
+    "doubler_active": 0.0,
+    "doubler_spread": 0.176,
+    "reverb_active": 0.0,
+    "delay_1_active": 0.0
+  }
+}

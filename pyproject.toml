@@ -1,0 +1,29 @@
+[project]
+name = "neural-tone-mcp"
+version = "0.1.0"
+description = "URL -> guitar stem -> tone features -> Neural DSP preset JSON -> DAW, exposed as an MCP server"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pedalboard>=0.9", "pydantic>=2", "numpy", "scipy", "librosa", "soundfile",
+  "yt-dlp", "imageio-ffmpeg", "demucs", "torch",
+  "mcp[cli]>=1.2", "python-reapy", "anthropic", "python-dotenv", "truststore",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+inspect-plugin = "scripts.inspect_plugin:main"
+neural-tone-mcp = "src.mcp_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src", "scripts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

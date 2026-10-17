@@ -1,0 +1,9 @@
+.venv/
+.venv-gpu/
+.env
+__pycache__/
+*.pyc
+output/
+.pytest_cache/
+*.wav
+*.webm

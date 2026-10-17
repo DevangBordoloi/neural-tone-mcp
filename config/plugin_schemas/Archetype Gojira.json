@@ -1,0 +1,4268 @@
+{
+  "plugin_name": "Archetype Gojira",
+  "vst3_path": "C:\\Program Files\\Common Files\\VST3\\Neural DSP\\Archetype Gojira.vst3",
+  "is_instrument": false,
+  "parameter_count": 119,
+  "inspected_with": "0.9.26",
+  "parameters": [
+    {
+      "index": 0,
+      "name": "input_gain",
+      "host_name": "Input Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "min_value": -24.0,
+      "max_value": 24.0,
+      "step_size": 0.1,
+      "num_steps": 481,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-24.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "24.0"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "output_gain",
+      "host_name": "Output Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "min_value": -24.0,
+      "max_value": 24.0,
+      "step_size": 0.1,
+      "num_steps": 481,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-24.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "12.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "24.0"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "gate_amount",
+      "host_name": "Gate Amount",
+      "kind": "numeric",
+      "default_normalized": 0.375,
+      "default_display": "-60.0",
+      "min_value": -96.0,
+      "max_value": 0.0,
+      "step_size": 0.1,
+      "num_steps": 961,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-96.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-72.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "-48.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "-24.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "0.0"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "pitch_section_active",
+      "host_name": "Pitch Section Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 4,
+      "name": "wow_active",
+      "host_name": "WOW Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 5,
+      "name": "wow_type",
+      "host_name": "WOW Type",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "BLADE 2",
+      "num_steps": 3,
+      "valid_values": [
+        "FATSO",
+        "BLADE 1",
+        "BLADE 2"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "FATSO"
+        },
+        {
+          "normalized": 0.25,
+          "display": "FATSO"
+        },
+        {
+          "normalized": 0.5,
+          "display": "BLADE 1"
+        },
+        {
+          "normalized": 0.75,
+          "display": "BLADE 2"
+        },
+        {
+          "normalized": 1.0,
+          "display": "BLADE 2"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 6,
+      "name": "wow_position",
+      "host_name": "WOW Position",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "wow_dry_wet",
+      "host_name": "WOW Dry/Wet",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "oct_active",
+      "host_name": "OCT Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 9,
+      "name": "oct_oct_1_level",
+      "host_name": "OCT Oct 1 Level",
+      "kind": "numeric",
+      "default_normalized": 0.5080000162124634,
+      "default_display": "0.508",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "oct_oct_2_level",
+      "host_name": "OCT Oct 2 Level",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "oct_direct_level",
+      "host_name": "OCT Direct Level",
+      "kind": "numeric",
+      "default_normalized": 0.5690000057220459,
+      "default_display": "0.569",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "pedal_section_active",
+      "host_name": "Pedal Section Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 13,
+      "name": "od_active",
+      "host_name": "OD Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 14,
+      "name": "od_dist",
+      "host_name": "OD Dist",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "od_tone",
+      "host_name": "OD Tone",
+      "kind": "numeric",
+      "default_normalized": 0.703000009059906,
+      "default_display": "0.703",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "od_level",
+      "host_name": "OD Level",
+      "kind": "numeric",
+      "default_normalized": 0.5320000052452087,
+      "default_display": "0.532",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "drt_active",
+      "host_name": "DRT Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 18,
+      "name": "drt_dist",
+      "host_name": "DRT Dist",
+      "kind": "numeric",
+      "default_normalized": 0.36400002241134644,
+      "default_display": "0.364",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "drt_filter",
+      "host_name": "DRT Filter",
+      "kind": "numeric",
+      "default_normalized": 0.9320000410079956,
+      "default_display": "0.932",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "name": "drt_vol",
+      "host_name": "DRT Vol",
+      "kind": "numeric",
+      "default_normalized": 0.6200000047683716,
+      "default_display": "0.620",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "name": "phsr_active",
+      "host_name": "PHSR Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 22,
+      "name": "phsr_rate",
+      "host_name": "PHSR Rate",
+      "kind": "numeric",
+      "default_normalized": 0.4399999976158142,
+      "default_display": "0.44",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.01,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.00"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.25"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.50"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.75"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.00"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "name": "chr_active",
+      "host_name": "CHR Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 24,
+      "name": "chr_rate",
+      "host_name": "CHR Rate",
+      "kind": "numeric",
+      "default_normalized": 0.3199999928474426,
+      "default_display": "0.32",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.01,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.00"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.25"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.50"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.75"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.00"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "name": "chr_depth",
+      "host_name": "CHR Depth",
+      "kind": "numeric",
+      "default_normalized": 0.46700000762939453,
+      "default_display": "0.467",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "name": "chr_feedback",
+      "host_name": "CHR Feedback",
+      "kind": "numeric",
+      "default_normalized": 0.3140000104904175,
+      "default_display": "0.314",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "name": "chr_mix",
+      "host_name": "CHR Mix",
+      "kind": "numeric",
+      "default_normalized": 0.20999999344348907,
+      "default_display": "0.21",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.01,
+      "num_steps": 101,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.00"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.25"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.50"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.75"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.00"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "name": "amp_section_active",
+      "host_name": "Amp Section Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 29,
+      "name": "amp_type",
+      "host_name": "Amp Type",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "HOT Amp",
+      "num_steps": 3,
+      "valid_values": [
+        "CLN Amp",
+        "RUST Amp",
+        "HOT Amp"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "CLN Amp"
+        },
+        {
+          "normalized": 0.25,
+          "display": "CLN Amp"
+        },
+        {
+          "normalized": 0.5,
+          "display": "RUST Amp"
+        },
+        {
+          "normalized": 0.75,
+          "display": "HOT Amp"
+        },
+        {
+          "normalized": 1.0,
+          "display": "HOT Amp"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 30,
+      "name": "cln_amp_gain",
+      "host_name": "CLN Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.6290000081062317,
+      "default_display": "0.629",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "name": "cln_amp_bright",
+      "host_name": "CLN Amp Bright",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "name": "cln_amp_bass",
+      "host_name": "CLN Amp Bass",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "name": "cln_amp_mid",
+      "host_name": "CLN Amp Mid",
+      "kind": "numeric",
+      "default_normalized": 0.5190000534057617,
+      "default_display": "0.519",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "name": "cln_amp_treble",
+      "host_name": "CLN Amp Treble",
+      "kind": "numeric",
+      "default_normalized": 0.7710000276565552,
+      "default_display": "0.771",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "name": "cln_amp_level",
+      "host_name": "CLN Amp Level",
+      "kind": "numeric",
+      "default_normalized": 0.4000000059604645,
+      "default_display": "-2.4",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "name": "rust_amp_gain",
+      "host_name": "RUST Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "name": "rust_amp_low",
+      "host_name": "RUST Amp Low",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "name": "rust_amp_mid",
+      "host_name": "RUST Amp Mid",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "name": "rust_amp_high",
+      "host_name": "RUST Amp High",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "name": "rust_amp_master",
+      "host_name": "RUST Amp Master",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "name": "rust_amp_presence",
+      "host_name": "RUST Amp Presence",
+      "kind": "numeric",
+      "default_normalized": 0.48500001430511475,
+      "default_display": "0.485",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "name": "rust_amp_depth",
+      "host_name": "RUST Amp Depth",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "name": "rust_amp_level",
+      "host_name": "RUST Amp Level",
+      "kind": "numeric",
+      "default_normalized": 0.6041666865348816,
+      "default_display": "2.5",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "name": "hot_amp_gain",
+      "host_name": "HOT Amp Gain",
+      "kind": "numeric",
+      "default_normalized": 0.7200000286102295,
+      "default_display": "0.720",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "name": "hot_amp_low",
+      "host_name": "HOT Amp Low",
+      "kind": "numeric",
+      "default_normalized": 0.4880000352859497,
+      "default_display": "0.488",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "name": "hot_amp_mid",
+      "host_name": "HOT Amp Mid",
+      "kind": "numeric",
+      "default_normalized": 0.6550000309944153,
+      "default_display": "0.655",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "name": "hot_amp_high",
+      "host_name": "HOT Amp High",
+      "kind": "numeric",
+      "default_normalized": 0.6670000553131104,
+      "default_display": "0.667",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "name": "hot_amp_master",
+      "host_name": "HOT Amp Master",
+      "kind": "numeric",
+      "default_normalized": 0.6730000376701355,
+      "default_display": "0.673",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "name": "hot_amp_presence",
+      "host_name": "HOT Amp Presence",
+      "kind": "numeric",
+      "default_normalized": 0.6920000314712524,
+      "default_display": "0.692",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "name": "hot_amp_depth",
+      "host_name": "HOT Amp Depth",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "name": "hot_amp_level",
+      "host_name": "HOT Amp Level",
+      "kind": "numeric",
+      "default_normalized": 0.40833333134651184,
+      "default_display": "-2.20",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.025,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.00"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.00"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.00"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.00"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.00"
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "name": "eq_section_active",
+      "host_name": "EQ Section Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 53,
+      "name": "cln_eq_active",
+      "host_name": "CLN EQ Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 54,
+      "name": "cln_eq_band_1_db",
+      "host_name": "CLN EQ Band 1",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "name": "cln_eq_band_2_db",
+      "host_name": "CLN EQ Band 2",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "name": "cln_eq_band_3_db",
+      "host_name": "CLN EQ Band 3",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "name": "cln_eq_band_4_db",
+      "host_name": "CLN EQ Band 4",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "name": "cln_eq_band_5_db",
+      "host_name": "CLN EQ Band 5",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "name": "cln_eq_band_6_db",
+      "host_name": "CLN EQ Band 6",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "name": "cln_eq_band_7_db",
+      "host_name": "CLN EQ Band 7",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "name": "cln_eq_band_8_db",
+      "host_name": "CLN EQ Band 8",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "name": "cln_eq_band_9_db",
+      "host_name": "CLN EQ Band 9",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "name": "rust_eq_active",
+      "host_name": "RUST EQ Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 64,
+      "name": "rust_eq_band_1_db",
+      "host_name": "RUST EQ Band 1",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "name": "rust_eq_band_2_db",
+      "host_name": "RUST EQ Band 2",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "name": "rust_eq_band_3_db",
+      "host_name": "RUST EQ Band 3",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "name": "rust_eq_band_4_db",
+      "host_name": "RUST EQ Band 4",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "name": "rust_eq_band_5_db",
+      "host_name": "RUST EQ Band 5",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "name": "rust_eq_band_6_db",
+      "host_name": "RUST EQ Band 6",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "name": "rust_eq_band_7_db",
+      "host_name": "RUST EQ Band 7",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "name": "rust_eq_band_8_db",
+      "host_name": "RUST EQ Band 8",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "name": "rust_eq_band_9_db",
+      "host_name": "RUST EQ Band 9",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "name": "hot_eq_active",
+      "host_name": "HOT EQ Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 74,
+      "name": "hot_eq_band_1_db",
+      "host_name": "HOT EQ Band 1",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "name": "hot_eq_band_2_db",
+      "host_name": "HOT EQ Band 2",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "name": "hot_eq_band_3_db",
+      "host_name": "HOT EQ Band 3",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "name": "hot_eq_band_4_db",
+      "host_name": "HOT EQ Band 4",
+      "kind": "numeric",
+      "default_normalized": 0.4833333492279053,
+      "default_display": "-0.4",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "name": "hot_eq_band_5_db",
+      "host_name": "HOT EQ Band 5",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "name": "hot_eq_band_6_db",
+      "host_name": "HOT EQ Band 6",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "name": "hot_eq_band_7_db",
+      "host_name": "HOT EQ Band 7",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "name": "hot_eq_band_8_db",
+      "host_name": "HOT EQ Band 8",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "name": "hot_eq_band_9_db",
+      "host_name": "HOT EQ Band 9",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.0",
+      "units": "dB",
+      "min_value": -12.0,
+      "max_value": 12.0,
+      "step_size": 0.1,
+      "num_steps": 241,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-6.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "12.0"
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "name": "cab_section_active",
+      "host_name": "Cab Section Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 84,
+      "name": "cab_type",
+      "host_name": "Cab Type",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Cab 3",
+      "num_steps": 3,
+      "valid_values": [
+        "Cab 1",
+        "Cab 2",
+        "Cab 3"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Cab 1"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Cab 1"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Cab 2"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Cab 3"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Cab 3"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 85,
+      "name": "cab_amp_linked",
+      "host_name": "Cab/Amp Linked",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "name": "cab_1_active",
+      "host_name": "Cab 1 Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 87,
+      "name": "cab_1_position",
+      "host_name": "Cab 1 Position",
+      "kind": "numeric",
+      "default_normalized": 0.30000001192092896,
+      "default_display": "0.300",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "name": "cab_1_distance",
+      "host_name": "Cab 1 Distance",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "name": "cab_1_level",
+      "host_name": "Cab 1 Level",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "-12.0",
+      "min_value": -48.0,
+      "max_value": 24.0,
+      "step_size": 0.1,
+      "num_steps": 721,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-48.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-30.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "24.0"
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "name": "cab_1_pan",
+      "host_name": "Cab 1 Pan",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.00",
+      "min_value": -1.0,
+      "max_value": 1.0,
+      "step_size": 0.01,
+      "num_steps": 201,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-1.00"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-0.50"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.00"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.50"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.00"
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "name": "cab_1_phase",
+      "host_name": "Cab 1 Phase",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "name": "cab_1_mic_ir",
+      "host_name": "Cab 1 Mic IR",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Dynamic 57",
+      "num_steps": 7,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 414",
+        "Condenser 184",
+        "Ribbon 160",
+        "Ribbon 121",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Condenser 184"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Ribbon 160"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 93,
+      "name": "cab_2_active",
+      "host_name": "Cab 2 Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 94,
+      "name": "cab_2_position",
+      "host_name": "Cab 2 Position",
+      "kind": "numeric",
+      "default_normalized": 0.35500001907348633,
+      "default_display": "0.355",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "name": "cab_2_distance",
+      "host_name": "Cab 2 Distance",
+      "kind": "numeric",
+      "default_normalized": 0.0,
+      "default_display": "0.000",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "name": "cab_2_level",
+      "host_name": "Cab 2 Level",
+      "kind": "numeric",
+      "default_normalized": 0.32499998807907104,
+      "default_display": "-24.6",
+      "min_value": -48.0,
+      "max_value": 24.0,
+      "step_size": 0.1,
+      "num_steps": 721,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-48.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-30.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "-12.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "6.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "24.0"
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "name": "cab_2_pan",
+      "host_name": "Cab 2 Pan",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.00",
+      "min_value": -1.0,
+      "max_value": 1.0,
+      "step_size": 0.01,
+      "num_steps": 201,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "-1.00"
+        },
+        {
+          "normalized": 0.25,
+          "display": "-0.50"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.00"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.50"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.00"
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "name": "cab_2_phase",
+      "host_name": "Cab 2 Phase",
+      "kind": "boolean",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "name": "cab_2_mic_ir",
+      "host_name": "Cab 2 Mic IR",
+      "kind": "enum",
+      "default_normalized": 0.3333333432674408,
+      "default_display": "Condenser 414",
+      "num_steps": 7,
+      "valid_values": [
+        "Dynamic 57",
+        "Dynamic 421",
+        "Condenser 414",
+        "Condenser 184",
+        "Ribbon 160",
+        "Ribbon 121",
+        "Custom IR"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Dynamic 57"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Condenser 414"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Condenser 184"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Ribbon 160"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Custom IR"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 100,
+      "name": "fx_section_active",
+      "host_name": "FX Section Active",
+      "kind": "enum",
+      "default_normalized": 1.0,
+      "default_display": "Active",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 101,
+      "name": "dly_active",
+      "host_name": "DLY Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 102,
+      "name": "dly_sync_active",
+      "host_name": "DLY Sync Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 103,
+      "name": "dly_ping_pong",
+      "host_name": "DLY Ping-Pong",
+      "kind": "boolean",
+      "default_normalized": 1.0,
+      "default_display": "On",
+      "step_size": 1.0,
+      "num_steps": 2,
+      "valid_values": [
+        false,
+        true
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.75,
+          "display": "On"
+        },
+        {
+          "normalized": 1.0,
+          "display": "On"
+        }
+      ]
+    },
+    {
+      "index": 104,
+      "name": "dly_mod_active",
+      "host_name": "DLY Mod Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 105,
+      "name": "dly_dry_wet",
+      "host_name": "DLY Dry/Wet",
+      "kind": "numeric",
+      "default_normalized": 0.38100001215934753,
+      "default_display": "0.381",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "name": "dly_feedback",
+      "host_name": "DLY Feedback",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "name": "dly_tape_saturation",
+      "host_name": "DLY Tape Saturation",
+      "kind": "numeric",
+      "default_normalized": 0.0010000000474974513,
+      "default_display": "0.001",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "name": "dly_tempo",
+      "host_name": "DLY Tempo",
+      "kind": "numeric",
+      "default_normalized": 0.4000000059604645,
+      "default_display": "120.0",
+      "min_value": 40.0,
+      "max_value": 240.0,
+      "step_size": 0.2,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "40.0"
+        },
+        {
+          "normalized": 0.25,
+          "display": "90.0"
+        },
+        {
+          "normalized": 0.5,
+          "display": "140.0"
+        },
+        {
+          "normalized": 0.75,
+          "display": "190.0"
+        },
+        {
+          "normalized": 1.0,
+          "display": "240.0"
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "name": "dly_sync_note",
+      "host_name": "DLY Sync Note",
+      "kind": "enum",
+      "default_normalized": 0.6000000238418579,
+      "default_display": "1/8D",
+      "num_steps": 21,
+      "valid_values": [
+        "1/64T",
+        "1/64",
+        "1/32T",
+        "1/64D",
+        "1/32",
+        "1/16T",
+        "1/32D",
+        "1/16",
+        "1/8T",
+        "1/16D",
+        "1/8",
+        "1/4T",
+        "1/8D",
+        "1/4",
+        "1/2T",
+        "1/4D",
+        "1/2",
+        "1/1T",
+        "1/2D",
+        "1/1",
+        "1/1D"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1/64T"
+        },
+        {
+          "normalized": 0.25,
+          "display": "1/16T"
+        },
+        {
+          "normalized": 0.5,
+          "display": "1/8"
+        },
+        {
+          "normalized": 0.75,
+          "display": "1/4D"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1/1D"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 110,
+      "name": "dly_tone",
+      "host_name": "DLY Tone",
+      "kind": "numeric",
+      "default_normalized": 0.5,
+      "default_display": "0.500",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "name": "dly_tap_tempo",
+      "host_name": "DLY Tap Tempo",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Tap1",
+      "num_steps": 2,
+      "valid_values": [
+        "Tap1",
+        "Tap2"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Tap1"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Tap1"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Tap1"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Tap2"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Tap2"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 112,
+      "name": "rev_active",
+      "host_name": "REV Active",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Inactive",
+      "num_steps": 2,
+      "valid_values": [
+        "Inactive",
+        "Active"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Inactive"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Active"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Active"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 113,
+      "name": "rev_mode",
+      "host_name": "REV Mode",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Reverb",
+      "num_steps": 2,
+      "valid_values": [
+        "Reverb",
+        "Shimmer"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Reverb"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Reverb"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Reverb"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Shimmer"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Shimmer"
+        }
+      ],
+      "options_verified": true
+    },
+    {
+      "index": 114,
+      "name": "rev_dry_wet",
+      "host_name": "REV Dry/Wet",
+      "kind": "numeric",
+      "default_normalized": 0.40400001406669617,
+      "default_display": "0.404",
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "step_size": 0.001,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "0.000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "0.250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "0.500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "0.750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "1.000"
+        }
+      ]
+    },
+    {
+      "index": 115,
+      "name": "rev_time",
+      "host_name": "REV Time",
+      "kind": "numeric",
+      "default_normalized": 0.38461539149284363,
+      "default_display": "4000.00",
+      "min_value": 250.0,
+      "max_value": 10000.0,
+      "step_size": 9.75,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "250.00"
+        },
+        {
+          "normalized": 0.25,
+          "display": "2687.50"
+        },
+        {
+          "normalized": 0.5,
+          "display": "5125.00"
+        },
+        {
+          "normalized": 0.75,
+          "display": "7562.50"
+        },
+        {
+          "normalized": 1.0,
+          "display": "10000.00"
+        }
+      ]
+    },
+    {
+      "index": 116,
+      "name": "rev_low_cut",
+      "host_name": "REV Low Cut",
+      "kind": "numeric",
+      "default_normalized": 0.07692307978868484,
+      "default_display": "100",
+      "min_value": 50.0,
+      "max_value": 700.0,
+      "step_size": 1.0,
+      "num_steps": 651,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "50"
+        },
+        {
+          "normalized": 0.25,
+          "display": "213"
+        },
+        {
+          "normalized": 0.5,
+          "display": "375"
+        },
+        {
+          "normalized": 0.75,
+          "display": "538"
+        },
+        {
+          "normalized": 1.0,
+          "display": "700"
+        }
+      ]
+    },
+    {
+      "index": 117,
+      "name": "rev_high_cut",
+      "host_name": "REV High Cut",
+      "kind": "numeric",
+      "default_normalized": 0.7777777910232544,
+      "default_display": "8000",
+      "min_value": 1000.0,
+      "max_value": 10000.0,
+      "step_size": 9.0,
+      "num_steps": 1001,
+      "linear": true,
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "1000"
+        },
+        {
+          "normalized": 0.25,
+          "display": "3250"
+        },
+        {
+          "normalized": 0.5,
+          "display": "5500"
+        },
+        {
+          "normalized": 0.75,
+          "display": "7750"
+        },
+        {
+          "normalized": 1.0,
+          "display": "10000"
+        }
+      ]
+    },
+    {
+      "index": 118,
+      "name": "bypass",
+      "host_name": "Bypass",
+      "kind": "enum",
+      "default_normalized": 0.0,
+      "default_display": "Off",
+      "num_steps": 2,
+      "valid_values": [
+        "Off",
+        "Bypassed"
+      ],
+      "samples": [
+        {
+          "normalized": 0.0,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.25,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.5,
+          "display": "Off"
+        },
+        {
+          "normalized": 0.75,
+          "display": "Bypassed"
+        },
+        {
+          "normalized": 1.0,
+          "display": "Bypassed"
+        }
+      ],
+      "options_verified": true
+    }
+  ]
+}
