@@ -124,24 +124,6 @@ REAPER by the plugin's display name (`host_name` in the schema), never by pedalb
   against the real plugin).
 * Demucs runs on CPU (torch CPU build): about 30 s for a 25 s clip with `single`, about 1 minute with the default `cascade`.
 
-## Windows + Norton note
-
-Norton's Web Shield re-signs HTTPS and mangles some PyPI replies. Downloads use the Windows certificate store
-(`src/net.py`, verification stays on). If `pip install` fails with `InvalidChunkLength`, use
-`python tools/pip_identity.py --python <venv python> install ...`, or install that one package from its wheel.
-
-## YouTube downloads: 403 and certificate errors
-
-* **`HTTP Error 403: Forbidden` on the media download.** YouTube now needs a JavaScript runtime for yt-dlp to solve
-  its stream challenge. Install Node.js and add `--js-runtimes node` to your command, or put that single line in
-  `%APPDATA%\yt-dlp\config` (Linux/macOS: `~/.config/yt-dlp/config`). The config file only affects the `yt-dlp`
-  command line, not yt-dlp used as a Python library, so for the MCP tools the most reliable route is to pass a local
-  WAV instead of a URL: `yt-dlp --js-runtimes node -f bestaudio <url>`, convert with the bundled ffmpeg, then give
-  the WAV path to `extract_tone_to_json`.
-* **`CERTIFICATE_VERIFY_FAILED: unable to get local issuer certificate`.** Python is not using the Windows
-  certificate store (typical behind antivirus HTTPS scanning). Install `pip-system-certs`, using
-  `pip install --use-feature=truststore -U pip-system-certs certifi yt-dlp`, which keeps verification on. Do not
-  use `--no-check-certificate`.
 
 ## Examples
 
