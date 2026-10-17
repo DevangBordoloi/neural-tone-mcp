@@ -7,3 +7,4 @@ output/
 .pytest_cache/
 *.wav
 *.webm
+!assets/default_di_riff.wav

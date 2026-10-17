@@ -30,7 +30,7 @@ from src.daw.ableton_driver import AbletonDriver
 from src.daw.base import DawController, DawError
 from src.daw.reaper_driver import ReaperDriver
 from src.dsp.vst_inspector import InspectorError, dump_plugin_schema, load_schema
-from src.pipeline import extract_tone
+from src.pipeline import extract_tone, extract_tone_hybrid
 
 logging.basicConfig(level=logging.INFO, stream=sys.stderr, format="%(levelname)s %(name)s: %(message)s")
 
@@ -40,7 +40,11 @@ Builds Neural DSP tones from reference audio.
 2. extract_tone_to_json(url, user_prompt, target_plugin) - downloads the clip, isolates the guitar, measures the
    tone and writes a preset JSON (normalized 0-1 values keyed by exact parameter name).
 3. apply_tone_json_to_daw(json_path, daw) - creates the track(s) in REAPER (or Ableton) and applies every parameter.
-match_url_tone_end_to_end does 2+3 in one call. The result is a rule-of-thumb starting point, not a clone of the
+match_url_tone_end_to_end does 2+3 in one call.
+match_url_tone_hybrid does the same with the dual-LLM engine: Claude drafts the parameters, a headless render of the
+plugin is compared with the reference, and Gemini listens to both recordings only when the band error is above
+2 dB (or force_gemini). It needs ANTHROPIC_API_KEY and, for the escalation, GEMINI_API_KEY; without them it falls
+back to the offline heuristic preset, and the result's `refiner` field says which stage produced the tone. The result is a rule-of-thumb starting point, not a clone of the
 record: say so to the user, and tell them what was assumed (see signal_chain_summary in the result).
 The REAPER bridge is shared with the separate `reaper` MCP server: do not call `reaper` tools at the same time as
 apply_tone_json_to_daw / match_url_tone_end_to_end. Extraction takes minutes on CPU (Demucs).
@@ -132,6 +136,25 @@ async def match_url_tone_end_to_end(
     extracted = await extract_tone_to_json(url, user_prompt, target_plugin, start_sec, duration_sec)
     applied = await apply_tone_json_to_daw(extracted["json_path"], daw)
     return {"extracted": extracted, "applied": applied}
+
+
+@mcp.tool()
+async def match_url_tone_hybrid(
+    url: str, user_prompt: str, target_plugin_name: str, force_gemini: bool = False,
+    daw: Literal["reaper", "ableton"] = "reaper", start_sec: int = 30, duration_sec: int = 25,
+) -> dict:
+    """URL -> stem -> features -> Claude draft -> headless render check -> (Gemini listens if off) -> DAW.
+
+    force_gemini=True always sends the reference and the render to Gemini. `refiner` in the result is "claude",
+    "gemini", "claude_fallback" (Gemini was needed but failed) or "heuristic" (Claude unavailable).
+    """
+    try:
+        res = await asyncio.to_thread(
+            extract_tone_hybrid, url, user_prompt, target_plugin_name, start_sec, duration_sec, None, False, force_gemini)
+    except (InspectorError, DawError, RuntimeError, ValueError) as e:
+        raise ToolError(str(e)) from e
+    applied = await apply_tone_json_to_daw(res["json_path"], daw)
+    return {"extracted": {**_brief(res), "refiner": res["refiner"], "reasoning": res["reasoning"]}, "applied": applied}
 
 
 @mcp.tool()

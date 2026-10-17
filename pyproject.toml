@@ -7,7 +7,7 @@ requires-python = ">=3.10"
 dependencies = [
   "pedalboard>=0.9", "pydantic>=2", "numpy", "scipy", "librosa", "soundfile",
   "yt-dlp", "imageio-ffmpeg", "demucs", "torch",
-  "mcp[cli]>=1.2", "python-reapy", "anthropic", "python-dotenv", "truststore",
+  "mcp[cli]>=1.2", "python-reapy", "anthropic", "google-genai", "python-dotenv", "truststore",
 ]
 
 [project.optional-dependencies]
